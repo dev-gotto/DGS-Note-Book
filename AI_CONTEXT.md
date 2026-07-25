@@ -1,20 +1,51 @@
 # AI_CONTEXT
 
-## Yeni Sohbet Başlatma
+# DGS Note Book - AI Context
 
-Yeni bir sohbet açıldığında aşağıdaki dosyalar sırasıyla incelenmelidir:
+## Repository
+https://github.com/dev-gotto/DGS-Note-Book
 
-1. AI_CONTEXT.md (başlangıç referansı)
-2. PROJECT_STATE.md (güncel durum)
-3. PROJECT_RULES.md (çalışma kuralları)
-4. CHANGELOG.md (son yapılan değişiklikler)
+## Proje Amacı
+DGS Matematik ve Geometri için MkDocs Material ile yayınlanan, GitHub üzerinde sürüm kontrollü bir bilgi bankası oluşturmak.
 
-Bu dört dosya okunduktan sonra çalışmaya başlanır.
+# 🤖 Assistant Startup Instructions
 
-## Çalışma Kuralları
-- Konu sırası: Dgs ders konuları.txt
+Bu dosya yeni sohbetlerde ilk referans dosyasıdır.
+
+Çalışmaya başlamadan ÖNCE aşağıdaki dosyaları sırayla incele:
+
+1. AI_CONTEXT.md
+2. PROJECT_STATE.md
+3. PROJECT_RULES.md
+4. CHANGELOG.md
+
+Bu dört dosya okunduktan sonra:
+
+- Projenin mevcut durumunu kavra.
+- Daha önce alınmış mimari kararlarını koru.
+- Kullanıcı istemedikçe yeni mimari veya süreç önerileri sunma.
+- Mevcut standartlara sadık kal.
+- İçerik üretimine odaklan.
+- Bu dosyalar proje için Single Source of Truth olarak kabul edilir.
+
+## Çalışma Akışı
+
+Video
+→ Transkript
+→ Kullanıcı Notları
+→ Standart DGS Note Book
+→ Commit
+→ GitHub Pages
+
+## İçerik Kuralları
+
+- Resmî konu sırası: Dgs ders konuları.txt
 - Video ana bağlamdır.
 - Kullanıcı notları korunur.
-- Eksikler yalnızca DGS kapsamında tamamlanır.
-- İstenmedikçe proje mimarisi değiştirilmez.
-- Hazırlanan her ZIP paketinde CHANGELOG.md güncellenir.
+- Eksik bilgiler yalnızca DGS kapsamında tamamlanır.
+- Aynı şablon bütün konularda uygulanır.
+
+## Güncel Durum
+
+Altyapı tamamlandı.
+Sıradaki hedef: M01 - İşlem Yeteneği.

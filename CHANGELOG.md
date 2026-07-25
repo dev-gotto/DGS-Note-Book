@@ -1,11 +1,14 @@
 # CHANGELOG
 
-## v0.5
+## v0.6
+
 ### Yapılanlar
-- Yeni sohbet başlangıç prosedürü tanımlandı.
-- AI_CONTEXT.md güncellendi.
-- PROJECT_RULES.md güncellendi.
-- CHANGELOG standardı eklendi.
+
+- Assistant Startup Instructions eklendi.
+- Yeni sohbetlerde okunacak dosya sırası tanımlandı.
+- AI çalışma protokolü oluşturuldu.
+- Assistant kuralları PROJECT_RULES.md dosyasına taşındı.
 
 ### Sonraki Hedef
-- M01 İşlem Yeteneği
+
+- M01 - İşlem Yeteneği
