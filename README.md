@@ -1,6 +1,6 @@
 # DGS Note Book
 
-Bu proje MkDocs Material kullanılarak GitHub Pages üzerinde yayınlanacaktır.
+Bu proje MkDocs Material kullanılarak GitHub Pages üzerinde yayınlanacaktır..
 
 ## Kurulum
 
