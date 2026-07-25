@@ -1,16 +1,5 @@
-# PROJECT_RULES
+## Teslim Standardı
 
-## İçerik Standardı
+Her ZIP tek başına uygulanabilir olmalıdır.
 
-Her konu aynı yapıyı kullanır:
-
-- Amaç
-- 📘 Teorik Bilgiler
-- 💡 Pratik Bilgiler
-- 🎯 Soru Çözüm Stratejileri
-- ⚠️ Yaygın Hatalar
-- Örnekler
-- Hızlı Tekrar
-
-Video sırası değil, konu bütünlüğü esas alınır.
-Teori ile pratik aynı bölümde yazılmaz.
+Bağımlı dosyalar eksik bırakılmaz.

@@ -1,5 +1,8 @@
 site_name: DGS Note Book
 theme:
   name: material
+
 nav:
   - Ana Sayfa: index.md
+  - Matematik:
+      - M01 İşlem Yeteneği: matematik/M01-islem-yetenegi.md

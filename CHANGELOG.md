@@ -1,11 +1,9 @@
 # CHANGELOG
 
-## v0.8
+## v0.8.1 Hotfix
 
 ### Yapılanlar
-- M01 Iterasyon 1 oluşturuldu.
-- Amaç bölümü eklendi.
-- 📘 Teorik Bilgiler bölümü oluşturuldu.
-
-### Sonraki Hedef
-- 💡 Pratik Bilgiler
+- GitHub Actions için contents: write izni eklendi.
+- mkdocs.yml nav güncellendi.
+- PRE_COMMIT_CHECKLIST eklendi.
+- Teslim standardı AI_CONTEXT ve PROJECT_RULES dosyalarına eklendi.
