@@ -1,11 +1,22 @@
-# M01 Başlık
+# M01 - Konu Başlığı
 
 ## Amaç
-## Temel Bilgiler
-## Kurallar
-## DGS Püf Noktaları
-## Tuzaklar
-## Ek Bilgiler
-## Örnek
+
+## 📘 Teorik Bilgiler
+
+## 💡 Pratik Bilgiler
+
+## 🎯 Soru Çözüm Stratejileri
+
+## ⚠️ Yaygın Hatalar
+
+## Çözümlü Örnekler
+
 ## Hızlı Tekrar
+
+## Kaynak
+- Video
+- Transkript
+- Kullanıcı Notları
+
 ## Değişiklik Geçmişi

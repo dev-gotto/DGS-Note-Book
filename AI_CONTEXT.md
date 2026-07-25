@@ -1,51 +1,37 @@
 # AI_CONTEXT
 
-# DGS Note Book - AI Context
+## Assistant Startup Instructions
 
-## Repository
-https://github.com/dev-gotto/DGS-Note-Book
-
-## Proje Amacı
-DGS Matematik ve Geometri için MkDocs Material ile yayınlanan, GitHub üzerinde sürüm kontrollü bir bilgi bankası oluşturmak.
-
-# 🤖 Assistant Startup Instructions
-
-Bu dosya yeni sohbetlerde ilk referans dosyasıdır.
-
-Çalışmaya başlamadan ÖNCE aşağıdaki dosyaları sırayla incele:
+Yeni sohbette sırasıyla oku:
 
 1. AI_CONTEXT.md
 2. PROJECT_STATE.md
 3. PROJECT_RULES.md
 4. CHANGELOG.md
 
-Bu dört dosya okunduktan sonra:
+## İçerik Stratejisi (v2)
 
-- Projenin mevcut durumunu kavra.
-- Daha önce alınmış mimari kararlarını koru.
-- Kullanıcı istemedikçe yeni mimari veya süreç önerileri sunma.
-- Mevcut standartlara sadık kal.
-- İçerik üretimine odaklan.
-- Bu dosyalar proje için Single Source of Truth olarak kabul edilir.
+Her konu aşağıdaki dört bilgi katmanına ayrılır:
 
-## Çalışma Akışı
+1. 📘 Teorik Bilgiler
+   - Tanımlar
+   - Kurallar
+   - Formüller
+   - Matematiksel altyapı
 
-Video
-→ Transkript
-→ Kullanıcı Notları
-→ Standart DGS Note Book
-→ Commit
-→ GitHub Pages
+2. 💡 Pratik Bilgiler
+   - Hız kazandıran yöntemler
+   - Kısa yollar
+   - Eğitmenin deneyimleri
 
-## İçerik Kuralları
+3. 🎯 Soru Çözüm Stratejileri
+   - DGS yaklaşımı
+   - Şık kullanımı
+   - Tahmin ve eleme
+   - Problem çözme taktikleri
 
-- Resmî konu sırası: Dgs ders konuları.txt
-- Video ana bağlamdır.
-- Kullanıcı notları korunur.
-- Eksik bilgiler yalnızca DGS kapsamında tamamlanır.
-- Aynı şablon bütün konularda uygulanır.
+4. ⚠️ Yaygın Hatalar
+   - Sık yapılan yanlışlar
+   - Dikkat edilmesi gereken noktalar
 
-## Güncel Durum
-
-Altyapı tamamlandı.
-Sıradaki hedef: M01 - İşlem Yeteneği.
+Video, transkript ve kullanıcı notları bu dört başlık altında yeniden düzenlenir.
