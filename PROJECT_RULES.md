@@ -1,6 +1,16 @@
 # PROJECT_RULES
 
-- Kimlik sistemi: M01..., G01...
-- Yaşam döngüsü: draft → review → final
-- Tüm notlar docs/ altında tutulur.
-- Commit örneği: docs(M01): işlem yeteneği notları eklendi
+## Yeni Sohbet Prosedürü
+Her yeni sohbette aşağıdaki dosyalar okunmalıdır:
+
+1. AI_CONTEXT.md
+2. PROJECT_STATE.md
+3. PROJECT_RULES.md
+4. CHANGELOG.md
+
+Bu dosyalar proje için tek referans kaynağıdır.
+
+## Çalışma Standardı
+- Her çıktı Markdown olarak hazırlanır.
+- Her önemli değişiklik CHANGELOG.md dosyasına eklenir.
+- ZIP paketleri güncel CHANGELOG ile teslim edilir.

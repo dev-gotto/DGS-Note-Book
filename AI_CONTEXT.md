@@ -1,21 +1,20 @@
 # AI_CONTEXT
 
-Bu dosya yeni sohbetlerde başlangıç referansıdır.
+## Yeni Sohbet Başlatma
 
-## Amaç
-DGS odaklı bilgi bankası.
+Yeni bir sohbet açıldığında aşağıdaki dosyalar sırasıyla incelenmelidir:
 
-## Kurallar
+1. AI_CONTEXT.md (başlangıç referansı)
+2. PROJECT_STATE.md (güncel durum)
+3. PROJECT_RULES.md (çalışma kuralları)
+4. CHANGELOG.md (son yapılan değişiklikler)
+
+Bu dört dosya okunduktan sonra çalışmaya başlanır.
+
+## Çalışma Kuralları
 - Konu sırası: Dgs ders konuları.txt
 - Video ana bağlamdır.
 - Kullanıcı notları korunur.
 - Eksikler yalnızca DGS kapsamında tamamlanır.
-- Aynı şablon kullanılır.
-- İstenmedikçe mimari değiştirilmez.
-
-## İş Akışı
-Video → Transkript → Kullanıcı Notları → Standart Not → Commit → Otomatik Yayın
-
-## Güncel Durum
-Altyapı tamamlandı.
-Sıradaki konu: M01.
+- İstenmedikçe proje mimarisi değiştirilmez.
+- Hazırlanan her ZIP paketinde CHANGELOG.md güncellenir.

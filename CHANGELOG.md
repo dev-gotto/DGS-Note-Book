@@ -1,6 +1,11 @@
 # CHANGELOG
 
-## v0.1 Repo oluşturuldu
-## v0.2 Mimari oluşturuldu
-## v0.3 MkDocs eklendi
-## v0.4 GitHub Pages yayına alındı
+## v0.5
+### Yapılanlar
+- Yeni sohbet başlangıç prosedürü tanımlandı.
+- AI_CONTEXT.md güncellendi.
+- PROJECT_RULES.md güncellendi.
+- CHANGELOG standardı eklendi.
+
+### Sonraki Hedef
+- M01 İşlem Yeteneği
