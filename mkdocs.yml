@@ -1,5 +1,4 @@
 site_name: DGS Note Book
-site_description: DGS Matematik ve Geometri Notları
 theme:
   name: material
 nav:

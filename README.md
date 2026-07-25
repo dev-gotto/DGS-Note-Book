@@ -1,16 +1,9 @@
 # DGS Note Book
 
-Bu proje MkDocs Material kullanılarak GitHub Pages üzerinde yayınlanacaktır.
+MkDocs Material tabanlı DGS Matematik ve Geometri bilgi bankası.
 
-## Kurulum
-
-```bash
-pip install -r requirements.txt
-mkdocs serve
-```
-
-## Yayın
-
-```bash
-mkdocs build
-```
+## Belgeler
+- AI_CONTEXT.md
+- PROJECT_RULES.md
+- PROJECT_STATE.md
+- CHANGELOG.md
