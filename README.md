@@ -1,17 +1,16 @@
 # DGS Note Book
 
-## Amaç
-DGS Matematik ve Geometri için video temelli, sürüm kontrollü, tekrar dostu bir bilgi bankası.
+Bu proje MkDocs Material kullanılarak GitHub Pages üzerinde yayınlanacaktır.
 
-## Temel İlkeler
-- Resmi konu sırası: Dgs ders konuları.txt
-- Video ana bağlamdır.
-- Kullanıcı notları korunur.
-- Eksikler DGS kapsamında tamamlanır.
-- Aynı şablon tüm konularda kullanılır.
+## Kurulum
 
-## Yapı
-- Matematik (Mxx)
-- Geometri (Gxx)
+```bash
+pip install -r requirements.txt
+mkdocs serve
+```
 
-README tanıtım amaçlıdır. Ayrıntılı kurallar PROJECT_RULES.md dosyasındadır.
+## Yayın
+
+```bash
+mkdocs build
+```
