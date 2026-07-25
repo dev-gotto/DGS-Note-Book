@@ -1,10 +1,9 @@
 # AI_CONTEXT
 
-## Repository
-https://github.com/dev-gotto/DGS-Note-Book
+Bu dosya yeni sohbetlerde başlangıç referansıdır.
 
 ## Amaç
-DGS odaklı, MkDocs ile yayınlanan bilgi bankası.
+DGS odaklı bilgi bankası.
 
 ## Kurallar
 - Konu sırası: Dgs ders konuları.txt
@@ -15,8 +14,8 @@ DGS odaklı, MkDocs ile yayınlanan bilgi bankası.
 - İstenmedikçe mimari değiştirilmez.
 
 ## İş Akışı
-Video -> Transkript -> Kullanıcı Notu -> Standart Not -> Commit -> Yayın
+Video → Transkript → Kullanıcı Notları → Standart Not → Commit → Otomatik Yayın
 
-## Durum
+## Güncel Durum
 Altyapı tamamlandı.
 Sıradaki konu: M01.

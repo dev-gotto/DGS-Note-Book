@@ -1,5 +1,6 @@
 # CHANGELOG
 
-## v0.1 Repo
-## v0.2 MkDocs
-## v0.3 GitHub Pages
+## v0.1 Repo oluşturuldu
+## v0.2 Mimari oluşturuldu
+## v0.3 MkDocs eklendi
+## v0.4 GitHub Pages yayına alındı

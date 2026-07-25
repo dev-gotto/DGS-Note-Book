@@ -8,3 +8,4 @@
 ## Ek Bilgiler
 ## Örnek
 ## Hızlı Tekrar
+## Değişiklik Geçmişi

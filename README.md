@@ -1,8 +1,8 @@
 # DGS Note Book
 
-MkDocs Material tabanlı DGS Matematik ve Geometri bilgi bankası.
+DGS Matematik ve Geometri için MkDocs Material tabanlı bilgi bankası.
 
-## Belgeler
+## Proje Belgeleri
 - AI_CONTEXT.md
 - PROJECT_RULES.md
 - PROJECT_STATE.md

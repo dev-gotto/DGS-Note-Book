@@ -1,3 +1,1 @@
 docs(M01): işlem yeteneği notları eklendi
-docs(M05): mutlak değer revize edildi
-refactor(repo): klasör yapısı güncellendi

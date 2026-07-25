@@ -1,6 +1,6 @@
 # PROJECT_RULES
 
-- Kimlik: M01..., G01...
-- Yaşam döngüsü: draft -> review -> final
-- Commit: docs(M01): ...
-- Tüm içerikler docs/ altında tutulur.
+- Kimlik sistemi: M01..., G01...
+- Yaşam döngüsü: draft → review → final
+- Tüm notlar docs/ altında tutulur.
+- Commit örneği: docs(M01): işlem yeteneği notları eklendi

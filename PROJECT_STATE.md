@@ -1,8 +1,10 @@
 # PROJECT_STATE
 
 - [x] GitHub Repo
-- [x] MkDocs
+- [x] MkDocs Material
 - [x] GitHub Pages
 - [x] Şablonlar
 
-Sonraki iş: M01
+Son tamamlanan iş: Altyapı.
+
+Sıradaki iş: M01.
