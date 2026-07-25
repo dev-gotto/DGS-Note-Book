@@ -1,16 +1,11 @@
 # CHANGELOG
 
-## v0.7
+## v0.8
 
 ### Yapılanlar
-- İçerik stratejisi revize edildi.
-- Bilgiler dört katmana ayrıldı:
-  - Teorik Bilgiler
-  - Pratik Bilgiler
-  - Soru Çözüm Stratejileri
-  - Yaygın Hatalar
-- Konu şablonu yeni standarda göre güncellendi.
-- AI_CONTEXT ve PROJECT_RULES yeni stratejiye göre güncellendi.
+- M01 Iterasyon 1 oluşturuldu.
+- Amaç bölümü eklendi.
+- 📘 Teorik Bilgiler bölümü oluşturuldu.
 
 ### Sonraki Hedef
-- M01 - İşlem Yeteneği bu standartla hazırlanacak.
+- 💡 Pratik Bilgiler
