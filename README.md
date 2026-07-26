@@ -19,12 +19,6 @@ Video anlatımları ham kaynak olarak kullanılır. Nihai hedef, videolardan ba�
 
 ---
 
-# Repository
-
-https://github.com/dev-gotto/DGS-Note-Book
-
----
-
 # Teknolojiler
 
 - Markdown
@@ -37,223 +31,81 @@ https://github.com/dev-gotto/DGS-Note-Book
 # Çalışma Akışı
 
 ```
-Video
-
-↓
-
-Transkript
-
-↓
-
-Kullanıcı Notları
-
-↓
-
-İçerik Analizi
-
-↓
-
-Standart Dokümantasyon
-
-↓
-
-Commit
-
-↓
-
-GitHub Pages
+Video → Transkript → Kullanıcı Notları → İçerik Analizi → Standart Dokümantasyon → Commit → GitHub Pages
 ```
 
 ---
 
 # Konu İşleme Stratejisi
 
-Video sırası esas alınmaz.
-
-Konu bütünlüğü esas alınır.
-
-Videolar yalnızca ham kaynaktır.
-
-Birden fazla video aynı konuya ait olabilir.
-
-Bir video birden fazla konu içerebilir.
-
-Dokümantasyon DGS konu sırasına göre hazırlanır.
-
-Referans:
-
-```
-Dgs ders konuları.txt
-```
+- Video sırası esas alınmaz; konu bütünlüğü esas alınır.
+- Videolar yalnızca ham kaynaktır. Birden fazla video aynı konuya ait olabilir; bir video birden fazla konu içerebilir.
+- Dokümantasyon, DGS konu sırasına göre hazırlanır. Referans: `Dgs ders konuları.txt`
 
 ---
 
 # İçerik Standardı
 
-Her konu aynı yapıyı kullanır.
+Her konu aynı yapıyı kullanır:
 
 ```
-Konu
-
-↓
-
-Amaç
-
-↓
-
-📘 Teorik Bilgiler
-
-↓
-
-💡 Pratik Bilgiler
-
-↓
-
-🎯 Soru Çözüm Stratejileri
-
-↓
-
-⚠️ Yaygın Hatalar
-
-↓
-
-Çözümlü Örnekler
-
-↓
-
-Hızlı Tekrar
-
-↓
-
-Kaynaklar
-
-↓
-
-Değişiklik Geçmişi
+Konu → Amaç → 📘 Teorik Bilgiler → 💡 Pratik Bilgiler → 🎯 Soru Çözüm Stratejileri
+→ ⚠️ Yaygın Hatalar → Çözümlü Örnekler → Hızlı Tekrar → Kaynaklar → Değişiklik Geçmişi
 ```
 
----
+| Bölüm | İçerik |
+|---|---|
+| 📘 Teorik Bilgiler | Değişmeyen matematik kuralları: tanımlar, kurallar, formüller. |
+| 💡 Pratik Bilgiler | Tecrübeye dayalı bilgiler: hız kazandıran yöntemler, kısayollar, eğitmen önerileri. |
+| 🎯 Soru Çözüm Stratejileri | ÖSYM mantığı: şık kullanımı, eleme, tahmin, hızlı çözüm teknikleri. |
+| ⚠️ Yaygın Hatalar | Öğrencilerin en sık yaptığı yanlışlar. |
 
-## 📘 Teorik Bilgiler
-
-Değişmeyen matematik kuralları.
-
-Örnekler
-
-- Tanımlar
-- Kurallar
-- Formüller
-- Matematiksel açıklamalar
-
----
-
-## 💡 Pratik Bilgiler
-
-Tecrübeye dayalı bilgiler.
-
-Örnekler
-
-- Hız kazandıran yöntemler
-- Kısa yollar
-- Eğitmenin önerileri
-
----
-
-## 🎯 Soru Çözüm Stratejileri
-
-ÖSYM mantığı.
-
-Örnekler
-
-- Şık kullanımı
-- Eleme
-- Tahmin
-- Hızlı çözüm teknikleri
-
----
-
-## ⚠️ Yaygın Hatalar
-
-Öğrencilerin en sık yaptığı yanlışlar.
+Her konu dosyasının başında `templates/metadata.yml` ile uyumlu bir front-matter bulunur (`id`, `title`, `status`, `version`, `previous`, `next`, `references`).
 
 ---
 
 # Konu Kimlikleri
 
-Matematik
-
-```
-M01
-M02
-M03
-...
-```
-
-Geometri
-
-```
-G01
-G02
-G03
-...
-```
+Matematik: `M01, M02, M03, ...`
+Geometri: `G01, G02, G03, ...`
 
 ---
 
 # Çalışma Kuralları
 
-- DGS konu sırasına uyulur.
-- Video sırası korunmaz.
-- Konu bütünlüğü korunur.
-- Kullanıcının notları korunur.
+- DGS konu sırasına uyulur; video sırası korunmaz.
+- Konu bütünlüğü ve kullanıcının notları korunur.
 - Eksik bilgiler yalnızca DGS kapsamı içerisinde tamamlanır.
 - Kullanıcı istemedikçe proje mimarisi değiştirilmez.
 
 ---
 
-# Assistant Startup Instructions
+# AI Asistanıyla Çalışma Kuralları
 
-Yeni bir sohbet başladığında aşağıdaki adımlar izlenmelidir.
+Yeni bir sohbet başladığında:
 
-1. README.md dosyasını oku.
-2. CHANGELOG.md dosyasını oku.
-3. Son yapılan değişiklikleri incele.
-4. Mevcut mimariyi koru.
-5. Yeni öneriler sunma.
-6. İçerik üretimine odaklan.
-
-README.md bu proje için **Single Source of Truth** olarak kabul edilir.
+1. README.md ve CHANGELOG.md okunur.
+2. Son yapılan değişiklikler (roadmap, versiyon geçmişi) incelenir.
+3. Mevcut mimari korunur; kullanıcı açıkça istemedikçe yeniden yapılandırma yapılmaz.
+4. Varsayılan odak içerik üretimi ve mevcut yapının geliştirilmesidir. Ancak kullanıcı proje üzerine **analiz, gözlem veya öneri** isterse, bu doğrudan ve açıkça paylaşılır — sınırlı tutulmaz.
+5. Teslimler `templates/` ve `docs/` dizin yapısına birebir uyan bir zip paketi olarak hazırlanır; asistanın repoya doğrudan yazma/commit erişimi yoktur, push işlemini kullanıcı yapar.
+6. Her teslime, hangi dosyanın üzerine yazılacağını ve elle yapılması gereken işlemleri (ör. dosya silme) açıklayan kısa bir not eşlik eder.
 
 ---
 
 # Teslim Standardı
 
-Varsayılan teslim biçimi
-
-```
-Patch
-```
-
-Tam proje yalnızca
-
-- ilk kurulumda
-- kullanıcı açıkça istediğinde
-
-teslim edilir.
+Varsayılan teslim biçimi **Patch**'tir (ilgili dosyalar + değişiklik notu). Tam proje yalnızca ilk kurulumda veya kullanıcı açıkça istediğinde teslim edilir.
 
 ---
 
 # Korunan Dosyalar
 
-Aşağıdaki dosyalar yeniden oluşturulmaz.
-
-Yalnızca güncellenir.
+Aşağıdaki dosyalar yeniden oluşturulmaz, yalnızca güncellenir:
 
 ```
 README.md
-
 CHANGELOG.md
-
 mkdocs.yml
 ```
 
@@ -261,33 +113,23 @@ mkdocs.yml
 
 # Pre-Commit Checklist
 
-Her teslimden önce aşağıdaki maddeler kontrol edilir.
-
 - Markdown dosyaları doğru klasörde mi?
-- mkdocs.yml güncel mi?
-- nav güncel mi?
+- mkdocs.yml ve nav güncel mi?
 - CHANGELOG güncellendi mi?
-- Commit mesajı hazır mı?
+- Commit mesajı standarda uygun mu?
 - GitHub Pages etkileniyor mu?
 - Korunan dosyalar eziliyor mu?
-- Paket Patch mi?
-- Paket tek başına uygulanabilir mi?
+- Paket Patch mi ve tek başına uygulanabilir mi?
 
 ---
 
 # Commit Mesaj Standardı
 
+Referans şablon: `.github/commit-template.txt`
+
 ```
 docs(M01): amaç ve teorik bilgiler eklendi
-
-docs(M01): pratik bilgiler eklendi
-
-docs(M01): soru çözüm stratejileri eklendi
-
-docs(M01): yaygın hatalar eklendi
-
-docs(M01): konu tamamlandı
-
+docs(M01): konu tamamlandı, şablon uyumu sağlandı
 build(hotfix): fix GitHub Pages deploy
 ```
 
@@ -295,61 +137,31 @@ build(hotfix): fix GitHub Pages deploy
 
 # Proje Kararları
 
-PD-001
-
-Video sırası yerine konu bütünlüğü esas alınır.
-
----
-
-PD-002
-
-Bilgiler dört katmana ayrılır.
-
-- Teori
-- Pratik
-- Strateji
-- Yaygın Hatalar
-
----
-
-PD-003
-
-Varsayılan teslim biçimi Patch'tir.
-
----
-
-PD-004
-
-Korunan dosyalar yeniden oluşturulmaz.
-
----
-
-PD-005
-
-Her teslim uygulanabilir bir değişiklik paketi olmalıdır.
-
----
-
-PD-006
-
-Her iterasyon sonunda GitHub Pages üzerinden görünüm kontrol edilir.
+| # | Karar |
+|---|---|
+| PD-001 | Video sırası yerine konu bütünlüğü esas alınır. |
+| PD-002 | Bilgiler dört katmana ayrılır: Teori, Pratik, Strateji, Yaygın Hatalar. |
+| PD-003 | Varsayılan teslim biçimi Patch'tir. |
+| PD-004 | Korunan dosyalar yeniden oluşturulmaz. |
+| PD-005 | Her teslim uygulanabilir bir değişiklik paketi olmalıdır. |
+| PD-006 | Her iterasyon sonunda GitHub Pages üzerinden görünüm kontrol edilir. |
+| PD-007 | AI asistanıyla çalışma kuralları, analiz/öneri taleplerini kısıtlamayacak; teslimler zip paketi + manuel commit olarak standartlaştırılmıştır. |
 
 ---
 
 # Yol Haritası
 
 ## Altyapı
-
 - [x] GitHub Repository
 - [x] MkDocs Material
 - [x] GitHub Pages
 - [x] Dokümantasyon Mimarisi
 
 ## İçerik
-
-- [ ] M01 İşlem Yeteneği
+- [x] M01 İşlem Yeteneği *(şablon tamamlandı — v1.1, içerik doğruluğu incelemesi bekleniyor)*
 - [ ] M02 Sayı Kümeleri
 - [ ] M03 ...
+- [ ] G01 ...
 
 ---
 
