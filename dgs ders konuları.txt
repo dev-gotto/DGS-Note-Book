@@ -1,0 +1,61 @@
+• işlem yeteneği ve sayı kümeleri
+• tek çift sayılar ve işaret incelemesi
+• ardışık sayılar
+• faktörüyel
+• basamak kavramı
+• bölme bölünebilme
+• asal sayılar ve asal çarpanlara ayırma
+• EBOB - EKOK
+• rasyonel Sayılar
+• birinci dereceden denklemler
+• kısay yollar ve özel teoremler - c teorisi
+• birinci dereceden eşitsizlikler
+• mutlak değer
+• üslü sayılar
+• köklü sayılar
+• kısa yollar ve özel teoremler - sıfırın büyüsü
+• çarpanlara ayırma
+• oran orantı
+• sayı problemleri
+• kesir problemleri
+• yaş problemleri
+• yüzde problemleri
+• kar zarar problemleri
+• karışım problemleri
+• kısa yollar ve özel teoremler
+• işçi problemleri - ekmek teorisi
+• havuz problemleri - damla teorisi
+• hareket problemleri
+• tablo ve grafik problemleri
+• kümeler
+• fonksiyonlar
+• işlem - periyodik tekrar eden durumlar
+• permütasyon
+• kombinasyon
+• olasılık
+• sayısal mantık
+• sayısal mantık - şekil ve sembol yorumlama
+• sayısal mantık - sayı tabloları ve şekilleri
+• sayısal mantık - oyun
+• sayısal mantık - örüntülü sayı ve şekil grupları
+• sayısal mantık - mantıksal akıl yürütme
+• sayısal mantık - küp, kod, şifre
+• sayısal mantık - üçgenler, doğruda açılar
+• geometri - üçgenler, dik üçgen
+• geometri - üçgenler, ikizkenar ve eşkenar üçgen
+• geometri - üçgenler, açıortay ve kenarortay
+• geometri - üçgenler, üçgende alan
+• geometri - üçgenler, üçgende benzerlik
+• geometri - üçgenler, açı - kenar bağıntıları
+• geometri - çokgenler, çokgenler ve dörtgenler
+• geometri - çokgenler, paralelkenar
+• geometri - çokgenler, eşkenar dörtgen
+• geometri - çokgenler, dikdörtgen - kare
+• geometri - çokgenler, yamuk - deltoid
+• geometri - çember ve daire, çemberde açı
+• geometri - çember ve daire, çemberde uzunluk
+• geometri - çember ve daire, dairenin alanı
+• analitik geometri - nokta analitiği
+• analitik geometri - doğrunun analitiği
+• analitik geometri - simetri
+• katı cisimler
