@@ -1,0 +1,7 @@
+# 💡 Pratik Bilgiler — Konu Başlığı
+
+*İçerik yakında eklenecektir.*
+
+> Kaynak: Hocanın anlatımına dayalı uygulama yöntemleri ve kısayollar.
+
+[← Konu ana sayfasına dön](index.md)

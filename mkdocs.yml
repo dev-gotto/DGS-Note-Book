@@ -2,10 +2,18 @@ site_name: DGS Note Book
 theme:
   name: material
 
+plugins:
+  - search
+  - awesome-pages
+
 nav:
   - Ana Sayfa: index.md
-  - Matematik:
-      - M01 İşlem Yeteneği: matematik/M01-islem-yetenegi.md
-  # Geometri bölümü, docs/geometri/ altında ilk konu (G01) eklendiğinde
-  # buraya "Geometri:" başlığıyla eklenmelidir. Henüz içerik olmadığı için
-  # nav'a eklenmedi (mkdocs build hatası vermemesi için).
+  - Hızlı Tekrar: hizli-tekrar.md
+  - Matematik: matematik/
+  - Geometri: geometri/
+
+# Not: Matematik ve Geometri altındaki 61 konu / 62 alt-konu klasörünü tek tek
+# nav'a yazmak sürdürülemez olduğu için mkdocs-awesome-pages-plugin kullanılıyor.
+# Bu plugin, klasör/dosya adlarındaki numara (01-, 02- gibi) öneklerine göre
+# sırayı otomatik kurar ve her index.md'nin H1 başlığını menü adı yapar.
+# Kurulum: requirements.txt içinde mkdocs-awesome-pages-plugin var.

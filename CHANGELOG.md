@@ -1,12 +1,27 @@
 # CHANGELOG
 
+## v1.0.0 Yapısal Dönüşüm — Konu/Alt-Konu İskeleti
+
+### Yapılanlar
+- Ana referans listesindeki (`Dgs ders konuları.txt`) 61 konu, `M01–M43` (Matematik) ve `G01–G18` (Geometri) kodlarıyla eşlendi.
+- Her konu için klasör bazlı bir yapı kuruldu: `docs/<matematik|geometri>/<KOD>-<slug>/<sıra-no>-<alt-konu-slug>/`.
+- Her alt-konu klasöründe 7 sayfa iskeleti oluşturuldu: `index.md`, `teorik.md`, `pratik.md`, `soru-bankasi.md`, `strateji.md`, `yaygin-hatalar.md`, `hizli-tekrar.md`.
+- M01 (İşlem Yeteneği ve Sayı Kümeleri), hocanın 2 ayrı videoda işlediği tespit edildiği için `01-islem-yetenegi` ve `02-sayi-kumeleri` olmak üzere 2 alt-konuya bölündü — bu, yeni "konu bölünme kuralı"nın ilk uygulanışı.
+- Üst düzey `docs/hizli-tekrar.md` indeks sayfası eklendi: her konu için kısa kavram özeti + ilgili alt-konu hızlı-tekrar sayfasına link.
+- `templates/konu/` yeni 7 dosyalık şablon seti ile güncellendi; eski `templates/konu.md` tekil şablonu artık kullanılmıyor.
+- `mkdocs.yml`'e `mkdocs-awesome-pages-plugin` eklendi (61+ konuyu elle nav'a yazmanın sürdürülemez olması nedeniyle); `requirements.txt` güncellendi.
+- `README.md`'ye iki yeni proje kuralı eklendi: (1) tüm konular için boş iskelet + "içerik yakında" bilgisi zorunluluğu, (2) içerik üretilirken bir konunun alt-konulara ayrıldığı fark edilirse yapının buna göre bölünmesi.
+
+### Kaldırılanlar / Yerini Alanlar
+- `docs/matematik/M01-islem-yetenegi.md` (tekil dosya, v1.1) — yeni klasör yapısındaki `M01-islem-yetenegi-ve-sayi-kumeleri/01-islem-yetenegi/` ile değiştirildi. Eski dosyanın elle silinmesi gerekiyor.
+- `templates/konu.md`, `templates/metadata.yml` (eski tekil şablon) — `templates/konu/` klasörü ile değiştirildi; `metadata.yml` artık sadece referans amaçlı korunuyor (alanlar front-matter'a taşındı).
+
 ## v0.9.0 Content Structure Update
 
 ### Yapılanlar
 - M01 İşlem Yeteneği dosyası şablonla (templates/konu.md) tam uyumlu hale getirildi: Pratik Bilgiler, Soru Çözüm Stratejileri, Yaygın Hatalar, Çözümlü Örnekler, Hızlı Tekrar, Kaynak ve Değişiklik Geçmişi bölümleri eklendi.
 - M01 dosyasına metadata.yml şablonuna uygun front-matter eklendi (id, title, status, version, previous, next, references).
 - docs/index.md genişletildi: proje amacı, konu durumu (Matematik/Geometri ilerleme listesi) ve kullanım rehberi eklendi.
-- Kök dizindeki commit-message.txt ile .github/commit-template.txt arasındaki çakışma tespit edildi; .github/commit-template.txt referans şablon olarak kabul edilmesi, kök dizindeki commit-message.txt dosyasının kaldırılması önerilir (bkz. UYGULAMA-NOTLARI.md).
 
 ## v0.8.1 Hotfix
 

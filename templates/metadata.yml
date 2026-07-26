@@ -1,7 +1,10 @@
-id: M01
-title:
-status: draft
-version: 1.0
-previous:
-next:
-references: []
+# Referans: Bu alanlar artık ayrı bir metadata.yml dosyası olarak değil,
+# her alt-konunun index.md dosyasının başında front-matter olarak tutulur.
+# Bu dosya sadece kullanılabilir alanların referansı içindir.
+id:            # Konu kodu, örn. M01, G07
+title:         # Alt konu başlığı, örn. "İşlem Yeteneği"
+status:        # empty | draft | review | complete
+version:       # "0.1", "1.0" gibi
+previous:      # önceki alt-konunun index.md yolu (varsa)
+next:          # sonraki alt-konunun index.md yolu (varsa)
+references: [] # dış kaynak listesi

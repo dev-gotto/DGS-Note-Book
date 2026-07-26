@@ -2,22 +2,24 @@
 
 Hoş geldiniz.
 
-DGS Matematik ve Geometri konuları için hazırlanan, sürüm kontrollü ve dokümantasyon kalitesinde bir bilgi bankasıdır. İçerik; video anlatımlarından çıkarılan transkriptler ve kullanıcı notları temel alınarak, standart bir yapıda (Amaç, Teorik Bilgiler, Pratik Bilgiler, Soru Çözüm Stratejileri, Yaygın Hatalar, Çözümlü Örnekler, Hızlı Tekrar) hazırlanır.
+DGS Matematik ve Geometri konuları için hazırlanan, sürüm kontrollü ve dokümantasyon kalitesinde bir bilgi bankasıdır. İçerik; video anlatımlarından çıkarılan transkriptler ve kullanıcı notları temel alınarak hazırlanır.
 
-## Konu Durumu
+Her konu, gerektiğinde hocanın videoda ayırdığı alt-konulara bölünür (bkz. README → "Konu ve Alt-Konu Yapısı"). Her alt-konu 7 sayfadan oluşur:
 
-### Matematik
-- [x] M01 - İşlem Yeteneği *(draft)*
-- [ ] M02 - Sayı Kümeleri
-- [ ] M03 - ...
+- **index.md** — Amaç, sayfa linkleri, Kaynak, Değişiklik Geçmişi
+- **📘 teorik.md** — Değişmeyen tanım ve kurallar
+- **💡 pratik.md** — Hocanın anlatımına dayalı uygulama yöntemleri
+- **Soru Bankası** — Geçmiş sınav sorularının listesi (ilgili çözüme link verir)
+- **🎯 strateji.md** — Soru çözüm stratejileri
+- **⚠️ yaygin-hatalar.md** — Hata örnekleri ve tuzakların derin kavrayışla çözümü
+- **hizli-tekrar.md** — Alt-konuya özel hızlı tekrar
 
-### Geometri
-- [ ] G01 - ...
+Tüm konuların hızlı tekrar sayfalarına tek yerden ulaşmak için: [Hızlı Tekrar — Ana Sayfa](hizli-tekrar.md)
 
-## Nasıl Kullanılır
+## Durum
 
-Sol menüden ilgili konuya girip sırasıyla Teorik Bilgiler, Pratik Bilgiler ve Soru Çözüm Stratejileri bölümlerini takip etmeniz önerilir. Her konunun sonundaki Hızlı Tekrar bölümü, sınav öncesi tekrar için özetlenmiştir.
+Şu an tüm 61 konu (43 Matematik + 18 Geometri) için iskelet oluşturulmuş durumda; içerikler kaynak transkriptler işlendikçe eklenecektir. Hangi konunun tamamlandığını görmek için ilgili konunun `index.md` dosyasındaki `status` alanına bakabilirsiniz (`empty` / `draft` / `review` / `complete`).
 
 ## Katkı ve Yapı
 
-Proje yapısı ve katkı kuralları için bkz. [README](https://github.com/dev-gotto/DGS-Note-Book/blob/main/README.md).
+Proje yapısı ve çalışma kuralları için bkz. [README](https://github.com/dev-gotto/DGS-Note-Book/blob/main/README.md).

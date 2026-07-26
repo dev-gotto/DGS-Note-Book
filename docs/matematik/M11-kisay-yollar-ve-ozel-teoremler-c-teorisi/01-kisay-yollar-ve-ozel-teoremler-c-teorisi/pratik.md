@@ -1,0 +1,7 @@
+# 💡 Pratik Bilgiler — kısay yollar ve özel teoremler - c teorisi
+
+*İçerik yakında eklenecektir.*
+
+> Hocanın anlatımına dayalı uygulama yöntemleri ve kısayollar.
+
+[← Konu ana sayfasına dön](index.md)

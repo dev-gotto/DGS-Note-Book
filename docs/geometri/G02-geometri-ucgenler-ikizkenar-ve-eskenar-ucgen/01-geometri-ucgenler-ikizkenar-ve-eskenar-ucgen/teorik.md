@@ -1,0 +1,7 @@
+# 📘 Teorik Bilgiler — geometri - üçgenler, ikizkenar ve eşkenar üçgen
+
+*İçerik yakında eklenecektir.*
+
+> Değişmeyen matematik kuralları: tanımlar, kurallar, formüller.
+
+[← Konu ana sayfasına dön](index.md)
