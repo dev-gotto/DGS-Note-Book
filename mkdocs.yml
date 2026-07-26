@@ -6,3 +6,6 @@ nav:
   - Ana Sayfa: index.md
   - Matematik:
       - M01 İşlem Yeteneği: matematik/M01-islem-yetenegi.md
+  # Geometri bölümü, docs/geometri/ altında ilk konu (G01) eklendiğinde
+  # buraya "Geometri:" başlığıyla eklenmelidir. Henüz içerik olmadığı için
+  # nav'a eklenmedi (mkdocs build hatası vermemesi için).
