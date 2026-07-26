@@ -1,18 +1,23 @@
 ---
 id: M01
 title: "Sayı Kümeleri"
-status: empty
-version: "0.1"
-previous:
+status: complete
+version: "1.0"
+previous: ../01-islem-yetenegi/index.md
 next:
-references: []
+references:
+  - "2__video.txt"
 ---
 
 # Sayı Kümeleri
 
 ## Amaç
 
-*İçerik yakında eklenecektir.*
+Rakam ve sayı kavramları arasındaki farkı; doğal, tam, rasyonel,
+irrasyonel ve gerçel sayı kümelerini ve aralarındaki içerme ilişkisini
+kavramak; sayı türünün en büyük/en küçük değer sorularındaki etkisini,
+toplamı/çarpımı sabit sayı çiftleri stratejisini ve bölünebilme/parçalama
+tekniklerini öğrenmek.
 
 ## Sayfalar
 
@@ -25,12 +30,13 @@ references: []
 
 ## Kaynak
 
-- Video
-- Transkript
-- Kullanıcı Notları
+- Video: "İşlem Yeteneği ve Sayı Kümeleri" ders serisi — 2. video
+- Transkript: `2__video.txt`
+- Kullanıcı Notları: —
 
 ## Değişiklik Geçmişi
 
 | Versiyon | Tarih | Açıklama |
 |---|---|---|
 | 0.1 | - | İskelet oluşturuldu, içerik bekleniyor. |
+| 1.0 | - | `2__video.txt` transkriptinden 7 sayfanın tamamı (Teorik, Pratik, Soru Bankası, Strateji, Yaygın Hatalar, Hızlı Tekrar) dolduruldu. |

@@ -6,11 +6,13 @@ Tüm konuların kısa özet ve hızlı tekrar sayfalarına buradan ulaşabilirsi
 ## Matematik
 
 ### İşlem Yeteneği
-*İçerik yakında eklenecektir.*
+İşaret kuralları, parantez dağıtma, işlem önceliği (soldan sağa) ve üslü
+sayıların temel kuralları.
 [Detaya git →](matematik/M01-islem-yetenegi-ve-sayi-kumeleri/01-islem-yetenegi/hizli-tekrar.md)
 
 ### Sayı Kümeleri
-*İçerik yakında eklenecektir.*
+Rakam/sayı ayrımı, N-Z-Q-Q'-R kümeleri ve içerme ilişkisi, toplam/çarpım
+sabit stratejileri, bölünebilme ve parçalama teknikleri.
 [Detaya git →](matematik/M01-islem-yetenegi-ve-sayi-kumeleri/02-sayi-kumeleri/hizli-tekrar.md)
 
 ### tek çift sayılar ve işaret incelemesi

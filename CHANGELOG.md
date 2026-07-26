@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## v1.1.0 M01 İçerik Tamamlandı
+
+### Yapılanlar
+- `M01-islem-yetenegi-ve-sayi-kumeleri/01-islem-yetenegi/` ve
+  `02-sayi-kumeleri/` alt-konularının 7'şer sayfası (`index.md`,
+  `teorik.md`, `pratik.md`, `soru-bankasi.md`, `strateji.md`,
+  `yaygin-hatalar.md`, `hizli-tekrar.md`), `1__video.txt` ve
+  `2__video.txt` transkriptlerinden gerçek içerikle dolduruldu.
+- Her iki alt-konunun `index.md` front-matter'ı güncellendi:
+  `status: complete`, `version: "1.0"`, `previous`/`next` linkleri
+  alt-konular arasında (01 → 02) kuruldu, `references` alanına
+  transkript dosya adları eklendi.
+- `strateji.md` sayfalarına, `soru-bankasi.md`'den link verilen çözümlü
+  örnekler için HTML anchor'lar (`ornek-1`..`ornek-4`) eklendi.
+- Üst düzey `docs/hizli-tekrar.md` içindeki İşlem Yeteneği ve Sayı
+  Kümeleri blokları "İçerik yakında eklenecektir" notundan çıkarılıp
+  gerçek özetlerle güncellendi.
+
 ## v1.0.0 Yapısal Dönüşüm — Konu/Alt-Konu İskeleti
 
 ### Yapılanlar
