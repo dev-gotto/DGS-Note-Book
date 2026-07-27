@@ -1,5 +1,37 @@
 # CHANGELOG
 
+## v1.2.3 TOC Kaldırma Kararından Dönüldü — Türkçe Etiketleme
+
+### Sorun / Karar Değişikliği
+`v1.2.2`'de sağdaki "Table of contents" sidebar'ı tüm sayfalardan CSS ile
+tamamen gizlenmişti. Kullanıcı geri bildirimiyle bunun aslında sayfa
+içi başlıklara hızlı atlamayı sağlayan faydalı bir menü olduğu, sorunun
+yalnızca **etiketin İngilizce olması** olduğu netleşti. Karar: menü
+**kalacak**, yalnızca ismi Türkçeleştirilecek.
+
+### Yapılanlar
+- `mkdocs.yml` → `theme.language: tr` eklendi. Bu, mkdocs-material'ın
+  yerleşik Türkçe çeviri paketini devreye sokar; "Table of contents"
+  başlığı otomatik olarak **"İçindekiler"** olur (ayrıca arama,
+  "sayfayı düzenle" gibi diğer arayüz metinleri de Türkçeleşir).
+- `v1.2.2`'de eklenen `extra_css` girişi ve `docs/stylesheets/extra.css`
+  dosyası **kaldırıldı** (artık kullanılmıyor).
+
+### Elle Yapılması Gereken (önceki patch uygulandıysa)
+`v1.2.2` patch'i daha önce uygulandıysa, `docs/stylesheets/extra.css`
+dosyasının elle silinmesi gerekir (bu patch onu yeniden oluşturmaz,
+yalnızca `mkdocs.yml`'i günceller).
+
+## v1.2.2 Sağ "Table of Contents" Kaldırıldı
+
+### Yapılanlar
+- `docs/stylesheets/extra.css` eklendi: mkdocs-material'ın otomatik
+  ürettiği sağ ikincil sidebar'ı (`.md-sidebar--secondary`, sayfa
+  başlıklarından türeyen "Table of contents") global olarak gizler.
+- `mkdocs.yml`'e `extra_css: [stylesheets/extra.css]` eklendi.
+- Sayfalarımız kısa olduğu için bu menünün pratik faydası yoktu,
+  yalnızca yatay alan kaplıyordu.
+
 ## v1.2.1 Sayfa Altı Navigasyon İyileştirmesi
 
 ### Sorun

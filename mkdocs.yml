@@ -1,6 +1,7 @@
 site_name: DGS Note Book
 theme:
   name: material
+  language: tr
 
 plugins:
   - search
