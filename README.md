@@ -63,7 +63,12 @@ docs/matematik/M01-islem-yetenegi-ve-sayi-kumeleri/
     (aynı 7 dosya)
 ```
 
-Ayrıca `docs/hizli-tekrar.md`, tüm konuların hızlı tekrar sayfalarına giden ve her biri için kısa bir kavram özeti içeren **ana indeks** sayfasıdır.
+Ayrıca üç adet **indeks sayfası** vardır, üçü de içerik büyüdükçe elle güncellenir:
+
+- `docs/hizli-tekrar.md` — tüm konuların hızlı tekrar sayfalarına giden ve her biri için kısa bir kavram özeti içeren **ana indeks**.
+- `docs/matematik/index.md` ve `docs/geometri/index.md` — kendi bölümündeki tüm konuları durum simgesiyle (✅/🔎/✏️/⏳) listeleyen **bölüm indeksleri**. Bunlar `mkdocs.yml`'deki `Matematik: matematik/` ve `Geometri: geometri/` nav girişlerinin çalışması için **zorunludur** — bu dosyalar olmadan `/matematik/` ve `/geometri/` adresleri 404 döner.
+
+Bu üç dosya "Korunan Dosyalar" listesinde değildir ama şablon/iskelet dosyaları da değildir; içerik durumunu yansıtan **canlı indekslerdir** ve her konu tamamlandığında güncellenmesi gerekir (bkz. "İçerik Doldurma Standardı").
 
 ## Sayfa İçerikleri ve Kaynakları
 
@@ -88,6 +93,50 @@ Kod, ana referans listesindeki sıraya birebir karşılık gelir (M=Matematik, G
 
 ---
 
+# İçerik Doldurma Standardı
+
+M01 ile birlikte kurulan ve artık standart kabul edilen iş akışı budur.
+Yeni bir konunun içeriğini doldururken bu sıra izlenir:
+
+1. **Kaynağı oku.** İlgili konunun transkript(ler)i (`uploads/` içindeki
+   `N__video.txt` dosyaları) baştan sona okunur.
+2. **Konu Bölünme Kuralı'nı kontrol et.** Transkript(ler) konunun
+   hocanın videoda birden fazla alt-konuya ayrılıp ayrılmadığını
+   gösteriyor mu? Gösteriyorsa iskelet önce buna göre bölünür (`01-...`,
+   `02-...`), göstermiyorsa mevcut tek alt-konu klasörü kullanılır.
+3. **7 sayfayı doldur** (her alt-konu için ayrı ayrı):
+   - `teorik.md` — hoca anlatımından bağımsız, değişmeyen tanım/kural/formüller.
+   - `pratik.md` — hocanın anlatımına dayalı uygulama yöntemleri ve kısayollar.
+   - `strateji.md` — soru çözüm stratejileri + **çözümlü örnekler**. Her
+     çözümlü örnek, başlığın hemen üstüne konan bir HTML anchor ile
+     işaretlenir: `<a id="ornek-1"></a>` (ardından `## Örnek 1 — ...`).
+     Bu anchor'lar `soru-bankasi.md`'den link almak içindir.
+   - `yaygin-hatalar.md` — her madde "hata/tuzak örneği + derin kavrayışla
+     çözüm" formatında yazılır.
+   - `soru-bankasi.md` — tablo halinde, her satır `strateji.md#ornek-N`
+     anchor'ına link verir.
+   - `hizli-tekrar.md` — kısa madde madde özet.
+   - `index.md` — Amaç metni yazılır; front-matter güncellenir
+     (`status: complete`, `version: "1.0"`, `previous`/`next` komşu
+     alt-konulara bağlanır, `references` alanına transkript dosya adı
+     eklenir); Kaynak ve Değişiklik Geçmişi bölümleri doldurulur.
+4. **Senkron dosyaları güncelle (zorunlu, aynı pakette):**
+   - `docs/hizli-tekrar.md` içindeki ilgili konunun bloğu
+     ("İçerik yakında eklenecektir" yerine gerçek özet + link).
+   - `docs/matematik/index.md` veya `docs/geometri/index.md` içindeki
+     ilgili satırın durum simgesi (`⏳` → `✅`).
+   - Bkz. PD-011 — bu üç dosyanın (alt-konu `index.md`, üst `hizli-tekrar.md`,
+     bölüm `index.md`) senkron kalması zorunludur; biri güncellenip
+     diğerleri unutulursa site tutarsız görünür.
+5. **Patch'i hazırla ve teslim et** (bkz. "Teslim Standardı").
+6. **Kullanıcı push ettikten sonra GitHub Pages'te doğrula:** hem
+   derin link (`.../01-konu-adi/`) hem de üst menü üzerinden erişim
+   (`Matematik` → bölüm indeksi → konu) test edilir. Bu adım özellikle
+   yeni bir konu/alt-konu **ilk kez** tamamlandığında önemlidir (bkz.
+   v1.1.1 navigasyon düzeltmesi, `CHANGELOG.md`).
+
+---
+
 # Çalışma Kuralları
 
 - DGS konu sırasına uyulur; video sırası korunmaz.
@@ -104,11 +153,12 @@ Kod, ana referans listesindeki sıraya birebir karşılık gelir (M=Matematik, G
 Yeni bir sohbet başladığında:
 
 1. README.md ve CHANGELOG.md okunur.
-2. Son yapılan değişiklikler (roadmap, versiyon geçmişi) incelenir.
+2. Son yapılan değişiklikler (roadmap, versiyon geçmişi) incelenir; `docs/matematik/index.md` ve `docs/geometri/index.md`'den hangi konuların `✅`, hangilerinin `⏳` olduğuna bakılır.
 3. Mevcut mimari korunur; kullanıcı açıkça istemedikçe yeniden yapılandırma yapılmaz.
-4. Varsayılan odak içerik üretimi ve mevcut yapının geliştirilmesidir. Ancak kullanıcı proje üzerine **analiz, gözlem veya öneri** isterse, bu doğrudan ve açıkça paylaşılır — sınırlı tutulmaz.
+4. **Varsayılan odak artık içerik doldurmadır** ("İçerik Doldurma Standardı" bölümündeki 6 adım izlenir), roadmap sırasına göre bir sonraki `⏳` konu hedef alınır. Kullanıcı proje üzerine **analiz, gözlem veya öneri** isterse, bu doğrudan ve açıkça paylaşılır — sınırlı tutulmaz.
 5. Teslimler `templates/` ve `docs/` dizin yapısına birebir uyan bir zip paketi olarak hazırlanır; asistanın repoya doğrudan yazma/commit erişimi yoktur, push işlemini kullanıcı yapar.
 6. Her teslime, hangi dosyanın üzerine yazılacağını ve elle yapılması gereken işlemleri (ör. dosya silme) açıklayan kısa bir not eşlik eder.
+7. Repo'ya salt-okunur erişim (klonlama, doğrulama) serbesttir — README/CHANGELOG okumakla yetinilmez, gerektiğinde gerçek dosya/klasör yapısı ve GitHub Pages çıktısı doğrudan kontrol edilir.
 
 ---
 
@@ -140,6 +190,9 @@ mkdocs.yml
 - Korunan dosyalar eziliyor mu?
 - Yeni/bölünen konularda iskelet kuralına uyuldu mu?
 - Paket Patch mi ve tek başına uygulanabilir mi?
+- **[İçerik tamamlama'ya özel]** Alt-konu `index.md` front-matter'ı (`status`, `version`, `previous`/`next`, `references`) güncellendi mi?
+- **[İçerik tamamlama'ya özel]** `docs/hizli-tekrar.md` ve ilgili bölüm indeksi (`docs/matematik/index.md` / `docs/geometri/index.md`) senkron mu (PD-011)?
+- **[İçerik tamamlama'ya özel]** `strateji.md` örnek anchor'ları (`#ornek-N`) ile `soru-bankasi.md` linkleri eşleşiyor mu?
 
 ---
 
@@ -169,6 +222,8 @@ build(hotfix): fix GitHub Pages deploy
 | PD-008 | Her konunun 5 bilgi katmanı (Teori, Pratik, Soru Bankası, Strateji, Yaygın Hatalar) ve Hızlı Tekrar, ayrı sayfalarda tutulur; konu bir klasörde toplanır. |
 | PD-009 | Tüm 61 konu için, içerik üretilmeden önce boş iskelet (7 sayfa) oluşturulur ve "içerik yakında eklenecektir" notu paylaşılır. |
 | PD-010 | İçerik üretimi sırasında bir konunun alt-konulara ayrıldığı fark edilirse, kod (M/G numarası) değişmeden klasör seviyesinde bölünme yapılır. |
+| PD-011 | **Senkronizasyon Kuralı:** Bir alt-konu tamamlandığında (`status: complete`), aynı pakette üç yer birden güncellenir: alt-konunun kendi `index.md`'si, `docs/hizli-tekrar.md`'deki ilgili blok, ve `docs/matematik/index.md` / `docs/geometri/index.md`'deki durum simgesi. |
+| PD-012 | `docs/matematik/index.md` ve `docs/geometri/index.md`, `mkdocs.yml` nav'ındaki `matematik/` ve `geometri/` dizin girişlerinin çalışması için zorunludur (yoksa GitHub Pages'te 404 oluşur); bu iki dosya da içerik ilerledikçe güncellenen canlı indekslerdir. |
 
 ---
 
@@ -179,11 +234,20 @@ build(hotfix): fix GitHub Pages deploy
 - [x] MkDocs Material + awesome-pages plugin
 - [x] GitHub Pages
 - [x] Konu/alt-konu klasör mimarisi (61 konu, 62 alt-konu iskeleti)
+- [x] `docs/matematik/index.md` ve `docs/geometri/index.md` bölüm indeksleri (404 düzeltmesi, v1.1.1)
 
 ## İçerik
-Tüm 61 konunun (43 Matematik + 18 Geometri) boş iskeleti oluşturuldu (`status: empty`). Hangi konunun içeriğinin tamamlandığını görmek için [docs/index.md](docs/index.md) → Durum bölümüne veya ilgili alt-konunun `index.md` front-matter'ındaki `status` alanına bakın.
+Durumu görmek için [docs/matematik/index.md](docs/matematik/index.md) ve
+[docs/geometri/index.md](docs/geometri/index.md)'deki durum simgelerine
+bakın (`✅` tamamlandı, `⏳` içerik bekleniyor).
 
-İlk içerik hedefi: `M01-islem-yetenegi-ve-sayi-kumeleri` (2 alt-konu, kaynak transkriptler mevcut).
+- [x] `M01-islem-yetenegi-ve-sayi-kumeleri` — 2 alt-konu (İşlem Yeteneği, Sayı Kümeleri), `status: complete`
+- [ ] `M02-tek-cift-sayilar-ve-isaret-incelemesi` — **sıradaki hedef**, kaynak transkript bekleniyor
+- [ ] `M03`–`M43`, `G01`–`G18` — iskelet hazır, içerik bekleniyor
+
+Bundan sonraki her sohbette varsayılan iş: yukarıdaki listede sıradaki
+`⏳` konunun transkriptini işleyip "İçerik Doldurma Standardı"ndaki
+6 adımı uygulamak.
 
 ---
 

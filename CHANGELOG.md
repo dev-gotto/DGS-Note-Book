@@ -1,5 +1,31 @@
 # CHANGELOG
 
+## v1.2.0 İçerik Doldurma Süreci Standartlaştırıldı
+
+### Yapılanlar
+- README.md'ye yeni bir **"İçerik Doldurma Standardı"** bölümü eklendi:
+  bir konunun transkriptten 7 sayfaya nasıl dönüştürüleceğini (kaynak
+  okuma → konu bölünme kontrolü → 7 sayfa → senkron dosyalar → patch →
+  canlı doğrulama) adım adım tanımlar.
+- `docs/matematik/index.md` ve `docs/geometri/index.md`, artık
+  "Konu ve Alt-Konu Yapısı" bölümünde resmi olarak üçüncü indeks türü
+  (bölüm indeksi) olarak tanımlandı.
+- **PD-011 (Senkronizasyon Kuralı):** Bir alt-konu tamamlandığında üç
+  dosyanın (alt-konu `index.md`, üst `hizli-tekrar.md`, bölüm `index.md`)
+  aynı pakette güncellenmesi zorunlu hale getirildi.
+- **PD-012:** `docs/matematik/index.md` / `docs/geometri/index.md`'nin
+  `mkdocs.yml` nav'ı için zorunlu olduğu (yoksa 404) karar olarak
+  belgelendi.
+- Pre-Commit Checklist'e içerik-tamamlamaya özel 3 madde eklendi
+  (front-matter, senkron dosyalar, anchor eşleşmesi).
+- "AI Asistanıyla Çalışma Kuralları"na yeni madde eklendi: varsayılan
+  odak artık açıkça roadmap sırasına göre içerik doldurma; ayrıca
+  asistanın repoyu salt-okunur klonlayıp doğrudan doğrulama yapabileceği
+  netleştirildi.
+- Yol Haritası, M01'in tamamlandığını ve sıradaki hedefin
+  `M02-tek-cift-sayilar-ve-isaret-incelemesi` olduğunu yansıtacak
+  şekilde güncellendi.
+
 ## v1.1.1 Navigasyon Düzeltmesi — matematik/ ve geometri/ 404 Sorunu
 
 ### Sorun
