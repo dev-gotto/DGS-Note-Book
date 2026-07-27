@@ -69,4 +69,4 @@ bölenler de (`-1, -2, -5, -10`) geçerli çözümlerdir.
 **Doğru çözüm:** Soru kökünde "tam sayı" ifadesi geçiyorsa bölen
 sayısını ikiye katlamayı (pozitif + negatif) unutma.
 
-[← Konu ana sayfasına dön](index.md)
+[← Konu ana sayfasına dön](index.md) · [Hızlı Tekrar →](hizli-tekrar.md)

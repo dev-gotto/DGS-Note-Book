@@ -120,6 +120,17 @@ Yeni bir konunun içeriğini doldururken bu sıra izlenir:
      (`status: complete`, `version: "1.0"`, `previous`/`next` komşu
      alt-konulara bağlanır, `references` alanına transkript dosya adı
      eklenir); Kaynak ve Değişiklik Geçmişi bölümleri doldurulur.
+
+   **Sayfa altı navigasyon:** `teorik.md`, `pratik.md`, `soru-bankasi.md`,
+   `strateji.md` ve `yaygin-hatalar.md` dosyalarının en altındaki
+   `[← Konu ana sayfasına dön](index.md)` satırının sağına, sıradaki
+   sayfaya giden bir link eklenir:
+   `[← Konu ana sayfasına dön](index.md) · [💡 Pratik Bilgiler →](pratik.md)`
+   Sıra, `index.md`'deki "Sayfalar" listesiyle birebir aynıdır:
+   Teorik → Pratik → Soru Bankası → Strateji → Yaygın Hatalar → Hızlı Tekrar.
+   `hizli-tekrar.md` bu zincirin son halkasıdır, sonrasına link eklenmez.
+   Bu kural, boş iskelet sayfalarında da (henüz içerik girilmeden)
+   geçerlidir — `templates/konu/` şablonları bu linkleri zaten içerir.
 4. **Senkron dosyaları güncelle (zorunlu, aynı pakette):**
    - `docs/hizli-tekrar.md` içindeki ilgili konunun bloğu
      ("İçerik yakında eklenecektir" yerine gerçek özet + link).

@@ -5,4 +5,4 @@
 > Kaynak: Öğrencilerin sık yaptığı hatalar ve ÖSYM'nin kurduğu tuzaklar.
 > Her madde; hata/tuzak örneği + derin kavrayışla çözümü şeklinde anlatılır.
 
-[← Konu ana sayfasına dön](index.md)
+[← Konu ana sayfasına dön](index.md) · [Hızlı Tekrar →](hizli-tekrar.md)

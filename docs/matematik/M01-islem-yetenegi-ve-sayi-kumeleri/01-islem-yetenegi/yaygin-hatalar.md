@@ -56,4 +56,4 @@ işaretini değiştirmelidir, yalnızca ilkinin değil.
 
 **Doğru çözüm:** `−(a − b + c) = −a + b − c`.
 
-[← Konu ana sayfasına dön](index.md)
+[← Konu ana sayfasına dön](index.md) · [Hızlı Tekrar →](hizli-tekrar.md)

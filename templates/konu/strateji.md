@@ -5,4 +5,4 @@
 > Kaynak: Hocanın önerdiği yöntemler + hocanın anlatmadığı ancak faydalı olan
 > genel best-practice çözüm teknikleri.
 
-[← Konu ana sayfasına dön](index.md)
+[← Konu ana sayfasına dön](index.md) · [⚠️ Yaygın Hatalar →](yaygin-hatalar.md)

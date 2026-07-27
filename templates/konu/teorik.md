@@ -4,4 +4,4 @@
 
 > Kaynak: Değişmeyen matematik gerçekleri (tanımlar, kurallar, formüller). Hoca anlatımından bağımsızdır.
 
-[← Konu ana sayfasına dön](index.md)
+[← Konu ana sayfasına dön](index.md) · [💡 Pratik Bilgiler →](pratik.md)

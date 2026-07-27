@@ -1,5 +1,27 @@
 # CHANGELOG
 
+## v1.2.1 Sayfa Altı Navigasyon İyileştirmesi
+
+### Sorun
+Her sayfanın altındaki `[← Konu ana sayfasına dön](index.md)` linki
+yalnızca geri dönüşü sağlıyordu; sıradaki sayfaya (ör. Teorik →
+Pratik) geçmek için kullanıcı her seferinde konu ana sayfasına dönüp
+oradan tekrar seçim yapmak zorundaydı.
+
+### Yapılanlar
+- `teorik.md`, `pratik.md`, `soru-bankasi.md`, `strateji.md` ve
+  `yaygin-hatalar.md` dosyalarının alt navigasyonuna, `index.md`'deki
+  "Sayfalar" sırasına (Teorik → Pratik → Soru Bankası → Strateji →
+  Yaygın Hatalar → Hızlı Tekrar) uygun bir "sonraki sayfa" linki
+  eklendi: `[← Konu ana sayfasına dön](index.md) · [💡 Pratik Bilgiler →](pratik.md)`
+  formatında. `hizli-tekrar.md` zincirin sonu olduğu için değişmedi.
+- Bu değişiklik **305 dosyada** uygulandı: M01'in 2 tamamlanmış
+  alt-konusundaki 10 dosya, geri kalan 60 boş iskelet konudaki 300
+  dosya, ve `templates/konu/` şablonundaki 5 dosya (böylece bundan
+  sonra oluşturulacak her yeni iskelet bu navigasyonu baştan içerir).
+- README.md → "İçerik Doldurma Standardı" bölümüne bu kural
+  ("Sayfa altı navigasyon") eklendi.
+
 ## v1.2.0 İçerik Doldurma Süreci Standartlaştırıldı
 
 ### Yapılanlar

@@ -37,4 +37,4 @@ düşünmek yerine **direkt denemeye başla**: bir işlemi (artı mı, eksi mi,
 deneme-yanılma ile çözülecek şekilde kurgulanır; detaylı strateji için
 bkz. [🎯 Soru Çözüm Stratejileri](strateji.md).
 
-[← Konu ana sayfasına dön](index.md)
+[← Konu ana sayfasına dön](index.md) · [Soru Bankası →](soru-bankasi.md)

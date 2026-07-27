@@ -47,4 +47,4 @@ sayılar (`Q'`) bu zincirin dışında, rasyonellerle kesişmeyen ayrı bir
 alt kümedir. Rasyonel ve irrasyonel sayıların birleşimi gerçel sayıları
 oluşturur: `Q ∪ Q' = R`.
 
-[← Konu ana sayfasına dön](index.md)
+[← Konu ana sayfasına dön](index.md) · [💡 Pratik Bilgiler →](pratik.md)

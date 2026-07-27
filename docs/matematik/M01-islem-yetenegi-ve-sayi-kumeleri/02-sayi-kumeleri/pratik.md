@@ -65,4 +65,4 @@ okunmalıdır**, çünkü kullanılabilecek en küçük değer türe göre deği
   kalır. Sonuç, bu sabit terimin **bölen sayısı kadar tekrarının
   toplamına**, yani `(sabit terim) × (bölen sayısı)` ifadesine eşittir.
 
-[← Konu ana sayfasına dön](index.md)
+[← Konu ana sayfasına dön](index.md) · [Soru Bankası →](soru-bankasi.md)

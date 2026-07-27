@@ -83,4 +83,4 @@ sağlayan kaç farklı `(x,y)` ikilisi vardır?
 - `a`'nın alabileceği değerler toplamı kısa yoldan: sabit terim (`2`) ×
   bölen sayısı (`8`) = **16**
 
-[← Konu ana sayfasına dön](index.md)
+[← Konu ana sayfasına dön](index.md) · [⚠️ Yaygın Hatalar →](yaygin-hatalar.md)

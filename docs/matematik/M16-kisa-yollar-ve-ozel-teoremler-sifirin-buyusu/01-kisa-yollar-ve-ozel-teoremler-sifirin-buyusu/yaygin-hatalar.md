@@ -4,4 +4,4 @@
 
 > Hata örnekleri ve ÖSYM tuzaklarının derin kavrayışla çözümü.
 
-[← Konu ana sayfasına dön](index.md)
+[← Konu ana sayfasına dön](index.md) · [Hızlı Tekrar →](hizli-tekrar.md)

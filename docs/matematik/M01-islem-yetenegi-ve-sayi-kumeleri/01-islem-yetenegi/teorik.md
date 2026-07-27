@@ -69,4 +69,4 @@ ifadelerde hata oluşur.
 
 - `a² + a` ifadesinde `a = -2` için: `(-2)² + (-2) = 4 - 2 = 2`
 
-[← Konu ana sayfasına dön](index.md)
+[← Konu ana sayfasına dön](index.md) · [💡 Pratik Bilgiler →](pratik.md)

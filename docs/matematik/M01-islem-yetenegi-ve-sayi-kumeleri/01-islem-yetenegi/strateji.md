@@ -82,4 +82,4 @@ yanlış cevap riskini sıfırlar.
 - `-2⁴`: önce `2⁴ = 16` alınır, sonra baştaki eksi uygulanır → **−16**
 - `(-2)⁴`: taban `-2`'dir, kuvvet çift ve parantez içindedir → **+16**
 
-[← Konu ana sayfasına dön](index.md)
+[← Konu ana sayfasına dön](index.md) · [⚠️ Yaygın Hatalar →](yaygin-hatalar.md)

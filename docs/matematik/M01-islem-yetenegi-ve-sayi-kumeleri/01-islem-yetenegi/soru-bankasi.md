@@ -11,4 +11,4 @@
 | 3 | Ders videosu (`1__video.txt`) | Çarpma/bölme sırası (soldan sağa) | [Örnek 3](strateji.md#ornek-3) |
 | 4 | Ders videosu (`1__video.txt`) | Üslü sayılarda parantez etkisi | [Örnek 4](strateji.md#ornek-4) |
 
-[← Konu ana sayfasına dön](index.md)
+[← Konu ana sayfasına dön](index.md) · [🎯 Soru Çözüm Stratejileri →](strateji.md)

@@ -9,4 +9,4 @@
 |---|---|---|
 | - | - | - |
 
-[← Konu ana sayfasına dön](index.md)
+[← Konu ana sayfasına dön](index.md) · [🎯 Soru Çözüm Stratejileri →](strateji.md)

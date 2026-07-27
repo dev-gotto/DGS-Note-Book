@@ -11,4 +11,4 @@
 | 3 | Ders videosu (`2__video.txt`) | Doğrusal denklemde tam sayı çözüm sayısı | [Örnek 3](strateji.md#ornek-3) |
 | 4 | Ders videosu (`2__video.txt`) | Parçalama ve bölen sayıları | [Örnek 4](strateji.md#ornek-4) |
 
-[← Konu ana sayfasına dön](index.md)
+[← Konu ana sayfasına dön](index.md) · [🎯 Soru Çözüm Stratejileri →](strateji.md)
