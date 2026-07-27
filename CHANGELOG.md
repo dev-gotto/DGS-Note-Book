@@ -1,5 +1,32 @@
 # CHANGELOG
 
+## v1.1.1 Navigasyon Düzeltmesi — matematik/ ve geometri/ 404 Sorunu
+
+### Sorun
+`mkdocs.yml`'deki `nav`, "Matematik" ve "Geometri" menü öğelerini
+`matematik/` ve `geometri/` klasörlerine (dizin olarak) yönlendiriyor,
+ancak bu klasörlerin kökünde bir `index.md` bulunmuyordu. Sonuç: GitHub
+Pages üzerinde `/matematik/` ve `/geometri/` adresleri **404** dönüyordu.
+Alt-konu sayfalarının (`M01.../01-islem-yetenegi/` vb.) doğrudan URL'leri
+çalışıyordu, ama siteye üst menüden ("Matematik" linkine tıklayarak)
+girildiğinde kullanıcı içeriğe ulaşamıyordu.
+
+### Yapılanlar
+- `docs/matematik/index.md` ve `docs/geometri/index.md` oluşturuldu:
+  her iki dosya da kendi bölümündeki tüm konuları (43 Matematik,
+  18 Geometri), durum simgeleriyle (`✅` tamamlandı, `🔎` gözden
+  geçiriliyor, `✏️` taslak, `⏳` içerik bekleniyor) ve ilgili alt-konunun
+  `index.md`'sine giden linklerle listeler.
+- M01, tek satırlık bir konu yerine iki alt-konulu (İşlem Yeteneği,
+  Sayı Kümeleri) nested bir liste olarak gösterilir, ikisi de `✅`.
+
+### Bilinen, Henüz Çözülmemiş Konu
+- `docs/matematik/M01-islem-yetenegi.md` — eski, tekil dosya (v1.1) hâlâ
+  repoda duruyor; `v1.0.0` CHANGELOG girişinde elle silinmesi
+  gerektiği belirtilmişti ama silinmemiş. Yeni yapıyla çakışmaz (farklı
+  URL) ama siteye alakasız/eski bir sayfa olarak sızabilir; elle
+  silinmesi önerilir.
+
 ## v1.1.0 M01 İçerik Tamamlandı
 
 ### Yapılanlar
