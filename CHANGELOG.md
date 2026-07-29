@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v1.2.4 Transkript Teslim Yöntemi Netleştirildi — Sohbet Direktifi
+
+### Yapılanlar
+- "İçerik Doldurma Standardı" madde 1 güncellendi: transkript(ler)in
+  repo içinde bir `uploads/` klasöründen değil, kullanıcı tarafından
+  doğrudan sohbete dosya olarak yüklendiği netleştirildi; dosya adının
+  `N__video.txt` formatında olması zorunluluğu kaldırıldı.
+- "AI Asistanıyla Çalışma Kuralları" bölümüne **"Yeni Sohbet Direktifi
+  (Örnek)"** alt bölümü eklendi: kullanıcının yeni bir sohbette içerik
+  doldurma iş akışını başlatmak için yazması yeterli olan tek cümlelik
+  örnek direktif belgelendi.
+
 ## v1.2.3 TOC Kaldırma Kararından Dönüldü — Türkçe Etiketleme
 
 ### Sorun / Karar Değişikliği

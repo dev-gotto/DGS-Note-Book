@@ -98,8 +98,10 @@ Kod, ana referans listesindeki sıraya birebir karşılık gelir (M=Matematik, G
 M01 ile birlikte kurulan ve artık standart kabul edilen iş akışı budur.
 Yeni bir konunun içeriğini doldururken bu sıra izlenir:
 
-1. **Kaynağı oku.** İlgili konunun transkript(ler)i (`uploads/` içindeki
-   `N__video.txt` dosyaları) baştan sona okunur.
+1. **Kaynağı oku.** İlgili konunun transkript(ler)i kullanıcı tarafından
+   sohbete doğrudan dosya olarak yüklenir (dosya adı serbesttir, ör.
+   `3__video.txt`; repo içinde ayrı bir `uploads/` klasörü tutulmaz).
+   Yüklenen transkript(ler) baştan sona okunur.
 2. **Konu Bölünme Kuralı'nı kontrol et.** Transkript(ler) konunun
    hocanın videoda birden fazla alt-konuya ayrılıp ayrılmadığını
    gösteriyor mu? Gösteriyorsa iskelet önce buna göre bölünür (`01-...`,
@@ -170,6 +172,20 @@ Yeni bir sohbet başladığında:
 5. Teslimler `templates/` ve `docs/` dizin yapısına birebir uyan bir zip paketi olarak hazırlanır; asistanın repoya doğrudan yazma/commit erişimi yoktur, push işlemini kullanıcı yapar.
 6. Her teslime, hangi dosyanın üzerine yazılacağını ve elle yapılması gereken işlemleri (ör. dosya silme) açıklayan kısa bir not eşlik eder.
 7. Repo'ya salt-okunur erişim (klonlama, doğrulama) serbesttir — README/CHANGELOG okumakla yetinilmez, gerektiğinde gerçek dosya/klasör yapısı ve GitHub Pages çıktısı doğrudan kontrol edilir.
+
+## Yeni Sohbet Direktifi (Örnek)
+
+İçerik doldurma işine yeni bir sohbette başlarken kullanıcının yazması
+yeterli olan örnek direktif cümlesi:
+
+> "DGS-Note-Book reposunu (https://github.com/dev-gotto/DGS-Note-Book/)
+> klonla, README.md ve CHANGELOG.md'yi oku, roadmap'teki sıradaki `⏳`
+> konuyu belirle. Transkript dosyasını yükleyeceğim, İçerik Doldurma
+> Standardı'ndaki 6 adımı uygulayıp patch hazırla."
+
+Bu cümle tek başına yeterlidir; asistan repoyu klonlar, roadmap'e göre
+hedef konuyu kendisi tespit eder ve kullanıcının yükleyeceği transkripti
+bekler.
 
 ---
 
