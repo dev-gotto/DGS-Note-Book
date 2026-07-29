@@ -15,8 +15,11 @@ Rakam/sayı ayrımı, N-Z-Q-Q'-R kümeleri ve içerme ilişkisi, toplam/çarpım
 sabit stratejileri, bölünebilme ve parçalama teknikleri.
 [Detaya git →](matematik/M01-islem-yetenegi-ve-sayi-kumeleri/02-sayi-kumeleri/hizli-tekrar.md)
 
-### tek çift sayılar ve işaret incelemesi
-*İçerik yakında eklenecektir.*
+### Tek-Çift Sayılar ve İşaret İncelemesi
+Toplama/çarpma altında tek-çift davranışı, çift katsayı ve pozitif tam
+sayı kuvveti kısayolları, kuvvetin doğal sayı/tam sayı ayrımına göre
+kesinlik farkları, işaret incelemesinde çıkarma yönü ve kuvvet (tek/çift)
+kısayolları.
 [Detaya git →](matematik/M02-tek-cift-sayilar-ve-isaret-incelemesi/01-tek-cift-sayilar-ve-isaret-incelemesi/hizli-tekrar.md)
 
 ### ardışık sayılar

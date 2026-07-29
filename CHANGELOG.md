@@ -1,5 +1,33 @@
 # CHANGELOG
 
+## v1.3.0 M02 İçerik Tamamlandı — Tek-Çift Sayılar ve İşaret İncelemesi
+
+### Yapılanlar
+- `M02-tek-cift-sayilar-ve-isaret-incelemesi/01-tek-cift-sayilar-ve-isaret-incelemesi/`
+  alt-konusunun 7 sayfası (`index.md`, `teorik.md`, `pratik.md`,
+  `soru-bankasi.md`, `strateji.md`, `yaygin-hatalar.md`, `hizli-tekrar.md`),
+  `3__video.txt` transkriptinden gerçek içerikle dolduruldu. Konu Bölünme
+  Kuralı kontrol edildi: hoca konuyu tek bir videoda anlattığı için mevcut
+  tek alt-konu klasörü (`01-...`) korundu, bölünme yapılmadı.
+- `index.md` front-matter'ı güncellendi: `status: complete`,
+  `version: "1.0"`, `references` alanına `3__video.txt` eklendi
+  (`previous`/`next` boş bırakıldı — M01'in son alt-konusunda olduğu gibi
+  konular arası sıralama linklenmiyor, yalnızca aynı konunun alt-konuları
+  arasında linkleniyor).
+- `strateji.md` sayfasına, `soru-bankasi.md`'den link verilen 7 çözümlü
+  örnek için HTML anchor'lar (`ornek-1`..`ornek-7`) eklendi; örnekler
+  tek/çift yorum kısayolları (çift/tek katsayı, kuvvet silme, kesinlik
+  yoksa değer verme, çok senaryolu dallanma) ve işaret incelemesi
+  (kuvvet kısayoluyla işaret belirleme, çarpım/fark zinciri) konularını
+  kapsıyor.
+- Üst düzey `docs/hizli-tekrar.md` içindeki Tek-Çift Sayılar ve İşaret
+  İncelemesi bloğu "İçerik yakında eklenecektir" notundan çıkarılıp
+  gerçek özetle güncellendi (PD-011).
+- `docs/matematik/index.md` içindeki ilgili satırın durum simgesi
+  `⏳` → `✅` olarak güncellendi (PD-011, PD-012).
+- `README.md`'deki "Yol Haritası" bölümünde M02 tamamlandı olarak
+  işaretlendi, sıradaki hedef `M03-ardisik-sayilar` olarak güncellendi.
+
 ## v1.2.4 Transkript Teslim Yöntemi Netleştirildi — Sohbet Direktifi
 
 ### Yapılanlar

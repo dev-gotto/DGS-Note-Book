@@ -269,8 +269,9 @@ Durumu görmek için [docs/matematik/index.md](docs/matematik/index.md) ve
 bakın (`✅` tamamlandı, `⏳` içerik bekleniyor).
 
 - [x] `M01-islem-yetenegi-ve-sayi-kumeleri` — 2 alt-konu (İşlem Yeteneği, Sayı Kümeleri), `status: complete`
-- [ ] `M02-tek-cift-sayilar-ve-isaret-incelemesi` — **sıradaki hedef**, kaynak transkript bekleniyor
-- [ ] `M03`–`M43`, `G01`–`G18` — iskelet hazır, içerik bekleniyor
+- [x] `M02-tek-cift-sayilar-ve-isaret-incelemesi` — 1 alt-konu, `3__video.txt` transkriptinden `status: complete`
+- [ ] `M03-ardisik-sayilar` — **sıradaki hedef**, kaynak transkript bekleniyor
+- [ ] `M04`–`M43`, `G01`–`G18` — iskelet hazır, içerik bekleniyor
 
 Bundan sonraki her sohbette varsayılan iş: yukarıdaki listede sıradaki
 `⏳` konunun transkriptini işleyip "İçerik Doldurma Standardı"ndaki
