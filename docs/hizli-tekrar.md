@@ -23,7 +23,10 @@ kısayolları.
 [Detaya git →](matematik/M02-tek-cift-sayilar-ve-isaret-incelemesi/01-tek-cift-sayilar-ve-isaret-incelemesi/hizli-tekrar.md)
 
 ### ardışık sayılar
-*İçerik yakında eklenecektir.*
+Farkların sabitliği ve toplamın terim sayısı × ortadaki sayı ile
+bulunması argümanları; özel toplam formülleri, ardışık iki/N sayı
+toplamının parite ve katlık kuralları, hata düzeltme ve min-max aralık
+kısayolları, 11 ile çarpma/bölünebilme.
 [Detaya git →](matematik/M03-ardisik-sayilar/01-ardisik-sayilar/hizli-tekrar.md)
 
 ### faktörüyel

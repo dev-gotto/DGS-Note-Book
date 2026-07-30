@@ -1,5 +1,32 @@
 # CHANGELOG
 
+## v1.4.0 M03 İçerik Tamamlandı — Ardışık Sayılar
+
+### Yapılanlar
+- `M03-ardisik-sayilar/01-ardisik-sayilar/` alt-konusunun 7 sayfası
+  (`index.md`, `teorik.md`, `pratik.md`, `soru-bankasi.md`, `strateji.md`,
+  `yaygin-hatalar.md`, `hizli-tekrar.md`), `4__video.txt` ve
+  `5__video.txt` transkriptlerinden gerçek içerikle dolduruldu. Konu
+  Bölünme Kuralı kontrol edildi: hoca konuyu iki videoda tek bir bütün
+  olarak (aynı konunun devamı) anlattığı için mevcut tek alt-konu
+  klasörü (`01-...`) korundu, bölünme yapılmadı.
+- `index.md` front-matter'ı güncellendi: `status: complete`,
+  `version: "1.0"`, `references` alanına `4__video.txt` ve
+  `5__video.txt` eklendi (`previous`/`next` boş bırakıldı — tek
+  alt-konulu bir konu olduğu için).
+- `strateji.md` sayfasına, `soru-bankasi.md`'den link verilen 14 çözümlü
+  örnek için HTML anchor'lar (`ornek-1`..`ornek-14`) eklendi; örnekler
+  farkların sabitliği (Argüman 1), toplam/ortadaki sayı (Argüman 2),
+  terim bulma, hata düzeltme (artı yerine eksi), min-max aralık ve
+  çarpımsal terimli seri kısayolu konularını kapsıyor.
+- Üst düzey `docs/hizli-tekrar.md` içindeki ardışık sayılar bloğu
+  "İçerik yakında eklenecektir" notundan çıkarılıp gerçek özetle
+  güncellendi (PD-011).
+- `docs/matematik/index.md` içindeki ilgili satırın durum simgesi
+  `⏳` → `✅` olarak güncellendi (PD-011, PD-012).
+- `README.md`'deki "Yol Haritası" bölümünde M03 tamamlandı olarak
+  işaretlendi, sıradaki hedef `M04-faktoruyel` olarak güncellendi.
+
 ## v1.3.0 M02 İçerik Tamamlandı — Tek-Çift Sayılar ve İşaret İncelemesi
 
 ### Yapılanlar

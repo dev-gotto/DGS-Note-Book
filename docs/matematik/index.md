@@ -6,7 +6,7 @@ DGS Matematik konularının tam listesi. Her konunun yanındaki simge, o konunun
     - ✅ [İşlem Yeteneği](M01-islem-yetenegi-ve-sayi-kumeleri/01-islem-yetenegi/index.md)
     - ✅ [Sayı Kümeleri](M01-islem-yetenegi-ve-sayi-kumeleri/02-sayi-kumeleri/index.md)
 - ✅ [tek çift sayılar ve işaret incelemesi](M02-tek-cift-sayilar-ve-isaret-incelemesi/01-tek-cift-sayilar-ve-isaret-incelemesi/index.md)
-- ⏳ [ardışık sayılar](M03-ardisik-sayilar/01-ardisik-sayilar/index.md)
+- ✅ [ardışık sayılar](M03-ardisik-sayilar/01-ardisik-sayilar/index.md)
 - ⏳ [faktörüyel](M04-faktoruyel/01-faktoruyel/index.md)
 - ⏳ [basamak kavramı](M05-basamak-kavrami/01-basamak-kavrami/index.md)
 - ⏳ [bölme bölünebilme](M06-bolme-bolunebilme/01-bolme-bolunebilme/index.md)
