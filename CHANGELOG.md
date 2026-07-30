@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## v1.4.1 Limit Aşımını Önleme Kuralı Kalıcı Hale Getirildi (PD-013)
+
+### Yapılanlar
+- `README.md` → "Teslim Standardı" bölümüne **"Üretim ve Teslim Kuralları
+  (Limit Aşımını Önleme)"** alt bölümü eklendi: transkriptin dosyadan
+  okunması (chat'e yapıştırılmaması), üretilen içeriğin doğrudan repo
+  dosyalarına yazılması (chat'e tam metin basılmaması), her dosyanın ayrı
+  bir işlemle üretilmesi, teslimin yalnızca değişen dosyaların zip'i +
+  kısa özet şeklinde yapılması ve olağan dışı uzun/çok parçalı
+  transkriptlerde işin iki adıma bölünmesi kuralları kalıcı hâle
+  getirildi. Bu kurallar, M03 içerik doldurma sohbetinde çıktı/mesaj
+  limitinin aşılması sorunundan sonra eklendi.
+- "Proje Kararları" tablosuna **PD-013** eklendi (yukarıdaki kuralın özeti).
+- "AI Asistanıyla Çalışma Kuralları" madde 5'e PD-013'e çapraz referans
+  eklendi.
+- "Yeni Sohbet Direktifi (Örnek)" cümlesi **değiştirilmedi** — kurallar
+  README'de kalıcı olduğu için kullanıcının her sohbette aynı kısa
+  direktif cümlesini kullanması yeterlidir.
+
 ## v1.4.0 M03 İçerik Tamamlandı — Ardışık Sayılar
 
 ### Yapılanlar

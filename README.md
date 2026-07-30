@@ -169,7 +169,7 @@ Yeni bir sohbet başladığında:
 2. Son yapılan değişiklikler (roadmap, versiyon geçmişi) incelenir; `docs/matematik/index.md` ve `docs/geometri/index.md`'den hangi konuların `✅`, hangilerinin `⏳` olduğuna bakılır.
 3. Mevcut mimari korunur; kullanıcı açıkça istemedikçe yeniden yapılandırma yapılmaz.
 4. **Varsayılan odak artık içerik doldurmadır** ("İçerik Doldurma Standardı" bölümündeki 6 adım izlenir), roadmap sırasına göre bir sonraki `⏳` konu hedef alınır. Kullanıcı proje üzerine **analiz, gözlem veya öneri** isterse, bu doğrudan ve açıkça paylaşılır — sınırlı tutulmaz.
-5. Teslimler `templates/` ve `docs/` dizin yapısına birebir uyan bir zip paketi olarak hazırlanır; asistanın repoya doğrudan yazma/commit erişimi yoktur, push işlemini kullanıcı yapar.
+5. Teslimler `templates/` ve `docs/` dizin yapısına birebir uyan bir zip paketi olarak hazırlanır; asistanın repoya doğrudan yazma/commit erişimi yoktur, push işlemini kullanıcı yapar. Üretim sırasında sohbetin çıktı/mesaj limitini aşmamak için "Teslim Standardı" bölümündeki "Üretim ve Teslim Kuralları" (PD-013) uygulanır: içerik dosyalara yazılır, chat'e tam metin basılmaz.
 6. Her teslime, hangi dosyanın üzerine yazılacağını ve elle yapılması gereken işlemleri (ör. dosya silme) açıklayan kısa bir not eşlik eder.
 7. Repo'ya salt-okunur erişim (klonlama, doğrulama) serbesttir — README/CHANGELOG okumakla yetinilmez, gerektiğinde gerçek dosya/klasör yapısı ve GitHub Pages çıktısı doğrudan kontrol edilir.
 
@@ -192,6 +192,31 @@ bekler.
 # Teslim Standardı
 
 Varsayılan teslim biçimi **Patch**'tir (ilgili dosyalar + değişiklik notu). Tam proje yalnızca ilk kurulumda veya kullanıcı açıkça istediğinde teslim edilir.
+
+## Üretim ve Teslim Kuralları (Limit Aşımını Önleme)
+
+İçerik doldurma gibi çok sayfalı işlerde sohbetin çıktı/mesaj limitinin
+aşılmasını önlemek için aşağıdaki kurallar zorunludur (bkz. PD-013):
+
+- Transkript(ler) her zaman **dosya olarak okunur**; ham metin chat
+  mesajına yapıştırılmaz/kopyalanmaz.
+- Üretilen 7 sayfanın (`teorik.md`, `pratik.md`, `strateji.md`,
+  `yaygin-hatalar.md`, `soru-bankasi.md`, `hizli-tekrar.md`, `index.md`)
+  ve senkron dosyaların içeriği **doğrudan klonlanan repo klasöründeki
+  dosyalara** yazılır (dosya araçlarıyla); chat cevabına tam metin
+  olarak basılmaz.
+- Her dosya **ayrı bir işlemle** yazılır; tüm sayfalar tek seferde tek
+  bir uzun mesajda üretilmeye çalışılmaz.
+- Tüm adımlar bitince yalnızca **değişen/eklenen dosyalar** bir zip'e
+  toplanır ve indirilebilir dosya olarak teslim edilir.
+- Chat cevabında yalnızca **kısa bir özet** paylaşılır: hangi konu
+  işlendi, hangi dosyalar değişti/eklendi, patch nasıl uygulanır, elle
+  yapılması gereken bir şey var mı. Dosya içeriklerinin tamamı tekrar
+  chat'e yazılmaz.
+- Transkript alışılmadık derecede uzunsa veya konu birden fazla
+  alt-konuya bölünüyorsa, iş tek seferde bitirilmeye çalışılmaz: önce
+  iskelet + teorik + pratik, ardından strateji + yaygın hatalar + soru
+  bankası + hızlı tekrar + senkron dosyalar şeklinde iki adıma bölünür.
 
 ---
 
@@ -251,6 +276,7 @@ build(hotfix): fix GitHub Pages deploy
 | PD-010 | İçerik üretimi sırasında bir konunun alt-konulara ayrıldığı fark edilirse, kod (M/G numarası) değişmeden klasör seviyesinde bölünme yapılır. |
 | PD-011 | **Senkronizasyon Kuralı:** Bir alt-konu tamamlandığında (`status: complete`), aynı pakette üç yer birden güncellenir: alt-konunun kendi `index.md`'si, `docs/hizli-tekrar.md`'deki ilgili blok, ve `docs/matematik/index.md` / `docs/geometri/index.md`'deki durum simgesi. |
 | PD-012 | `docs/matematik/index.md` ve `docs/geometri/index.md`, `mkdocs.yml` nav'ındaki `matematik/` ve `geometri/` dizin girişlerinin çalışması için zorunludur (yoksa GitHub Pages'te 404 oluşur); bu iki dosya da içerik ilerledikçe güncellenen canlı indekslerdir. |
+| PD-013 | **Limit Aşımını Önleme Kuralı:** Transkript(ler) dosyadan okunur, chat'e yapıştırılmaz; üretilen sayfa/senkron dosyaların içeriği doğrudan repo klasörüne yazılır ve her dosya ayrı işlemle üretilir; teslim yalnızca değişen dosyaların zip'i + kısa özet şeklinde yapılır, dosya içerikleri chat'e tekrar basılmaz (bkz. "Teslim Standardı"). |
 
 ---
 
