@@ -38,7 +38,12 @@ parantez zorunluluğu; negatif faktöriyel kısıtı.
 [Detaya git →](matematik/M04-faktoruyel/01-faktoruyel/hizli-tekrar.md)
 
 ### basamak kavramı
-*İçerik yakında eklenecektir.*
+Basamak değeri/sayı değeri ayrımı; harfli çözümleme (`AB=10A+B` gibi) ve
+klasik kalıplar (`AB+BA=11(A+B)`, `AB-BA=9(A-B)`, `ABC-CBA=99(A-C)`);
+benzetme tekniği (baştan/sondan); basamak değişiminin sayıya etkisi;
+çarpımın basamak sayısı kuralı; 4 işlemde yanlış okunan rakamın etkisi
+ve sütun toplama/çıkarma bulmacalarında elde-ödünç zinciri; sayma
+temelli mantık soruları.
 [Detaya git →](matematik/M05-basamak-kavrami/01-basamak-kavrami/hizli-tekrar.md)
 
 ### bölme bölünebilme

@@ -1,5 +1,48 @@
 # CHANGELOG
 
+## v1.6.0 M05 İçerik Tamamlandı — Basamak Kavramı
+
+### Yapılanlar
+- `M05-basamak-kavrami/01-basamak-kavrami/` alt-konusunun 7 sayfası
+  (`index.md`, `teorik.md`, `pratik.md`, `soru-bankasi.md`,
+  `strateji.md`, `yaygin-hatalar.md`, `hizli-tekrar.md`),
+  `8__video.txt` (Basamak Kavramı 1: çözümleme, benzetme, klasik
+  kalıplar) ve `9__video.txt` (Basamak Kavramı 2: 4 işlem, sütun
+  toplama/çıkarma bulmacaları, mantık soruları) transkriptlerinden
+  gerçek içerikle dolduruldu. Konu Bölünme Kuralı kontrol edildi:
+  `dgs ders konuları.txt`'de "basamak kavramı" tek bir referans madde
+  olduğu ve her iki video da aynı konunun devamı olduğu için (M03/M04
+  gibi) mevcut tek alt-konu klasörü (`01-...`) korundu, bölünme
+  yapılmadı.
+- Transkript uzunluğu (2 video, ~1800+ satır) nedeniyle PD-013 gereği
+  iş iki adıma bölündü: önce `teorik.md` + `pratik.md`, ardından
+  `strateji.md` + `yaygin-hatalar.md` + `soru-bankasi.md` +
+  `hizli-tekrar.md` + senkron dosyalar.
+- `index.md` front-matter'ı güncellendi: `status: complete`,
+  `version: "1.0"`, `references` alanına `8__video.txt` ve
+  `9__video.txt` eklendi (`previous`/`next` boş bırakıldı — tek
+  alt-konulu bir konu olduğu için).
+- `strateji.md` sayfasına, `soru-bankasi.md`'den link verilen 27
+  çözümlü örnek için HTML anchor'lar (`ornek-1`..`ornek-27`) eklendi;
+  örnekler çözümleme/benzetme (klasik kalıplar, katlı denklemler,
+  boy-farkı problemi, basamak artış/azalışı, çarpımın basamak sayısı)
+  ve 4 işlem (yanlış okunan rakamın etkisi, sütun toplama/çıkarma
+  bulmacaları, rakam çiftleştirme, kibrit çöpü kısıtı, sayma temelli
+  mantık soruları) konularını kapsıyor.
+- `teorik.md`'ye basamak değeri/sayı değeri ayrımı, klasik çözümleme
+  kalıpları tablosu (`AB+BA`, `AB-BA`, `ABC-CBA`, çevrimsel toplam),
+  benzetme tanımı (baştan/sondan), çarpımın basamak sayısı kuralı ve
+  standart kibrit çöpü (dijital gösterge) rakam-çöp sayısı tablosu
+  eklendi.
+- Üst düzey `docs/hizli-tekrar.md` içindeki basamak kavramı bloğu
+  "İçerik yakında eklenecektir" notundan çıkarılıp gerçek özetle
+  güncellendi (PD-011).
+- `docs/matematik/index.md` içindeki ilgili satırın durum simgesi
+  `⏳` → `✅` olarak güncellendi (PD-011, PD-012).
+- `README.md`'deki "Yol Haritası" bölümünde M05 tamamlandı olarak
+  işaretlendi, sıradaki hedef `M06-bolme-bolunebilme` olarak
+  güncellendi.
+
 ## v1.5.1 Yazım Düzeltmesi — "faktörüyel" → "faktöriyel"
 
 ### Yapılanlar
