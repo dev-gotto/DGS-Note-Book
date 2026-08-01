@@ -297,8 +297,9 @@ bakın (`✅` tamamlandı, `⏳` içerik bekleniyor).
 - [x] `M01-islem-yetenegi-ve-sayi-kumeleri` — 2 alt-konu (İşlem Yeteneği, Sayı Kümeleri), `status: complete`
 - [x] `M02-tek-cift-sayilar-ve-isaret-incelemesi` — 1 alt-konu, `3__video.txt` transkriptinden `status: complete`
 - [x] `M03-ardisik-sayilar` — 1 alt-konu, `4__video.txt` ve `5__video.txt` transkriptlerinden `status: complete`
-- [ ] `M04-faktoruyel` — **sıradaki hedef**, kaynak transkript bekleniyor
-- [ ] `M05`–`M43`, `G01`–`G18` — iskelet hazır, içerik bekleniyor
+- [x] `M04-faktoruyel` — 1 alt-konu, `6__video.txt` ve `7__video.txt` transkriptlerinden `status: complete`
+- [ ] `M05-basamak-kavrami` — **sıradaki hedef**, kaynak transkript bekleniyor
+- [ ] `M06`–`M43`, `G01`–`G18` — iskelet hazır, içerik bekleniyor
 
 Bundan sonraki her sohbette varsayılan iş: yukarıdaki listede sıradaki
 `⏳` konunun transkriptini işleyip "İçerik Doldurma Standardı"ndaki

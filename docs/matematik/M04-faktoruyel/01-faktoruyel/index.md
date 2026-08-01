@@ -1,18 +1,25 @@
 ---
 id: M04
 title: "faktörüyel"
-status: empty
-version: "0.1"
+status: complete
+version: "1.0"
 previous:
 next:
-references: []
+references:
+  - "6__video.txt"
+  - "7__video.txt"
 ---
 
 # faktörüyel
 
 ## Amaç
 
-*İçerik yakında eklenecektir.*
+Faktöriyel kavramını (`n! = 1×2×...×n`, `0!=1` özel kabulü) ve DGS'nin
+bu konudan sorduğu iki soru grubunu — **sadeleştirme** (faktöriyel
+bölme/toplama/çıkarma işlemlerini hızlı sonuçlandırma) ve **yorum**
+(ardışık dizileri faktöriyele çevirme, denklem çözme, asal çarpan
+sayısı/sondan kaç basamağı `0` bulma, negatif faktöriyel kısıtı) —
+harfsiz, kafadan çözüm teknikleriyle çözebilmeyi amaçlar.
 
 ## Sayfalar
 
@@ -25,12 +32,13 @@ references: []
 
 ## Kaynak
 
-- Video
-- Transkript
-- Kullanıcı Notları
+- Video: "faktörüyel" ders serisi — 6. ve 7. videolar (Faktöriyel 1: kavram + sadeleştirme, Faktöriyel 2: yorum soruları)
+- Transkript: `6__video.txt`, `7__video.txt`
+- Kullanıcı Notları: —
 
 ## Değişiklik Geçmişi
 
 | Versiyon | Tarih | Açıklama |
 |---|---|---|
 | 0.1 | - | İskelet oluşturuldu, içerik bekleniyor. |
+| 1.0 | - | `6__video.txt` ve `7__video.txt` transkriptlerinden 7 sayfanın tamamı (Teorik, Pratik, Soru Bankası, Strateji, Yaygın Hatalar, Hızlı Tekrar) dolduruldu. |

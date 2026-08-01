@@ -1,5 +1,43 @@
 # CHANGELOG
 
+## v1.5.0 M04 İçerik Tamamlandı — Faktöriyel
+
+### Yapılanlar
+- `M04-faktoruyel/01-faktoruyel/` alt-konusunun 7 sayfası (`index.md`,
+  `teorik.md`, `pratik.md`, `soru-bankasi.md`, `strateji.md`,
+  `yaygin-hatalar.md`, `hizli-tekrar.md`), `6__video.txt` (Faktöriyel 1:
+  kavram + sadeleştirme) ve `7__video.txt` (Faktöriyel 2: yorum
+  soruları) transkriptlerinden gerçek içerikle dolduruldu. Konu Bölünme
+  Kuralı kontrol edildi: `dgs ders konuları.txt`'de "faktörüyel" tek bir
+  referans madde olduğu ve her iki video da aynı konunun devamı olduğu
+  için (M03'teki gibi) mevcut tek alt-konu klasörü (`01-...`) korundu,
+  bölünme yapılmadı.
+- Transkript uzunluğu (2 video, ~1900+ satır) nedeniyle PD-013 gereği iş
+  iki adıma bölündü: önce `teorik.md` + `pratik.md`, ardından
+  `strateji.md` + `yaygin-hatalar.md` + `soru-bankasi.md` +
+  `hizli-tekrar.md` + senkron dosyalar.
+- `index.md` front-matter'ı güncellendi: `status: complete`,
+  `version: "1.0"`, `references` alanına `6__video.txt` ve
+  `7__video.txt` eklendi (`previous`/`next` boş bırakıldı — tek
+  alt-konulu bir konu olduğu için).
+- `strateji.md` sayfasına, `soru-bankasi.md`'den link verilen 26 çözümlü
+  örnek için HTML anchor'lar (`ornek-1`..`ornek-26`) eklendi; örnekler
+  sadeleştirme (bölme, toplama/çıkarmada parantez alma, pay/payda ayrı
+  sadeleştirme, payda eşitleme), yorum (ardışık diziyi faktöriyele
+  çevirme, `A!=k×B!` ve `P!/R!=5!` denklemleri, asal/asal olmayan
+  tabanda üs bulma, sondan kaç basamağı `0`/`9`, negatif faktöriyel
+  kısıtı) ve ÖSYM tarzı kombine sorular (demir blokları, dairelere
+  rakam yazma, iki şart birden) konularını kapsıyor.
+- `teorik.md`'ye ayrıca `0!=1` ispatı (kombinasyon formülüyle) ve
+  Legendre mantığıyla asal çarpan sayısı bulma formülü eklendi.
+- Üst düzey `docs/hizli-tekrar.md` içindeki faktörüyel bloğu "İçerik
+  yakında eklenecektir" notundan çıkarılıp gerçek özetle güncellendi
+  (PD-011).
+- `docs/matematik/index.md` içindeki ilgili satırın durum simgesi
+  `⏳` → `✅` olarak güncellendi (PD-011, PD-012).
+- `README.md`'deki "Yol Haritası" bölümünde M04 tamamlandı olarak
+  işaretlendi, sıradaki hedef `M05-basamak-kavrami` olarak güncellendi.
+
 ## v1.4.1 Limit Aşımını Önleme Kuralı Kalıcı Hale Getirildi (PD-013)
 
 ### Yapılanlar

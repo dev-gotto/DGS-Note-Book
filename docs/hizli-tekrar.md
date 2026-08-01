@@ -30,7 +30,11 @@ kısayolları, 11 ile çarpma/bölünebilme.
 [Detaya git →](matematik/M03-ardisik-sayilar/01-ardisik-sayilar/hizli-tekrar.md)
 
 ### faktörüyel
-*İçerik yakında eklenecektir.*
+Faktöriyel tanımı (`n!`, `0!=1`); büyüğü küçüğe açarak sadeleştirme,
+toplama/çıkarmada en küçüğü parantezine alma; ardışık azalan dizileri
+faktöriyele çevirme; asal çarpan sayısı (Legendre) ve sondan kaç
+basamağının `0` olduğunu bulma; ardışık faktöriyellerin toplamında
+parantez zorunluluğu; negatif faktöriyel kısıtı.
 [Detaya git →](matematik/M04-faktoruyel/01-faktoruyel/hizli-tekrar.md)
 
 ### basamak kavramı
