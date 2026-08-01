@@ -29,7 +29,7 @@ toplamının parite ve katlık kuralları, hata düzeltme ve min-max aralık
 kısayolları, 11 ile çarpma/bölünebilme.
 [Detaya git →](matematik/M03-ardisik-sayilar/01-ardisik-sayilar/hizli-tekrar.md)
 
-### faktörüyel
+### faktöriyel
 Faktöriyel tanımı (`n!`, `0!=1`); büyüğü küçüğe açarak sadeleştirme,
 toplama/çıkarmada en küçüğü parantezine alma; ardışık azalan dizileri
 faktöriyele çevirme; asal çarpan sayısı (Legendre) ve sondan kaç

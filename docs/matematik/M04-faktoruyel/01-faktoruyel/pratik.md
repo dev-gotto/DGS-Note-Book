@@ -1,4 +1,4 @@
-# 💡 Pratik Bilgiler — faktörüyel
+# 💡 Pratik Bilgiler — faktöriyel
 
 > Kaynak: Hocanın anlatımına dayalı uygulama yöntemleri ve kısayollar.
 

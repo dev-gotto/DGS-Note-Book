@@ -1,4 +1,4 @@
-# 📘 Teorik Bilgiler — faktörüyel
+# 📘 Teorik Bilgiler — faktöriyel
 
 > Kaynak: Değişmeyen matematik kuralları (tanımlar, kurallar, formüller). Hoca anlatımından bağımsızdır.
 

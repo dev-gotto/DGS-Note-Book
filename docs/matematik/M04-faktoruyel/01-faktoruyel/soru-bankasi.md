@@ -1,4 +1,4 @@
-# Soru Bankası — faktörüyel
+# Soru Bankası — faktöriyel
 
 > Bu konuya ait geçmiş sınav sorularının listesi. Her satır, sorunun
 > çözüldüğü [🎯 Soru Çözüm Stratejileri](strateji.md) sayfasındaki ilgili

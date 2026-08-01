@@ -1,4 +1,4 @@
-# ⚠️ Yaygın Hatalar — faktörüyel
+# ⚠️ Yaygın Hatalar — faktöriyel
 
 > Kaynak: Öğrencilerin sık yaptığı hatalar ve ÖSYM'nin kurduğu tuzaklar.
 > Her madde; hata/tuzak örneği + derin kavrayışla çözümü şeklinde anlatılır.

@@ -1,7 +1,7 @@
 • işlem yeteneği ve sayı kümeleri
 • tek çift sayılar ve işaret incelemesi
 • ardışık sayılar
-• faktörüyel
+• faktöriyel
 • basamak kavramı
 • bölme bölünebilme
 • asal sayılar ve asal çarpanlara ayırma

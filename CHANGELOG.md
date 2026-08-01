@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## v1.5.1 Yazım Düzeltmesi — "faktörüyel" → "faktöriyel"
+
+### Yapılanlar
+- `dgs ders konuları.txt` kaynak listesindeki "faktörüyel" yazım hatası
+  "faktöriyel" (doğru Türkçe yazım) olarak düzeltildi.
+- Bu düzeltme, M04 konusuna ait tüm dosyalara (`README.md` hariç — orada
+  yalnızca klasör yolu geçiyor) yayıldı: `index.md`, `teorik.md`,
+  `pratik.md`, `strateji.md`, `yaygin-hatalar.md`, `soru-bankasi.md`,
+  `hizli-tekrar.md` (M04 alt-konusu), üst düzey `docs/hizli-tekrar.md`
+  ve `docs/matematik/index.md`.
+- **Klasör adı (`M04-faktoruyel`) bilinçli olarak değiştirilmedi** —
+  URL/link kırılmasını önlemek için; yalnızca görünen metinler
+  (`title`, başlıklar, gövde metni) düzeltildi.
+
 ## v1.5.0 M04 İçerik Tamamlandı — Faktöriyel
 
 ### Yapılanlar
@@ -8,7 +22,7 @@
   `yaygin-hatalar.md`, `hizli-tekrar.md`), `6__video.txt` (Faktöriyel 1:
   kavram + sadeleştirme) ve `7__video.txt` (Faktöriyel 2: yorum
   soruları) transkriptlerinden gerçek içerikle dolduruldu. Konu Bölünme
-  Kuralı kontrol edildi: `dgs ders konuları.txt`'de "faktörüyel" tek bir
+  Kuralı kontrol edildi: `dgs ders konuları.txt`'de "faktöriyel" tek bir
   referans madde olduğu ve her iki video da aynı konunun devamı olduğu
   için (M03'teki gibi) mevcut tek alt-konu klasörü (`01-...`) korundu,
   bölünme yapılmadı.
@@ -30,7 +44,7 @@
   rakam yazma, iki şart birden) konularını kapsıyor.
 - `teorik.md`'ye ayrıca `0!=1` ispatı (kombinasyon formülüyle) ve
   Legendre mantığıyla asal çarpan sayısı bulma formülü eklendi.
-- Üst düzey `docs/hizli-tekrar.md` içindeki faktörüyel bloğu "İçerik
+- Üst düzey `docs/hizli-tekrar.md` içindeki faktöriyel bloğu "İçerik
   yakında eklenecektir" notundan çıkarılıp gerçek özetle güncellendi
   (PD-011).
 - `docs/matematik/index.md` içindeki ilgili satırın durum simgesi

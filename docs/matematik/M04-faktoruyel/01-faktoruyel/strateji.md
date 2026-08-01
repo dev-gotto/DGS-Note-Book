@@ -1,4 +1,4 @@
-# 🎯 Soru Çözüm Stratejileri — faktörüyel
+# 🎯 Soru Çözüm Stratejileri — faktöriyel
 
 > Kaynak: Hocanın önerdiği yöntemler + genel best-practice çözüm teknikleri.
 

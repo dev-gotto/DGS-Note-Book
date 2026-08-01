@@ -1,4 +1,4 @@
-# Hızlı Tekrar — faktörüyel
+# Hızlı Tekrar — faktöriyel
 
 - **Tanım:** `n! = 1×2×3×...×n`; yalnızca doğal sayılarda tanımlıdır,
   negatiflerde tanımsızdır. `0! = 1` (özel kabul; kombinasyon formülüyle

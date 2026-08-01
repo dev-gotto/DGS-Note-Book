@@ -1,6 +1,6 @@
 ---
 id: M04
-title: "faktörüyel"
+title: "faktöriyel"
 status: complete
 version: "1.0"
 previous:
@@ -10,7 +10,7 @@ references:
   - "7__video.txt"
 ---
 
-# faktörüyel
+# faktöriyel
 
 ## Amaç
 
@@ -32,7 +32,7 @@ harfsiz, kafadan çözüm teknikleriyle çözebilmeyi amaçlar.
 
 ## Kaynak
 
-- Video: "faktörüyel" ders serisi — 6. ve 7. videolar (Faktöriyel 1: kavram + sadeleştirme, Faktöriyel 2: yorum soruları)
+- Video: "faktöriyel" ders serisi — 6. ve 7. videolar (Faktöriyel 1: kavram + sadeleştirme, Faktöriyel 2: yorum soruları)
 - Transkript: `6__video.txt`, `7__video.txt`
 - Kullanıcı Notları: —
 
