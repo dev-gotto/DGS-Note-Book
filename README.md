@@ -245,6 +245,7 @@ mkdocs.yml
 - **[İçerik tamamlama'ya özel]** Alt-konu `index.md` front-matter'ı (`status`, `version`, `previous`/`next`, `references`) güncellendi mi?
 - **[İçerik tamamlama'ya özel]** `docs/hizli-tekrar.md` ve ilgili bölüm indeksi (`docs/matematik/index.md` / `docs/geometri/index.md`) senkron mu (PD-011)?
 - **[İçerik tamamlama'ya özel]** `strateji.md` örnek anchor'ları (`#ornek-N`) ile `soru-bankasi.md` linkleri eşleşiyor mu?
+- **[İçerik tamamlama'ya özel]** Transkriptte çelişen/eksik/görsele dayanan bir kısım var mıydı; varsa PD-014'e göre mi ele alındı (ASR hatası → sürece uygun düzeltme; görsel-bağımlı belirsizlik → üretim durdurulup kullanıcıya video zaman aralığı bildirilerek soruldu mu)?
 
 ---
 
@@ -277,6 +278,8 @@ build(hotfix): fix GitHub Pages deploy
 | PD-011 | **Senkronizasyon Kuralı:** Bir alt-konu tamamlandığında (`status: complete`), aynı pakette üç yer birden güncellenir: alt-konunun kendi `index.md`'si, `docs/hizli-tekrar.md`'deki ilgili blok, ve `docs/matematik/index.md` / `docs/geometri/index.md`'deki durum simgesi. |
 | PD-012 | `docs/matematik/index.md` ve `docs/geometri/index.md`, `mkdocs.yml` nav'ındaki `matematik/` ve `geometri/` dizin girişlerinin çalışması için zorunludur (yoksa GitHub Pages'te 404 oluşur); bu iki dosya da içerik ilerledikçe güncellenen canlı indekslerdir. |
 | PD-013 | **Limit Aşımını Önleme Kuralı:** Transkript(ler) dosyadan okunur, chat'e yapıştırılmaz; üretilen sayfa/senkron dosyaların içeriği doğrudan repo klasörüne yazılır ve her dosya ayrı işlemle üretilir; teslim yalnızca değişen dosyaların zip'i + kısa özet şeklinde yapılır, dosya içerikleri chat'e tekrar basılmaz (bkz. "Teslim Standardı"). |
+| PD-014 | **Transkript Belirsizliği Protokolü:** İçerik üretimi sırasında transkriptte iki farklı türde güvenilmezlik ortaya çıkabilir; asistan bu ikisini ayırt etmek ve buna göre davranmak zorundadır: **(a) Basit ses-metin (ASR) hatası** — sayı/rakam gibi tek bir değerin yanlış tanınması (örn. aynı hesapta "357" ve "350" gibi çelişen iki değerin geçmesi). Bu durumda asistan, hocanın ulaştığı **nihai sonuçla ve anlattığı çözüm adımlarıyla hangi değer tutarlıysa onu doğru kabul eder**, düzeltir ve **kurguladığı içeriğin sürecin geri kalanıyla (verilen sayılar, ara adımlar, nihai cevap) birebir örtüştüğünden emin olur**; bunu sessizce yapar, sonuç teslim özetinde kısaca belirtilir. **(b) Ekran görseline/tabloya dayanan, sesten tam olarak yeniden kurulamayan içerik** — hocanın "şuraya bak, şu şurada" gibi işaret ifadeleriyle anlattığı, sayısal düzeni (hangi rakam hangi sütun/hücrede) transkriptten kesin olarak çıkarılamayan sorular (kibrit çöpü tabloları, sütun toplama/çıkarma bulmacaları, karşılaştırma görselleri vb.). Bu durumda asistan **tahmine dayalı bir soru metni uydurmaz**; üretimi o örnek için durdurur, kullanıcıya **hangi video ve hangi zaman aralığının (`mm:ss–mm:ss`) belirsiz olduğunu bildirir** ve kullanıcıdan ilgili kesiti izleyip doğru notu paylaşmasını ister. Kullanıcıdan onay/doğru içerik gelene kadar o örnek iskelet/taslak olarak işaretlenir, tamamlanmış muamelesi görmez. |
+
 
 ---
 
@@ -298,7 +301,7 @@ bakın (`✅` tamamlandı, `⏳` içerik bekleniyor).
 - [x] `M02-tek-cift-sayilar-ve-isaret-incelemesi` — 1 alt-konu, `3__video.txt` transkriptinden `status: complete`
 - [x] `M03-ardisik-sayilar` — 1 alt-konu, `4__video.txt` ve `5__video.txt` transkriptlerinden `status: complete`
 - [x] `M04-faktoruyel` — 1 alt-konu, `6__video.txt` ve `7__video.txt` transkriptlerinden `status: complete`
-- [x] `M05-basamak-kavrami` — 1 alt-konu, `8__video.txt` ve `9__video.txt` transkriptlerinden `status: complete`
+- [~] `M05-basamak-kavrami` — 1 alt-konu, `8__video.txt` ve `9__video.txt` transkriptlerinden `status: review` (23/27 örnek doğrulandı, 4 örnek PD-014b gereği kullanıcı video doğrulaması bekliyor — bkz. alt-konu `index.md`)
 - [ ] `M06-bolme-bolunebilme` — **sıradaki hedef**, kaynak transkript bekleniyor
 - [ ] `M07`–`M43`, `G01`–`G18` — iskelet hazır, içerik bekleniyor
 

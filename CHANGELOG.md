@@ -1,5 +1,43 @@
 # CHANGELOG
 
+## v1.6.1 M05 Hata Denetimi — PD-014 Uygulaması
+
+### Yapılanlar
+- `M05-basamak-kavrami` içeriğinde kullanıcı talebiyle tam bir hata
+  denetimi yapıldı; 27 çözümlü örnekten 23'ü matematiksel olarak
+  yeniden doğrulandı, 4 tanesinde kaynak güvenilirliği sorunu tespit
+  edildi.
+- **Örnek 17 (PD-014a — basit ASR hatası):** Transkriptte aynı hesap
+  için çelişen iki değer geçiyordu (`357` ve `350`). Hocanın nihai
+  sonucuyla (`AB=51`) yalnızca `357` tutarlı olduğu için bu değer esas
+  alındı; içerik zaten bu şekilde yazılmıştı, ek düzeltme gerekmedi.
+- **Örnek 18, 19, 20, 24 (PD-014b — ekran görseline dayanan belirsizlik):**
+  Bu 4 örneğin soru metni, hocanın ekranda gösterdiği bir görsele
+  (sütun toplama/çıkarma tablosu, karşılaştırma görseli) dayanıyor;
+  ses transkriptinden tam sayısal düzen kesin olarak yeniden
+  kurulamadı. Örnek 19'da önceki teslimdeki kurgunun (`A4B-C1=B89`)
+  kendi çözümüyle bile tutarsız olduğu (`540-41=499 ≠ 089`) fark
+  edildi. Bu 4 örnek artık:
+  - `strateji.md`'de her biri `⚠️ Doğrulama Bekleniyor` başlığı ve
+    video zaman aralığı (`mm:ss–mm:ss`) içeren bir PD-014 notuyla
+    işaretlendi (nihai sayısal sonuçlar korundu, yalnızca soru
+    metninin yaklaşık olduğu belirtildi).
+  - `soru-bankasi.md`'ye eklenen yeni **Durum** sütununda 🔎 ile
+    işaretlendi (23 örnek ✅).
+  - Alt-konu `index.md`'sine yeni bir "Gözden Geçirme Notu (PD-014b)"
+    bölümü eklendi.
+- Bu nedenle `M05-basamak-kavrami/01-basamak-kavrami/index.md`
+  `status: complete` → `status: review`, `version: "1.0"` →
+  `"1.1"` olarak güncellendi.
+- Senkron dosyalar güncellendi (PD-011): `docs/matematik/index.md`
+  simgesi `✅` → `🔎`, `README.md` Yol Haritası satırı `review`
+  durumunu ve doğrulama bekleyen örnek sayısını yansıtacak şekilde
+  güncellendi.
+- Not: `PD-014` (Transkript Belirsizliği Protokolü) kuralı ve
+  Pre-Commit Checklist'teki ilgili madde `README.md`'de zaten mevcuttu;
+  bu turda yeniden teyit edildi, kullanıcının video kesiti izleyip
+  doğru notu paylaşması bekleniyor.
+
 ## v1.6.0 M05 İçerik Tamamlandı — Basamak Kavramı
 
 ### Yapılanlar

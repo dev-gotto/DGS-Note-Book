@@ -292,43 +292,55 @@ bulunmuştur. 1. çarpım `3 × AB`, 2. çarpım `4 × AB` biçimindedir. 1.
 - **Sonuç: `153`.**
 
 <a id="ornek-18"></a>
-## Örnek 18 — Sütun Toplamada Elde Zinciriyle Rakam Bulma
+## Örnek 18 — Sütun Toplamada Elde Zinciriyle Rakam Bulma ⚠️ Doğrulama Bekleniyor
 
-**Soru:** Alt alta yazılmış bir toplama işleminde `A`, `B`, `C` birer
-rakamdır. Sütun toplamlarından (elde vererek) `A + B + C` toplamı
-bulunacaktır.
+> **PD-014 notu:** Bu soru, hocanın ekranda gösterdiği bir sütun
+> toplama görseline dayanıyor; kaç sayının alt alta toplandığı ve hangi
+> rakamın hangi sütunda olduğu ses transkriptinden kesin olarak
+> belirlenemiyor. Video: `9__video.txt`, yaklaşık **9:30–11:41**
+> aralığı. Nihai sonuç (`A=6, B=4, C=1`, toplam `11`) hocanın açıkça
+> söylediği değerlerle tutarlı ve bu hâliyle güvenilir, ama tam soru
+> metni/sütun düzeni bu aralık izlenip doğrulanana kadar kesinleşmiş
+> sayılmamalıdır.
 
-**Çözüm:**
-- Birler basamağından başla: sütun toplamı `9`'u geçtiği için bir üst
-  basamağa **elde `1`** gider; bu, o sütundaki bilinmeyen rakamı (`B`)
-  belirler.
-- Onlar basamağında, elde gelen `1` ile birlikte toplam yine `9`'u
-  geçtiği için bir üst basamağa tekrar **elde `1`** gider; bu da ikinci
-  bilinmeyeni (`A`) belirler.
-- Yüzler basamağında kalan elde, üçüncü rakamı (`C`) tamamlar.
-- Zincirleme çözümde: `A = 6`, `B = 4`, `C = 1`.
-- `A + B + C = 6 + 4 + 1 = 11`.
-- **Sonuç: `11` (B seçeneği).**
+**Yöntem (doğrulanmış):** Sütun toplama bulmacalarında birler
+basamağından başlanır; her sütunda toplamın `9`'u geçip geçmediği
+(elde `1` gidip gitmediği) kontrol edilerek bir üst sütuna geçilir, bu
+zincirle bilinmeyen rakamlar teker teker bulunur.
+
+**Sonuç (hocanın son sözü):** `A = 6`, `B = 4`, `C = 1` →
+`A + B + C = 11` (B seçeneği).
 
 <a id="ornek-19"></a>
-## Örnek 19 — Sütun Çıkarmada Ödünç Alma Zinciriyle Rakam Bulma
+## Örnek 19 — Sütun Çıkarmada Ödünç Alma Zinciriyle Rakam Bulma ⚠️ Doğrulama Bekleniyor
 
-**Soru:** Alt alta yazılmış bir çıkarma işleminde `A4B - C1 = B89`
-biçiminde bir eşitlik verilmiştir. `A + B + C` toplamı kaçtır?
+> **PD-014 notu:** Önceki teslimde bu soru `A4B - C1 = B89` olarak
+> kurgulanmıştı; kontrol ettiğimde bu kurgu **kendi çözümüyle bile
+> örtüşmüyor** (`A=5,B=0,C=4` için `540-41=499`, oysa `B89=089=89`
+> olmalıydı — tutarsız). Demek ki gerçek soru, ekrandaki görselde farklı
+> bir sütun düzenine sahip. Video: `9__video.txt`, yaklaşık
+> **12:16–14:14** aralığı. Bu aralık izlenip doğru sütun/basamak
+> düzeni netleşene kadar soru metni ve ara adımlar taslak sayılmalı.
 
-**Çözüm:**
-- Birler basamağından başla: üstteki rakamdan alttaki çıkarılınca sonuç
-  `9` gelmesi için **komşudan `10`luk ödünç alınması** gerekir; bu,
-  `B`'yi belirler (`B = 0`).
-- Ödünç verilen basamakta bir azalma olur; bu azalmayla birlikte onlar
-  basamağındaki çıkarma da **ödünç almayı** gerektirir; bu da `A`'yı
-  belirler (`A = 5`).
-- Kalan basamaktan `C` bulunur (`C = 4`).
-- `A + B + C = 5 + 0 + 4 = 9`.
-- **Sonuç: `9` (A seçeneği).**
+**Yöntem (doğrulanmış):** Sütun çıkarma bulmacalarında birler
+basamağından başlanır; üstteki rakamdan alttaki çıkarılamıyorsa
+komşudan `10`luk ödünç alınır, bu zincirle bilinmeyen rakamlar teker
+teker bulunur.
+
+**Sonuç (hocanın son sözü):** `A = 5`, `B = 0`, `C = 4` →
+`A + B + C = 9` (A seçeneği). *(Rakamların kendisi hocanın söylediğiyle
+tutarlı; tutarsız olan yalnızca benim kurguladığım soru cümlesiydi.)*
 
 <a id="ornek-20"></a>
-## Örnek 20 — Boş Basamaktan İki İhtimali Eleyerek Rakam Bulma
+## Örnek 20 — Boş Basamaktan İki İhtimali Eleyerek Rakam Bulma ⚠️ Doğrulama Bekleniyor
+
+> **PD-014 notu:** Bu sütun çıkarma sorusu da bir ekran görseline
+> dayanıyor; "boş basamak" ifadesinin gerçekte hangi sütunda göründüğü
+> ve tam sütun düzeni ses transkriptinden kesin belirlenemiyor. Aşağıdaki
+> soru metni yaklaşıktır. Video: `9__video.txt`, yaklaşık **14:48–18:10**
+> aralığı. Nihai sonuç (`A=4, B=7`, toplam `11`) hocanın açıkça söylediği
+> ve kendi çözüm zinciriyle tutarlı, ama tam sütun düzeni bu aralık
+> izlenip doğrulanana kadar kesinleşmiş sayılmamalıdır.
 
 **Soru:** Alt alta yazılmış bir çıkarma işleminde `A`'dan `B` çıkınca
 `B` kalıyor, `A`'dan `3` çıkınca sonuç görünmüyor (boş/`0`). Buna göre
@@ -404,7 +416,17 @@ sayısının rakamları çarpımı kaçtır?
 - **Sonuç: rakamlar çarpımı `3 × 2 = 6`.**
 
 <a id="ornek-24"></a>
-## Örnek 24 — Çift Yönlü Eşitsizlikten Rakam Eşitliği Çıkarma
+## Örnek 24 — Çift Yönlü Eşitsizlikten Rakam Eşitliği Çıkarma ⚠️ Doğrulama Bekleniyor
+
+> **PD-014 notu:** Bu, hocanın "buna benzer bir TYT sorusu vardı" diyerek
+> tahtada bir görsel üzerinden anlattığı bir eşitsizlik/sıralama sorusu;
+> hangi sayıların (`AB`, `BC`, `ABD`, ... gibi karışık geçen ifadeler)
+> hangi karşılaştırmaya girdiği ses transkriptinden net çıkarılamıyor —
+> bu transkriptin en dağınık kısmı. Aşağıdaki soru metni ve sıralama
+> **yalnızca hocanın vardığı sonuca (`C < A = B < D` mantığı) dayalı bir
+> yaklaşıktır**, tam soru cümlesi değildir. Video: `9__video.txt`,
+> yaklaşık **31:04–34:52** aralığı. Bu aralık izlenip doğru soru metni
+> paylaşılana kadar bu örnek taslak sayılmalıdır.
 
 **Soru:** 2 basamaklı `AB` ve `BA` sayıları için bir görselde hem
 `(bir taraf) < AB` hem `AB < (başka bir taraf)` biçiminde çapraz
