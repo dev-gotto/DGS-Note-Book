@@ -1,5 +1,34 @@
 # CHANGELOG
 
+## v1.7.0 M06/01-bolme İçerik Tamamlandı — Bölme
+
+### Yapılanlar
+- `M06-bolme-bolunebilme/01-bolme/` alt-konusunun kalan 4 sayfası
+  (`strateji.md`, `yaygin-hatalar.md`, `soru-bankasi.md`,
+  `hizli-tekrar.md`), `10__video.txt` transkriptinden gerçek içerikle
+  dolduruldu (`index.md`, `teorik.md`, `pratik.md` önceki pakette
+  tamamlanmıştı). 11 çözümlü örnek (`strateji.md`) ve 8 yaygın hata
+  maddesi (`yaygin-hatalar.md`) eklendi.
+- Transkript kontrol edildi; ekran görseline dayanan, sesten kesin
+  yeniden kurulamayan bir içerik tespit edilmedi (PD-014b uygulanacak
+  bir durum yok), tüm örnekler `soru-bankasi.md`'de ✅ olarak işaretli.
+- `M06-bolme-bolunebilme/01-bolme/index.md` front-matter'ı
+  güncellendi: `status: draft` → `complete`, `version: "0.5"` →
+  `"1.0"`.
+- Senkron dosyalar güncellendi (PD-011): `docs/matematik/index.md`'de
+  bölme satırı `✏️` → `✅` (bölünebilme kuralları satırı `✏️` olarak
+  kaldı, çünkü bu alt-konu bu paketin kapsamı dışında); `docs/
+  hizli-tekrar.md`'deki birleşik "bölme bölünebilme" placeholder
+  bloğu, `docs/matematik/index.md`'deki klasör yapısıyla tutarlı
+  olacak şekilde ayrı "bölme" (gerçek özet + düzeltilmiş link) ve
+  "bölünebilme kuralları" (placeholder, düzeltilmiş link) bloklarına
+  ayrıldı — önceki link `01-bolme-bolunebilme/` adında var olmayan bir
+  klasöre işaret ediyordu, `01-bolme/` olarak düzeltildi.
+- `README.md` Yol Haritası satırı, `M06`'nın 2 alt-konudan yalnızca
+  birinin (`01-bolme`) tamamlandığını yansıtacak şekilde güncellendi.
+- `02-bolunebilme-kurallari` alt-konusuna bu pakette **hiç
+  dokunulmadı**; kullanıcı talebiyle ayrı bir sohbette işlenecek.
+
 ## v1.6.1 M05 Hata Denetimi — PD-014 Uygulaması
 
 ### Yapılanlar

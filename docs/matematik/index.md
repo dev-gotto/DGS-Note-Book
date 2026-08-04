@@ -10,7 +10,7 @@ DGS Matematik konularının tam listesi. Her konunun yanındaki simge, o konunun
 - ✅ [faktöriyel](M04-faktoruyel/01-faktoruyel/index.md)
 - 🔎 [basamak kavramı](M05-basamak-kavrami/01-basamak-kavrami/index.md)
 - **M06-bolme-bolunebilme**
-    - ✏️ [bölme](M06-bolme-bolunebilme/01-bolme/index.md) — 10. video
+    - ✅ [bölme](M06-bolme-bolunebilme/01-bolme/index.md) — 10. video
     - ✏️ [bölünebilme kuralları](M06-bolme-bolunebilme/02-bolunebilme-kurallari/index.md) — 11. ve 12. videolar
 - ⏳ [asal sayılar ve asal çarpanlara ayırma](M07-asal-sayilar-ve-asal-carpanlara-ayirma/01-asal-sayilar-ve-asal-carpanlara-ayirma/index.md)
 - ⏳ [EBOB - EKOK](M08-ebob-ekok/01-ebob-ekok/index.md)

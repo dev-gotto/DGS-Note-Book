@@ -311,7 +311,7 @@ bakın (`✅` tamamlandı, `⏳` içerik bekleniyor).
 - [x] `M03-ardisik-sayilar` — 1 alt-konu, `4__video.txt` ve `5__video.txt` transkriptlerinden `status: complete`
 - [x] `M04-faktoruyel` — 1 alt-konu, `6__video.txt` ve `7__video.txt` transkriptlerinden `status: complete`
 - [~] `M05-basamak-kavrami` — 1 alt-konu, `8__video.txt` ve `9__video.txt` transkriptlerinden `status: review` (23/27 örnek doğrulandı, 4 örnek PD-014b gereği kullanıcı video doğrulaması bekliyor — bkz. alt-konu `index.md`)
-- [ ] `M06-bolme-bolunebilme` — **sıradaki hedef**, kaynak transkript bekleniyor
+- [~] `M06-bolme-bolunebilme` — 2 alt-konu (bölme, bölünebilme kuralları); `10__video.txt`'den `01-bolme` alt-konusu `status: complete`; `02-bolunebilme-kurallari` (`11__video.txt`, `12__video.txt`) **sıradaki hedef**, ayrı bir sohbette işlenecek
 - [ ] `M07`–`M43`, `G01`–`G18` — iskelet hazır, içerik bekleniyor
 
 Bundan sonraki her sohbette varsayılan iş: yukarıdaki listede sıradaki

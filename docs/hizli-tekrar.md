@@ -46,9 +46,17 @@ ve sütun toplama/çıkarma bulmacalarında elde-ödünç zinciri; sayma
 temelli mantık soruları.
 [Detaya git →](matematik/M05-basamak-kavrami/01-basamak-kavrami/hizli-tekrar.md)
 
-### bölme bölünebilme
+### bölme
+Bölmenin sağlaması (`A=B×C+K`) ve "bölen>kalan" kuralıyla harfli bölme
+sorularını çözme; ortak harfli iki bölmeyi birlikte kullanma, taraf
+tarafa toplama/çıkarma ve sayı atama teknikleri; kalan bulma
+ilkesiyle (sayının yerine kalanını kullanma) ve bölme yapmadan kalan
+bulma; periyodik kalan zincirlerinde farklı kalanları bulma.
+[Detaya git →](matematik/M06-bolme-bolunebilme/01-bolme/hizli-tekrar.md)
+
+### bölünebilme kuralları
 *İçerik yakında eklenecektir.*
-[Detaya git →](matematik/M06-bolme-bolunebilme/01-bolme-bolunebilme/hizli-tekrar.md)
+[Detaya git →](matematik/M06-bolme-bolunebilme/02-bolunebilme-kurallari/hizli-tekrar.md)
 
 ### asal sayılar ve asal çarpanlara ayırma
 *İçerik yakında eklenecektir.*
