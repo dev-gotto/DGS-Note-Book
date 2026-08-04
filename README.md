@@ -217,6 +217,14 @@ aşılmasını önlemek için aşağıdaki kurallar zorunludur (bkz. PD-013):
   alt-konuya bölünüyorsa, iş tek seferde bitirilmeye çalışılmaz: önce
   iskelet + teorik + pratik, ardından strateji + yaygın hatalar + soru
   bankası + hızlı tekrar + senkron dosyalar şeklinde iki adıma bölünür.
+- **Çok adımlı teslimde sekans kuralı:** İş iki veya daha fazla adıma
+  bölündüğünde, her adımın çıktısı (o adıma ait dosyaların zip'i + kısa
+  özet) kendi sırasında, ayrı bir teslim olarak verilir — sonraki adımın
+  içeriği önceki adımla birleştirilip tek seferde sunulmaz. Bir sonraki
+  adıma geçmeden önce kullanıcıdan açık onay istenir (ör. "1. adım
+  [iskelet + teorik + pratik] teslim edildi, 2. adıma [strateji + yaygın
+  hatalar + soru bankası + hızlı tekrar + senkron dosyalar] geçilsin
+  mi?"); onay gelmeden bir sonraki adımın dosyaları üretilmez.
 
 ---
 
@@ -277,7 +285,7 @@ build(hotfix): fix GitHub Pages deploy
 | PD-010 | İçerik üretimi sırasında bir konunun alt-konulara ayrıldığı fark edilirse, kod (M/G numarası) değişmeden klasör seviyesinde bölünme yapılır. |
 | PD-011 | **Senkronizasyon Kuralı:** Bir alt-konu tamamlandığında (`status: complete`), aynı pakette üç yer birden güncellenir: alt-konunun kendi `index.md`'si, `docs/hizli-tekrar.md`'deki ilgili blok, ve `docs/matematik/index.md` / `docs/geometri/index.md`'deki durum simgesi. |
 | PD-012 | `docs/matematik/index.md` ve `docs/geometri/index.md`, `mkdocs.yml` nav'ındaki `matematik/` ve `geometri/` dizin girişlerinin çalışması için zorunludur (yoksa GitHub Pages'te 404 oluşur); bu iki dosya da içerik ilerledikçe güncellenen canlı indekslerdir. |
-| PD-013 | **Limit Aşımını Önleme Kuralı:** Transkript(ler) dosyadan okunur, chat'e yapıştırılmaz; üretilen sayfa/senkron dosyaların içeriği doğrudan repo klasörüne yazılır ve her dosya ayrı işlemle üretilir; teslim yalnızca değişen dosyaların zip'i + kısa özet şeklinde yapılır, dosya içerikleri chat'e tekrar basılmaz (bkz. "Teslim Standardı"). |
+| PD-013 | **Limit Aşımını Önleme Kuralı:** Transkript(ler) dosyadan okunur, chat'e yapıştırılmaz; üretilen sayfa/senkron dosyaların içeriği doğrudan repo klasörüne yazılır ve her dosya ayrı işlemle üretilir; teslim yalnızca değişen dosyaların zip'i + kısa özet şeklinde yapılır, dosya içerikleri chat'e tekrar basılmaz. İş birden fazla adıma bölündüğünde her adım kendi sırasında ayrı teslim edilir ve bir sonraki adıma geçmeden önce kullanıcıdan onay istenir (bkz. "Teslim Standardı"). |
 | PD-014 | **Transkript Belirsizliği Protokolü:** İçerik üretimi sırasında transkriptte iki farklı türde güvenilmezlik ortaya çıkabilir; asistan bu ikisini ayırt etmek ve buna göre davranmak zorundadır: **(a) Basit ses-metin (ASR) hatası** — sayı/rakam gibi tek bir değerin yanlış tanınması (örn. aynı hesapta "357" ve "350" gibi çelişen iki değerin geçmesi). Bu durumda asistan, hocanın ulaştığı **nihai sonuçla ve anlattığı çözüm adımlarıyla hangi değer tutarlıysa onu doğru kabul eder**, düzeltir ve **kurguladığı içeriğin sürecin geri kalanıyla (verilen sayılar, ara adımlar, nihai cevap) birebir örtüştüğünden emin olur**; bunu sessizce yapar, sonuç teslim özetinde kısaca belirtilir. **(b) Ekran görseline/tabloya dayanan, sesten tam olarak yeniden kurulamayan içerik** — hocanın "şuraya bak, şu şurada" gibi işaret ifadeleriyle anlattığı, sayısal düzeni (hangi rakam hangi sütun/hücrede) transkriptten kesin olarak çıkarılamayan sorular (kibrit çöpü tabloları, sütun toplama/çıkarma bulmacaları, karşılaştırma görselleri vb.). Bu durumda asistan **tahmine dayalı bir soru metni uydurmaz**; üretimi o örnek için durdurur, kullanıcıya **hangi video ve hangi zaman aralığının (`mm:ss–mm:ss`) belirsiz olduğunu bildirir** ve kullanıcıdan ilgili kesiti izleyip doğru notu paylaşmasını ister. Kullanıcıdan onay/doğru içerik gelene kadar o örnek iskelet/taslak olarak işaretlenir, tamamlanmış muamelesi görmez. |
 
 
