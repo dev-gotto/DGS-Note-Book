@@ -55,7 +55,13 @@ bulma; periyodik kalan zincirlerinde farklı kalanları bulma.
 [Detaya git →](matematik/M06-bolme-bolunebilme/01-bolme/hizli-tekrar.md)
 
 ### bölünebilme kuralları
-*İçerik yakında eklenecektir.*
+Kendine ait kuralı olan sayılar (2, 3, 4, 5, 8, 9, 10, 11) ve her biri
+için basamak/rakam-toplama testleri; kontrol sırası kuralı (basamak
+önce, rakam toplama en son); kuralı olmayan sayıları (6, 12, 15, 30 ...)
+aralarında asal iki çarpana ayırarak test etme; kalanlı kuralsız sayı
+sorularında kalanı her iki çarpana uygulama; 11'e bölmenin bölüm
+kısayolu; "bir şey olmuşsa olmuştur" ve "biri yanlış" mantık soruları
+stratejileri.
 [Detaya git →](matematik/M06-bolme-bolunebilme/02-bolunebilme-kurallari/hizli-tekrar.md)
 
 ### asal sayılar ve asal çarpanlara ayırma

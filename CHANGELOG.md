@@ -1,5 +1,33 @@
 # CHANGELOG
 
+## v1.8.0 M06/02-bolunebilme-kurallari İçerik Tamamlandı — Bölünebilme Kuralları
+
+### Yapılanlar
+- `M06-bolme-bolunebilme/02-bolunebilme-kurallari/` alt-konusunun kalan
+  4 sayfası (`strateji.md`, `yaygin-hatalar.md`, `soru-bankasi.md`,
+  `hizli-tekrar.md`), `11__video.txt` ve `12__video.txt`
+  transkriptlerinden gerçek içerikle dolduruldu (`index.md`,
+  `teorik.md`, `pratik.md` önceki pakette tamamlanmıştı). 14 çözümlü
+  örnek (`strateji.md`) ve 8 yaygın hata maddesi (`yaygin-hatalar.md`)
+  eklendi.
+- Transkriptte birkaç basit ASR (ses-metin) hatası tespit edildi (ör.
+  "8'e bölünebilme" bölümünde sayının tekrarlı "88" olarak geçmesi,
+  ilk video sonundaki bir örnekte sayı ifadelerinin ("ABBA"/"BB" gibi
+  iki ayrı koşulun) net ayrışmaması); PD-014a gereği hocanın ulaştığı
+  nihai sonuçla ve çözüm adımlarıyla tutarlı değerler esas alınarak
+  içerik kurgulandı. Ekran görseline dayanan, sesten kesin yeniden
+  kurulamayan bir içerik tespit edilmedi (PD-014b uygulanacak bir
+  durum yok); tüm örnekler `soru-bankasi.md`'de ✅ olarak işaretli.
+- `M06-bolme-bolunebilme/02-bolunebilme-kurallari/index.md`
+  front-matter'ı güncellendi: `status: draft` → `complete`,
+  `version: "0.5"` → `"1.0"`.
+- Senkron dosyalar güncellendi (PD-011): `docs/matematik/index.md`'de
+  bölünebilme kuralları satırı `✏️` → `✅`; `docs/hizli-tekrar.md`'deki
+  "bölünebilme kuralları" placeholder bloğu gerçek özetle dolduruldu.
+- `README.md` Yol Haritası satırı, `M06`'nın her iki alt-konusunun
+  (`01-bolme`, `02-bolunebilme-kurallari`) tamamlandığını yansıtacak
+  şekilde güncellendi.
+
 ## v1.7.0 M06/01-bolme İçerik Tamamlandı — Bölme
 
 ### Yapılanlar
