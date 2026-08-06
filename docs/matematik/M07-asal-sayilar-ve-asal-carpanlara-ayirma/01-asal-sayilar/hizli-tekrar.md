@@ -1,4 +1,4 @@
-# Hızlı Tekrar — asal sayılar ve asal çarpanlara ayırma
+# Hızlı Tekrar — asal sayılar
 
 *İçerik yakında eklenecektir.*
 

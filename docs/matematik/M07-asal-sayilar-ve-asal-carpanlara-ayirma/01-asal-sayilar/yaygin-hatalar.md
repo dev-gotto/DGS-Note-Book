@@ -1,4 +1,4 @@
-# ⚠️ Yaygın Hatalar — asal sayılar ve asal çarpanlara ayırma
+# ⚠️ Yaygın Hatalar — asal sayılar
 
 *İçerik yakında eklenecektir.*
 

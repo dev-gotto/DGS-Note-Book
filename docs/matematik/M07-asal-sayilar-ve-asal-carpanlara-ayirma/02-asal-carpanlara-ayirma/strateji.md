@@ -1,4 +1,4 @@
-# 🎯 Soru Çözüm Stratejileri — asal sayılar ve asal çarpanlara ayırma
+# 🎯 Soru Çözüm Stratejileri — asal çarpanlara ayırma
 
 *İçerik yakında eklenecektir.*
 

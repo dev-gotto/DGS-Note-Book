@@ -1,4 +1,4 @@
-# Soru Bankası — asal sayılar ve asal çarpanlara ayırma
+# Soru Bankası — asal çarpanlara ayırma
 
 *İçerik yakında eklenecektir.*
 
