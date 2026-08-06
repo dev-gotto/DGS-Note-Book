@@ -1,0 +1,571 @@
+
+<!doctype html>
+<html lang="tr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>📘 Teorik Bilgiler — ardışık sayılar - DGS Note Book</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#teorik-bilgiler-ardsk-saylar" class="md-skip">
+          Ana içeriğe geç
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Başlık">
+    <a href="../../../.." title="DGS Note Book" class="md-header__button md-logo" aria-label="DGS Note Book" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DGS Note Book
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📘 Teorik Bilgiler — ardışık sayılar
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Ara" placeholder="Ara" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Ara">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Temizle" aria-label="Temizle" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Arama başlatılıyor
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigasyon" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="DGS Note Book" class="md-nav__button md-logo" aria-label="DGS Note Book" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    DGS Note Book
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ana Sayfa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hizli-tekrar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hızlı Tekrar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matematik
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../geometri/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometri
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="İçindekiler">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      İçindekiler
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ardsk-say-tanm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ardışık Sayı Tanımı
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arguman-1-ardsk-saylarn-fark-sabittir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Argüman 1 — Ardışık Sayıların Farkı Sabittir
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terim-says-say-adedi-formulu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Terim Sayısı (Sayı Adedi) Formülü
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ortadaki-say" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ortadaki Sayı
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arguman-2-ardsk-saylarn-toplam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Argüman 2 — Ardışık Sayıların Toplamı
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ozel-toplam-formulleri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Özel Toplam Formülleri
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iki-sabit-kural" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        İki Sabit Kural
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-ile-carpma-ksayolu-iki-basamakl-saylar-icin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11 ile Çarpma Kısayolu (İki Basamaklı Sayılar İçin)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11e-bolunebilme-kural-uc-basamakl-saylar-icin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11'e Bölünebilme Kuralı (Üç Basamaklı Sayılar İçin)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="teorik-bilgiler-ardsk-saylar">📘 Teorik Bilgiler — ardışık sayılar</h1>
+<blockquote>
+<p>Kaynak: Değişmeyen matematik kuralları (tanımlar, kurallar, formüller). Hoca anlatımından bağımsızdır.</p>
+</blockquote>
+<h2 id="ardsk-say-tanm">Ardışık Sayı Tanımı</h2>
+<p><strong>Ardışık sayı:</strong> Artış miktarı sabit olan sayı dizileridir. Kilit nokta
+"artış miktarının sabit olması"dır; ardışıklık yalnızca birer birer
+artan sayılarla sınırlı değildir.</p>
+<ul>
+<li><strong>Ardışık tam sayılar:</strong> artış miktarı <code>±1</code> (ör. <code>1, 2, 3, 4...</code>)</li>
+<li><strong>Ardışık tek sayılar:</strong> artış miktarı <code>±2</code> (ör. <code>1, 3, 5, 7...</code>)</li>
+<li><strong>Ardışık çift sayılar:</strong> artış miktarı <code>±2</code> (ör. <code>2, 4, 6, 8...</code>)</li>
+<li><strong>Genel ardışıklık:</strong> Farkı sabit olan herhangi bir dizi de ardışıktır
+  (ör. <code>2, 5, 8, 11...</code> artış miktarı <code>3</code> olan bir ardışık sayı dizisidir).</li>
+</ul>
+<p>Artış yönü küçükten büyüğe de (<code>1, 2, 3</code>), büyükten küçüğe de (<code>4, 2, 1</code>
+gibi negatif artışla) olabilir; önemli olan artışın <strong>sabit</strong> olmasıdır.</p>
+<h2 id="arguman-1-ardsk-saylarn-fark-sabittir">Argüman 1 — Ardışık Sayıların Farkı Sabittir</h2>
+<p><code>a, b, c</code> ardışık sayılarsa: <code>b - a = c - b</code> = sabit fark. Bu fark, dizinin
+türüne göre değişir (tam sayıda <code>1</code>, tek/çift sayıda <code>2</code>, genel bir dizide
+o dizinin artış miktarı).</p>
+<h2 id="terim-says-say-adedi-formulu">Terim Sayısı (Sayı Adedi) Formülü</h2>
+<pre><code>Terim Sayısı = (Son Terim − İlk Terim) / Artış Miktarı + 1
+</code></pre>
+<p>Bu formül, ilk ve son terimler dahil olmak üzere aralıktaki toplam terim
+sayısını verir. Artış miktarı <code>1</code> olduğunda (ardışık tam sayılar / birer
+birer giden bir aralık) formül <code>Son − İlk + 1</code>'e indirgenir.</p>
+<h2 id="ortadaki-say">Ortadaki Sayı</h2>
+<ul>
+<li><strong>Terim sayısı tek</strong> olduğunda, ortadaki sayı dizinin <strong>gerçek bir
+  üyesidir</strong> (dizinin tam ortasındaki terim).</li>
+<li><strong>Terim sayısı çift</strong> olduğunda, ortadaki sayı dizinin bir üyesi
+  <strong>değildir</strong>; iki orta terimin aritmetik ortalamasıdır ("aradaki sayı").</li>
+<li><strong>Toplam biliniyorsa:</strong> <code>Ortadaki Sayı = Toplam / Terim Sayısı</code></li>
+<li><strong>Toplam bilinmiyorsa:</strong> <code>Ortadaki Sayı = (İlk Terim + Son Terim) / 2</code></li>
+</ul>
+<h2 id="arguman-2-ardsk-saylarn-toplam">Argüman 2 — Ardışık Sayıların Toplamı</h2>
+<pre><code>Toplam = Terim Sayısı × Ortadaki Sayı
+</code></pre>
+<p>Bilinen tüm toplam formülleri (<code>n(n+1)/2</code> dahil) temelde bu tek kurala
+dayanır.</p>
+<h2 id="ozel-toplam-formulleri">Özel Toplam Formülleri</h2>
+<ul>
+<li><strong>1'den n'e kadar ardışık doğal sayıların toplamı:</strong>
+  <code>n × (n + 1) / 2</code> (sondaki terim × bir fazlası, bölü 2)</li>
+<li><strong>1'den başlayan, n'e kadar giden ardışık tek sayıların toplamı</strong>
+  (n tek sayı olmalıdır): <code>((n + 1) / 2)²</code></li>
+<li><strong>2'den başlayan, n'e kadar giden ardışık çift sayıların toplamı:</strong>
+  <code>(n / 2) × (n / 2 + 1)</code> (sondaki sayının yarısı × bir fazlası)</li>
+</ul>
+<p>Bu üç formül de "terim sayısı × ortadaki sayı" temel kuralının özel
+durumlarıdır; ezberlenmese de temel kuraldan türetilebilirler.</p>
+<h2 id="iki-sabit-kural">İki Sabit Kural</h2>
+<ol>
+<li><strong>Ardışık İKİ sayının toplamı her zaman TEK sayıdır</strong> — çünkü ardışık
+   iki sayıdan biri mutlaka tek, diğeri mutlaka çifttir; tek + çift = tek.</li>
+<li><strong>Terim sayısı TEK olan bir ardışık sayı grubunun toplamı, her zaman o
+   terim sayısının katıdır.</strong> Örneğin ardışık 3 sayının toplamı her zaman
+   3'ün katıdır, ardışık 5 sayının toplamı her zaman 5'in katıdır. (Bu,
+   "terim sayısı × ortadaki sayı" kuralının doğrudan bir sonucudur: terim
+   sayısı tek olduğunda ortadaki sayı bir tam sayıdır ve toplam bu tam
+   sayının terim-sayısı-katı olur.)</li>
+</ol>
+<h2 id="11-ile-carpma-ksayolu-iki-basamakl-saylar-icin">11 ile Çarpma Kısayolu (İki Basamaklı Sayılar İçin)</h2>
+<p>İki basamaklı bir sayı <code>11</code> ile çarpılırken, iki basamağın <strong>arasına o
+iki basamağın toplamı</strong> yazılır:</p>
+<ul>
+<li>Toplam tek basamaklıysa (<code>0-9</code>) doğrudan araya yazılır.</li>
+<li>Toplam <code>10</code> veya üzerindeyse, birler basamağı araya yazılır ve elde
+  kalan <code>1</code>, sol basamağa eklenir.</li>
+</ul>
+<h2 id="11e-bolunebilme-kural-uc-basamakl-saylar-icin">11'e Bölünebilme Kuralı (Üç Basamaklı Sayılar İçin)</h2>
+<p>Üç basamaklı bir sayının <strong>ilk ve son basamağının toplamı, ortadaki
+basamağa eşitse</strong>, bu sayı <code>11</code>'e tam bölünür. Bölüm, sayının ilk ve son
+basamaklarından oluşan iki basamaklı sayıdır (11 ile çarpma kısayolunun
+tersidir).</p>
+<p><a href="../">← Konu ana sayfasına dön</a> · <a href="../pratik/">💡 Pratik Bilgiler →</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Kopyaland\u0131", "clipboard.copy": "Kopyala", "search.result.more.one": "Bu sayfada 1 tane daha", "search.result.more.other": "Bu sayfada # tane daha", "search.result.none": "E\u015fle\u015fen dok\u00fcman bulunamad\u0131", "search.result.one": "1 dok\u00fcman bulundu", "search.result.other": "# dok\u00fcman bulundu", "search.result.placeholder": "Aramaya ba\u015flamak i\u00e7in yaz\u0131n", "search.result.term.missing": "Eksik", "select.version": "Versiyon se\u00e7"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

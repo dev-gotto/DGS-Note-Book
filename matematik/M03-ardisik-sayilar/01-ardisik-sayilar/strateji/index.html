@@ -1,0 +1,851 @@
+
+<!doctype html>
+<html lang="tr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>🎯 Soru Çözüm Stratejileri — ardışık sayılar - DGS Note Book</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#soru-cozum-stratejileri-ardsk-saylar" class="md-skip">
+          Ana içeriğe geç
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Başlık">
+    <a href="../../../.." title="DGS Note Book" class="md-header__button md-logo" aria-label="DGS Note Book" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DGS Note Book
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              🎯 Soru Çözüm Stratejileri — ardışık sayılar
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Ara" placeholder="Ara" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Ara">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Temizle" aria-label="Temizle" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Arama başlatılıyor
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigasyon" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="DGS Note Book" class="md-nav__button md-logo" aria-label="DGS Note Book" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    DGS Note Book
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ana Sayfa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hizli-tekrar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hızlı Tekrar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matematik
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../geometri/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometri
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="İçindekiler">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      İçindekiler
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fark-bilgisi-verilince-harflerle-ugrasma-fark-dogrudan-kullan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fark Bilgisi Verilince Harflerle Uğraşma, Farkı Doğrudan Kullan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fark-sorularnda-say-yapstrma-stratejisi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fark Sorularında Sayı Yapıştırma Stratejisi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tek-terim-sayl-toplamlarda-ortadaki-saydan-yuru" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tek Terim Sayılı Toplamlarda Ortadaki Sayıdan Yürü
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#toplamdan-terim-ckarma-terim-bulma-stratejisi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Toplamdan Terim Çıkarma / Terim Bulma Stratejisi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hata-bulma-stratejisi-art-yerine-eksi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hata Bulma Stratejisi (Artı Yerine Eksi)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#carpmsal-terimli-serilerde-sabit-carpan-silme-stratejisi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Çarpımsal Terimli Serilerde Sabit Çarpanı Silme Stratejisi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ornek-1-ev-numaralar-fark-bilgisiyle-ksa-yol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek 1 — Ev Numaraları: Fark Bilgisiyle Kısa Yol
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ornek-2-fark-bilgisiyle-denklem-kurma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek 2 — Fark Bilgisiyle Denklem Kurma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ornek-3-harf-ifadeleriyle-verilen-ardsk-saylar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek 3 — Harf İfadeleriyle Verilen Ardışık Sayılar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ornek-4-ikili-ardsk-say-tanm-sorusu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek 4 — "İkili Ardışık Sayı" Tanım Sorusu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ornek-5-toplamdan-en-kucuk-terimi-bulma-tek-terim-says" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek 5 — Toplamdan En Küçük Terimi Bulma (Tek Terim Sayısı)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ornek-6-toplamdan-en-buyuk-terimi-bulma-cift-terim-says" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek 6 — Toplamdan En Büyük Terimi Bulma (Çift Terim Sayısı)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ornek-7-n-terimi-bulma-bastan-sayarak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek 7 — N. Terimi Bulma (Baştan Sayarak)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ornek-8-iki-ayr-ardsk-grubun-ortak-toplam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek 8 — İki Ayrı Ardışık Grubun Ortak Toplamı
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ornek-9-kalan-toplamdan-ckarlan-terimleri-bulma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek 9 — Kalan Toplamdan Çıkarılan Terimleri Bulma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ornek-10-art-yerine-eksi-konan-terimi-bulma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek 10 — Artı Yerine Eksi Konan Terimi Bulma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ornek-11-en-az-en-cok-aralgnda-alnabilecek-deger-says" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek 11 — En Az / En Çok Aralığında Alınabilecek Değer Sayısı
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ornek-12-toplamn-5in-kat-olmas-kosulundan-n-degerlerini-bulma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek 12 — Toplamın 5'in Katı Olması Koşulundan n Değerlerini Bulma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ornek-13-her-terim-sabit-miktar-artrlrsa-toplamdaki-arts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek 13 — Her Terim Sabit Miktar Artırılırsa Toplamdaki Artış
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ornek-14-carpmsal-terimlerde-tek-carpan-artsnn-etkisi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Örnek 14 — Çarpımsal Terimlerde Tek Çarpan Artışının Etkisi
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="soru-cozum-stratejileri-ardsk-saylar">🎯 Soru Çözüm Stratejileri — ardışık sayılar</h1>
+<blockquote>
+<p>Kaynak: Hocanın önerdiği yöntemler + genel best-practice çözüm teknikleri.</p>
+</blockquote>
+<h2 id="fark-bilgisi-verilince-harflerle-ugrasma-fark-dogrudan-kullan">Fark Bilgisi Verilince Harflerle Uğraşma, Farkı Doğrudan Kullan</h2>
+<p>İki ayrı ardışık grubun (ör. iki farklı ardışık tek sayı dizisi) belirli
+üyeleri arasındaki fark verildiğinde, her terimi <code>x</code>, <code>x+2</code>, <code>y</code>, <code>y+2</code>
+gibi ayrı ayrı yazıp uzun bir denklem kurmak yerine, istenen farkı
+doğrudan verilen sabit farkın cinsinden ifade et. Bu, çözüm süresini
+ciddi biçimde kısaltır.</p>
+<h2 id="fark-sorularnda-say-yapstrma-stratejisi">Fark Sorularında Sayı Yapıştırma Stratejisi</h2>
+<p>Soru yalnızca <strong>farkla</strong> ilgiliyse (harflerin kendi değerleriyle değil),
+harflerin yerine dizinin türüne uygun küçük sayılar (<code>2, 4, 6</code> gibi)
+yerleştirip işlemi doğrudan sonuçlandır — fark sabit olduğu için hangi
+üçlüyü seçtiğin sonucu değiştirmez.</p>
+<h2 id="tek-terim-sayl-toplamlarda-ortadaki-saydan-yuru">Tek Terim Sayılı Toplamlarda Ortadaki Sayıdan Yürü</h2>
+<p>Terim sayısı tek olan bir grubun toplamı verildiğinde, sayıları tek tek
+<code>x</code>li ifadeler hâlinde yazıp toplamak yerine: toplamı terim sayısına böl
+→ ortadaki sayıyı bul → istenen terime (en küçük/en büyük/N. sayı) oradan
+adım adım ilerle.</p>
+<h2 id="toplamdan-terim-ckarma-terim-bulma-stratejisi">Toplamdan Terim Çıkarma / Terim Bulma Stratejisi</h2>
+<p>Bir grubun tamamının toplamı biliniyor, ama gruptan birkaç terim
+çıkarıldıktan sonraki (kalan) toplam veriliyorsa: <strong>tüm grubun standart
+toplamından kalan toplamı çıkararak</strong> çıkarılan terimlerin toplamını
+bul, sonra bu küçük toplamı aynı mantıkla (terim sayısı × ortadaki sayı)
+çöz.</p>
+<h2 id="hata-bulma-stratejisi-art-yerine-eksi">Hata Bulma Stratejisi (Artı Yerine Eksi)</h2>
+<p>Toplama işleminde bir terimin önüne yanlışlıkla eksi konduğu
+belirtildiğinde, doğru (standart) toplamla yanlış sonuç arasındaki farkı
+<code>2</code>ye böl — bu, yanlışlıkla eksi konan terimi doğrudan verir.</p>
+<h2 id="carpmsal-terimli-serilerde-sabit-carpan-silme-stratejisi">Çarpımsal Terimli Serilerde Sabit Çarpanı Silme Stratejisi</h2>
+<p>Bir terimin yalnızca bir çarpanı belirli bir miktar artırıldığında,
+değişmeyen çarpanları zihinsel olarak sil, geriye kalan (değişen)
+çarpanlarla oluşan yeni ardışık diziyi topla, bulduğun toplamı artış
+miktarıyla çarp.</p>
+<hr />
+<p><a id="ornek-1"></a></p>
+<h2 id="ornek-1-ev-numaralar-fark-bilgisiyle-ksa-yol">Örnek 1 — Ev Numaraları: Fark Bilgisiyle Kısa Yol</h2>
+<p><strong>Soru:</strong> Bir sokakta, yolun üst tarafındaki evler ardışık tek
+sayılarla, alt tarafındaki evler ardışık çift sayılarla
+numaralandırılmıştır (numaralar soldan sağa doğru artmaktadır). <code>A</code> ve
+<code>C</code> evleri üst sıradadır ve <code>A - C</code> farkı <code>23</code>'tür. <code>B</code> ve <code>D</code> evleri
+alt sıradadır. Buna göre <code>B - D</code> farkı kaçtır?</p>
+<p><strong>Çözüm (kısa yol):</strong>
+- Üstteki (tek sayılı) evler kendi içinde ardışık, alttaki (çift sayılı)
+  evler de kendi içinde ardışıktır — fark her iki sıra için de sabittir.
+- <code>A - C = 23</code> bilgisi zaten üst sıranın sabit farkını temsil eder;
+  <code>x</code>, <code>x+2</code> gibi harflerle yeniden kurmaya gerek yoktur.
+- Alt sıradaki evler de aynı mantıkla ardışık olduğundan, karşılıklı
+  evler arasındaki ilişki üst sıradakiyle <strong>aynı kalıptadır</strong>: üst sırada
+  <code>A</code>'dan <code>C</code>'ye giderken kaç ev atlanıyorsa alt sırada <code>B</code>'den <code>D</code>'ye
+  giderken de aynı sayıda ev atlanır, dolayısıyla iki sıranın farkları
+  arasında sabit bir kaymayla ilişki kurulabilir.
+- Bu ilişki kurulduğunda <code>B - D = 25</code> bulunur.
+- <strong>Sonuç: <code>B - D = 25</code>.</strong> (Harfleri <code>x</code>, <code>x+2</code>, <code>y</code>, <code>y+2</code> şeklinde açıp
+  uzun denklem kurmak da aynı sonucu verir, ama gereksiz derecede
+  uzundur — bu yüzden "yol değil" olarak nitelenir.)</p>
+<p><a id="ornek-2"></a></p>
+<h2 id="ornek-2-fark-bilgisiyle-denklem-kurma">Örnek 2 — Fark Bilgisiyle Denklem Kurma</h2>
+<p><strong>Soru:</strong> <code>a, b, c</code> küçükten büyüğe sıralı ardışık tek sayılardır.
+<code>4b = 9(c - a)</code> olduğuna göre <code>a + b + c</code> toplamı kaçtır?</p>
+<p><strong>Çözüm:</strong>
+- <code>a, b, c</code> ardışık tek sayılar olduğundan ikişer ikişer artar:
+  <code>c - a = 4</code>.
+- Bu bilgi doğrudan denklemde yerine konur: <code>4b = 9 × 4 = 36</code>.
+- Buradan <code>b = 9</code>.
+- <code>b</code> bulunduğunda tüm dizi bulunmuş olur: ardışık tek sayılarda bir
+  öncesi <code>2</code> az, bir sonrası <code>2</code> fazladır → <code>a = 7</code>, <code>c = 11</code>.
+- <strong>Sonuç: <code>a + b + c = 7 + 9 + 11 = 27</code>.</strong></p>
+<p><a id="ornek-3"></a></p>
+<h2 id="ornek-3-harf-ifadeleriyle-verilen-ardsk-saylar">Örnek 3 — Harf İfadeleriyle Verilen Ardışık Sayılar</h2>
+<p><strong>Soru:</strong> <code>m, m+n, 2m</code> sayıları küçükten büyüğe sıralanmış, ardışık 3
+çift sayıdır. Buna göre <code>m × n</code> kaçtır?</p>
+<p><strong>Çözüm:</strong>
+- Ardışık çift sayılarda artış miktarı <code>2</code>'dir: <code>(m+n) - m = 2</code> ya da
+  <code>2m - (m+n) = 2</code> ya da <code>2m - m = 4</code> (ilk terimden son terime iki adım).
+- En basit ilişkiden gidilir: <code>2m - m = 4</code> olduğundan doğrudan <code>m = 4</code>.
+- <code>(m+n) - m = 2</code> ilişkisinden <code>n = 2</code>.
+- <strong>Sonuç: <code>m × n = 4 × 2 = 8</code>.</strong></p>
+<p><a id="ornek-4"></a></p>
+<h2 id="ornek-4-ikili-ardsk-say-tanm-sorusu">Örnek 4 — "İkili Ardışık Sayı" Tanım Sorusu</h2>
+<p><strong>Soru:</strong> Hem ardışık iki pozitif tam sayının hem de ardışık üç pozitif
+tam sayının toplamı biçiminde yazılabilen sayılara <strong>"ikili ardışık
+sayı"</strong> denir. Buna göre:</p>
+<p>I. <code>39</code>
+  II. <code>240</code>
+  III. <code>693</code></p>
+<p>sayılarından hangileri ikili ardışıktır?</p>
+<p><strong>Çözüm:</strong>
+- <strong>Kural 1:</strong> Ardışık iki sayının toplamı her zaman <strong>tektir.</strong> <code>240</code>
+  çift olduğundan bu koşulu sağlayamaz — <strong>II elenir.</strong>
+- <strong>Kural 2:</strong> Ardışık üç sayının toplamı her zaman <strong>3'ün katıdır.</strong>
+  - <code>39</code>: hem tek hem <code>3</code>'ün katı (<code>3+9=12</code>, <code>12</code> de <code>3</code>'ün katı) →
+    uygun. Doğrulama: <code>19 + 20 = 39</code> (ardışık iki) ve
+    <code>12 + 13 + 14 = 39</code> (ardışık üç) — ikisi de sağlanıyor.
+  - <code>693</code>: rakamları toplamı <code>6+9+3=18</code>, <code>3</code>'ün katı, ve <code>693</code> tek sayı
+    → her iki koşulu da sağlıyor.
+- <strong>Sonuç: I ve III (<code>39</code> ve <code>693</code>) ikili ardışık sayıdır.</strong></p>
+<p><a id="ornek-5"></a></p>
+<h2 id="ornek-5-toplamdan-en-kucuk-terimi-bulma-tek-terim-says">Örnek 5 — Toplamdan En Küçük Terimi Bulma (Tek Terim Sayısı)</h2>
+<p><strong>Soru:</strong> Ardışık 7 tek sayının toplamı <code>105</code> ise, bu sayıların en
+küçüğü kaçtır?</p>
+<p><strong>Çözüm:</strong>
+- Terim sayısı <code>7</code> (tek) → gerçek bir ortadaki sayı vardır.
+- Ortadaki sayı: <code>105 / 7 = 15</code>.
+- <code>7</code> terimde ortadakinden sola doğru <code>3</code> adım vardır; tek sayılarda
+  adım başına <code>2</code> azalır: <code>15 - 2 - 2 - 2 = 9</code>.
+- <strong>Sonuç: En küçük sayı <code>9</code>'dur.</strong></p>
+<p><a id="ornek-6"></a></p>
+<h2 id="ornek-6-toplamdan-en-buyuk-terimi-bulma-cift-terim-says">Örnek 6 — Toplamdan En Büyük Terimi Bulma (Çift Terim Sayısı)</h2>
+<p><strong>Soru:</strong> Ardışık 6 tek sayının toplamı <code>96</code> ise, bu sayıların en büyüğü
+kaçtır?</p>
+<p><strong>Çözüm:</strong>
+- Terim sayısı <code>6</code> (çift) → gerçek bir ortadaki sayı yoktur, "aradaki
+  sayı" kullanılır.
+- Aradaki sayı: <code>96 / 6 = 16</code>.
+- <code>16</code>, ardışık tek sayı dizisinde iki terimin (<code>15</code> ve <code>17</code>) tam
+  ortasındadır.
+- En büyüğe ulaşmak için <code>17</code>'den sağa doğru <code>2</code> terim daha ilerlenir
+  (<code>6</code> terimin <code>3</code>'ü sağda): <code>17, 19, 21</code>.
+- <strong>Sonuç: En büyük sayı <code>21</code>'dir.</strong></p>
+<p><a id="ornek-7"></a></p>
+<h2 id="ornek-7-n-terimi-bulma-bastan-sayarak">Örnek 7 — N. Terimi Bulma (Baştan Sayarak)</h2>
+<p><strong>Soru:</strong> Ardışık 15 çift sayının toplamı <code>330</code>'dur. Sayılar küçükten
+büyüğe sıralandığında, baştan 9. sayı kaçtır?</p>
+<p><strong>Çözüm:</strong>
+- Terim sayısı <code>15</code> (tek) → ortadaki sayı gerçek bir üyedir ve tam
+  olarak <code>8</code>. sayıdır (<code>7</code> terim solda, <code>7</code> terim sağda).
+- Ortadaki sayı: <code>330 / 15 = 22</code>.
+- <code>22</code>, <code>8</code>. terimdir. <code>9</code>. terim ondan bir adım (çift sayıda <code>2</code>)
+  sonrasıdır: <code>22 + 2 = 24</code>.
+- <strong>Sonuç: Baştan 9. sayı <code>24</code>'tür.</strong></p>
+<p><a id="ornek-8"></a></p>
+<h2 id="ornek-8-iki-ayr-ardsk-grubun-ortak-toplam">Örnek 8 — İki Ayrı Ardışık Grubun Ortak Toplamı</h2>
+<p><strong>Soru:</strong> Ardışık 3 pozitif tek sayı ile ardışık 3 pozitif çift sayının
+toplamı <code>117</code>'dir. Bu tek sayıların en büyüğü en fazla kaç olabilir?</p>
+<p><strong>Çözüm:</strong>
+- Tek sayıların en büyüğünün maksimum olması için, çift sayıların
+  toplamının <strong>minimum</strong> olması gerekir (117 sabit olduğundan, biri
+  küçüldükçe diğerine daha fazla pay kalır).
+- En küçük 3 pozitif ardışık çift sayı: <code>2, 4, 6</code> → toplamları <code>12</code>.
+- Kalan tek sayıların toplamı: <code>117 - 12 = 105</code>.
+- Bu <code>105</code>, ardışık 3 tek sayının toplamı olduğundan ortadaki sayı:
+  <code>105 / 3 = 35</code>.
+- Ortadaki <code>35</code> olduğuna göre dizinin en büyüğü: <code>35 + 2 = 37</code>.
+- <strong>Sonuç: Tek sayıların en büyüğü en fazla <code>37</code> olabilir.</strong></p>
+<p><a id="ornek-9"></a></p>
+<h2 id="ornek-9-kalan-toplamdan-ckarlan-terimleri-bulma">Örnek 9 — Kalan Toplamdan Çıkarılan Terimleri Bulma</h2>
+<p><strong>Soru:</strong> <code>1</code>'den <code>39</code>'a kadar numaralı <code>39</code> top bir torbadadır.
+İçlerinden numaraları ardışık tek sayı olan <code>5</code> top çıkarılıyor. Kalan
+topların numaraları toplamı <code>645</code>'tir. Çıkarılan toplardan en küçük
+numaralı olanının numarası kaçtır?</p>
+<p><strong>Çözüm:</strong>
+- <code>1</code>'den <code>39</code>'a kadar tüm topların toplamı:
+  <code>39 × 40 / 2 = 780</code>.
+- Çıkarılan 5 topun toplamı: <code>780 - 645 = 135</code>.
+- Bu 5 top ardışık tek sayı olduğundan ortadaki sayı: <code>135 / 5 = 27</code>.
+- <code>27</code> ortadaysa, dizinin en küçüğü iki adım (<code>2 + 2</code>) öncesindedir:
+  <code>27 - 2 - 2 = 23</code>.
+- <strong>Sonuç: Çıkarılan en küçük numaralı top <code>23</code> numaralıdır.</strong></p>
+<p><a id="ornek-10"></a></p>
+<h2 id="ornek-10-art-yerine-eksi-konan-terimi-bulma">Örnek 10 — Artı Yerine Eksi Konan Terimi Bulma</h2>
+<p><strong>Soru:</strong> <code>1</code>'den <code>15</code>'e kadar numaralı toplar üzerindeki numaralar
+toplanmak isteniyor, fakat toplarken bir topun numarasının önüne
+yanlışlıkla <code>+</code> yerine <code>-</code> konuyor ve sonuç <code>96</code> bulunuyor. Yanlışlıkla
+önüne eksi konan topun numarası kaçtır?</p>
+<p><strong>Çözüm:</strong>
+- Doğru toplam (hata olmasaydı): <code>15 × 16 / 2 = 120</code>.
+- Bulunan (yanlış) toplam: <code>96</code>.
+- Fark: <code>120 - 96 = 24</code>.
+- Bir terimin önüne eksi konması, o terimi hem toplamamak hem de bir
+  kez fazladan çıkarmak anlamına geldiğinden, toplamdaki azalma o
+  terimin <strong>2 katı</strong> kadardır: <code>24 = 2 × terim</code>.
+- <strong>Sonuç: Eksi konan topun numarası <code>24 / 2 = 12</code>'dir.</strong></p>
+<p><a id="ornek-11"></a></p>
+<h2 id="ornek-11-en-az-en-cok-aralgnda-alnabilecek-deger-says">Örnek 11 — En Az / En Çok Aralığında Alınabilecek Değer Sayısı</h2>
+<p><strong>Soru:</strong> <code>1</code>'den <code>10</code>'a kadar numaralı kutuların her birine, kutunun
+üzerindeki sayı kadar kalem konulmak isteniyor. Ancak kutulardan
+<strong>üçüne</strong>, üzerlerindeki sayı kadar <strong>iki kez</strong> (yani bir fazladan)
+kalem konuyor. Buna göre tüm kutulardaki toplam kalem sayısı kaç farklı
+değer alabilir?</p>
+<p><strong>Çözüm:</strong>
+- Standart durumda (hatasız) toplam kalem sayısı:
+  <code>10 × 11 / 2 = 55</code>.
+- Fazladan konan kalemler, seçilen <code>3</code> kutunun üzerindeki sayıların
+  toplamı kadar <strong>ilave</strong> kalem demektir.
+- <strong>En az ilave</strong> için en küçük <code>3</code> kutu seçilir: <code>1+2+3=6</code> →
+  toplam kalem: <code>55 + 6 = 61</code>.
+- <strong>En çok ilave</strong> için en büyük <code>3</code> kutu seçilir: <code>8+9+10=27</code> →
+  toplam kalem: <code>55 + 27 = 82</code>.
+- <code>61</code> ile <code>82</code> arasındaki her tam sayı değeri, farklı üçlü kutu
+  seçimleriyle elde edilebilir (aradaki tüm değerler alınabilir).
+- Alınabilecek farklı değer sayısı: <code>82 - 61 + 1 = 22</code>.
+- <strong>Sonuç: Toplam kalem sayısı <code>22</code> farklı değer alabilir.</strong></p>
+<p><a id="ornek-12"></a></p>
+<h2 id="ornek-12-toplamn-5in-kat-olmas-kosulundan-n-degerlerini-bulma">Örnek 12 — Toplamın 5'in Katı Olması Koşulundan <code>n</code> Değerlerini Bulma</h2>
+<p><strong>Soru:</strong> <code>n</code> pozitif tam sayı ve <code>n ≤ 24</code> olmak üzere, <code>1</code>'den <code>n</code>'e
+kadar olan sayıların toplamı <code>5</code>'in tam katı bir sayıya eşittir. Buna
+göre <code>n</code> kaç farklı değer alabilir?</p>
+<p><strong>Çözüm:</strong>
+- Toplam formülü: <code>n × (n + 1) / 2</code>. Bu ifadenin <code>5</code>'in katı olması
+  için, <code>n</code> ile <code>n + 1</code> çarpanlarından <strong>birinin <code>5</code>'in katı</strong> olması
+  yeterlidir (2'ye bölme paritesini etkilemez).
+- <code>n</code>'in kendisi <code>5</code>'in katıysa: <code>n = 5, 10, 15, 20</code> (4 değer, <code>24</code>
+  sınırı içinde).
+- <code>n + 1</code> ifadesi <code>5</code>'in katıysa, yani <code>n</code> bir eksiği <code>5</code>'in katından:
+  <code>n = 4, 9, 14, 19</code> (4 değer, <code>24</code> sınırı içinde; <code>n = 24</code> bir sonraki
+  aday olurdu ama <code>25</code>'in bir eksiği olan <code>24</code> de aslında bu gruba
+  girer — sınır kontrolüyle uygun olanlar sayılır).
+- Bu iki grup toplamda <code>n</code>'e <strong>8 farklı değer</strong> kazandırır.
+- <strong>Sonuç: <code>n</code>, <code>8</code> farklı değer alabilir.</strong></p>
+<p><a id="ornek-13"></a></p>
+<h2 id="ornek-13-her-terim-sabit-miktar-artrlrsa-toplamdaki-arts">Örnek 13 — Her Terim Sabit Miktar Artırılırsa Toplamdaki Artış</h2>
+<p><strong>Soru:</strong> <code>2, 5, 8, ..., 62</code> şeklinde giden ardışık toplamdaki her bir
+terim <code>5</code> artırılırsa, toplam kaç artar?</p>
+<p><strong>Çözüm:</strong>
+- Önce terim sayısı bulunur: artış miktarı <code>3</code> olduğundan
+  <code>(62 - 2) / 3 + 1 = 20 + 1 = 21</code> terim vardır.
+- Her terim <code>5</code> arttığında toplamdaki artış, terim sayısı ile terim
+  başına artışın çarpımıdır: <code>21 × 5 = 105</code>.
+- <strong>Sonuç: Toplam <code>105</code> artar.</strong></p>
+<p><a id="ornek-14"></a></p>
+<h2 id="ornek-14-carpmsal-terimlerde-tek-carpan-artsnn-etkisi">Örnek 14 — Çarpımsal Terimlerde Tek Çarpan Artışının Etkisi</h2>
+<p><strong>Soru:</strong> <code>1×2 + 2×3 + 3×4 + ... + 15×16</code> toplamındaki her terimin
+<strong>ikinci çarpanı</strong> <code>5</code> artırılırsa (yani terimler <code>1×7, 2×8, 3×9, ...,
+15×20</code> olursa), toplam kaç artar?</p>
+<p><strong>Çözüm:</strong>
+- Her terimde <strong>değişmeyen</strong> ilk çarpanlar (<code>1, 2, 3, ..., 15</code>) zihinsel
+  olarak silinir; geriye bu çarpanların oluşturduğu <strong>yeni bir ardışık
+  toplam</strong> kalır: <code>1 + 2 + 3 + ... + 15</code>.
+- Bu toplam: <code>15 × 16 / 2 = 120</code>.
+- Bulunan bu toplam, terimin arttığı miktarla (<code>5</code>) çarpılır:
+  <code>120 × 5 = 600</code>.
+- <strong>Sonuç: Toplam <code>600</code> artar.</strong> (Her terimi tek tek yeniden çarpıp eski
+  toplamdan çıkarmaktan çok daha hızlı bir yoldur.)</p>
+<p><a href="../">← Konu ana sayfasına dön</a> · <a href="../yaygin-hatalar/">⚠️ Yaygın Hatalar →</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Kopyaland\u0131", "clipboard.copy": "Kopyala", "search.result.more.one": "Bu sayfada 1 tane daha", "search.result.more.other": "Bu sayfada # tane daha", "search.result.none": "E\u015fle\u015fen dok\u00fcman bulunamad\u0131", "search.result.one": "1 dok\u00fcman bulundu", "search.result.other": "# dok\u00fcman bulundu", "search.result.placeholder": "Aramaya ba\u015flamak i\u00e7in yaz\u0131n", "search.result.term.missing": "Eksik", "select.version": "Versiyon se\u00e7"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

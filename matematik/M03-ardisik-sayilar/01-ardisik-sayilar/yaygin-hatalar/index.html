@@ -1,0 +1,561 @@
+
+<!doctype html>
+<html lang="tr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>⚠️ Yaygın Hatalar — ardışık sayılar - DGS Note Book</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#yaygn-hatalar-ardsk-saylar" class="md-skip">
+          Ana içeriğe geç
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Başlık">
+    <a href="../../../.." title="DGS Note Book" class="md-header__button md-logo" aria-label="DGS Note Book" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DGS Note Book
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ⚠️ Yaygın Hatalar — ardışık sayılar
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Ara" placeholder="Ara" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Ara">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Temizle" aria-label="Temizle" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Arama başlatılıyor
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigasyon" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="DGS Note Book" class="md-nav__button md-logo" aria-label="DGS Note Book" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    DGS Note Book
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ana Sayfa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hizli-tekrar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hızlı Tekrar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matematik
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../geometri/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometri
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="İçindekiler">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      İçindekiler
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-fark-verilen-sorularda-harfleri-tek-tek-acmak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Fark Verilen Sorularda Harfleri Tek Tek Açmak
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-fark-sorusunda-harf-kullanmaya-devam-etmek" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Fark Sorusunda Harf Kullanmaya Devam Etmek
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-tek-terim-sayl-toplamlar-harflerle-cozmeye-calsmak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Tek Terim Sayılı Toplamları Harflerle Çözmeye Çalışmak
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-cift-terim-saysnda-ortadaki-saynn-diziye-ait-oldugunu-sanmak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Çift Terim Sayısında "Ortadaki Sayı"nın Diziye Ait Olduğunu Sanmak
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ardsk-iki-saynn-toplamnn-her-zaman-tek-oldugunu-unutmak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Ardışık İki Sayının Toplamının Her Zaman Tek Olduğunu Unutmak
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-ardsk-n-saynn-toplamnn-nin-kat-olma-kuraln-yanls-uygulamak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Ardışık N Sayının Toplamının N'in Katı Olma Kuralını Yanlış Uygulamak
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-eksi-konan-terimin-etkisini-yalnzca-1-kat-sanmak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Eksi Konan Terimin Etkisini Yalnızca 1 Katı Sanmak
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-carpmsal-terimli-serilerde-tum-terimleri-yeniden-hesaplamaya-calsmak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Çarpımsal Terimli Serilerde Tüm Terimleri Yeniden Hesaplamaya Çalışmak
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="yaygn-hatalar-ardsk-saylar">⚠️ Yaygın Hatalar — ardışık sayılar</h1>
+<blockquote>
+<p>Kaynak: Öğrencilerin sık yaptığı hatalar ve ÖSYM'nin kurduğu tuzaklar.
+Her madde; hata/tuzak örneği + derin kavrayışla çözümü şeklinde anlatılır.</p>
+</blockquote>
+<h2 id="1-fark-verilen-sorularda-harfleri-tek-tek-acmak">1. Fark Verilen Sorularda Harfleri Tek Tek Açmak</h2>
+<p><strong>Hata:</strong> <code>a, b, c</code> gibi ardışık sayılar arasındaki bir fark bilgisi
+verildiğinde, her terim <code>x</code>, <code>x+2</code>, <code>x+4</code> gibi ayrı ayrı harflerle ifade
+edilip uzun bir denklem sistemine dönüştürülür.</p>
+<p><strong>Neden yanlış:</strong> Ardışık sayıların farkı zaten <strong>sabittir</strong>; bu sabit
+farkı doğrudan kullanmak yerine sıfırdan harflerle denklem kurmak, aynı
+sonuca çok daha uzun bir yoldan ulaşmak demektir.</p>
+<p><strong>Doğru çözüm:</strong> Verilen fark bilgisini doğrudan, aranan farkın cinsinden
+ifade ederek çöz; gereksiz harf tanımlamalarından kaçın.</p>
+<h2 id="2-fark-sorusunda-harf-kullanmaya-devam-etmek">2. Fark Sorusunda Harf Kullanmaya Devam Etmek</h2>
+<p><strong>Hata:</strong> Soru yalnızca ardışık sayıların <strong>farkıyla</strong> ilgiliyken (sayı
+değerleriyle değil), harflerle sembolik çözüme devam edilir.</p>
+<p><strong>Neden yanlış:</strong> Fark her zaman sabit olduğundan, harflerin yerine
+dizinin türüne uygun küçük sayılar (<code>2, 4, 6</code> gibi) yazmak sonucu
+değiştirmez ama işlemi çok kısaltır.</p>
+<p><strong>Doğru çözüm:</strong> Yalnızca fark soruluyorsa sayı kullan; sayıların
+<strong>kendisi</strong> soruluyorsa (yani hangi spesifik sayılar olduğu isteniyorsa)
+bu kısayol kullanılamaz, cebirsel ilişki kurulmalıdır.</p>
+<h2 id="3-tek-terim-sayl-toplamlar-harflerle-cozmeye-calsmak">3. Tek Terim Sayılı Toplamları Harflerle Çözmeye Çalışmak</h2>
+<p><strong>Hata:</strong> "Ardışık 7 tek sayının toplamı 105" gibi bir soruda, sayılar
+<code>x, x+2, x+4, x+6, x+8, x+10, x+12</code> şeklinde tek tek yazılıp toplanarak
+<code>x</code> çözülmeye çalışılır.</p>
+<p><strong>Neden yanlış:</strong> Bu yöntem çok daha fazla işlem adımı gerektirir ve hata
+riskini artırır.</p>
+<p><strong>Doğru çözüm:</strong> Toplamı terim sayısına böl, ortadaki sayıyı bul, oradan
+istenen terime doğru ilerle.</p>
+<h2 id="4-cift-terim-saysnda-ortadaki-saynn-diziye-ait-oldugunu-sanmak">4. Çift Terim Sayısında "Ortadaki Sayı"nın Diziye Ait Olduğunu Sanmak</h2>
+<p><strong>Hata:</strong> Terim sayısı çift olduğunda (ör. 6 tane sayı), <code>Toplam / Terim
+Sayısı</code> işleminden çıkan sayının doğrudan dizinin bir üyesi olduğu
+varsayılır.</p>
+<p><strong>Neden yanlış:</strong> Terim sayısı çift olduğunda gerçek bir ortadaki terim
+yoktur; bu işlemden çıkan sayı iki orta terimin <strong>ortalamasıdır</strong>
+("aradaki sayı") ve dizinin gerçek bir üyesi olmayabilir.</p>
+<p><strong>Doğru çözüm:</strong> Çift terim sayısında çıkan sayıyı "aradaki sayı" olarak
+yorumla; istenen terime bu aradaki sayıdan adım adım ilerleyerek ulaş.</p>
+<h2 id="5-ardsk-iki-saynn-toplamnn-her-zaman-tek-oldugunu-unutmak">5. Ardışık İki Sayının Toplamının Her Zaman Tek Olduğunu Unutmak</h2>
+<p><strong>Hata:</strong> Bir sayının, ardışık iki sayının toplamı olarak yazılıp
+yazılamayacağı sorgulanırken çift sayılar da aday olarak değerlendirilir.</p>
+<p><strong>Neden yanlış:</strong> Ardışık iki sayıdan biri her zaman tek, diğeri her
+zaman çifttir; toplamları bu yüzden <strong>her zaman tektir.</strong> Çift bir sayı
+hiçbir zaman ardışık iki sayının toplamı olamaz.</p>
+<p><strong>Doğru çözüm:</strong> Bu tip sorularda önce çift adayları hiç hesaba katmadan
+ele; yalnızca tek sayılar için devam et.</p>
+<h2 id="6-ardsk-n-saynn-toplamnn-nin-kat-olma-kuraln-yanls-uygulamak">6. Ardışık N Sayının Toplamının N'in Katı Olma Kuralını Yanlış Uygulamak</h2>
+<p><strong>Hata:</strong> Ardışık terim sayısının <strong>tek</strong> olduğu durumlarda geçerli olan
+"toplam, terim sayısının katıdır" kuralı, terim sayısı <strong>çift</strong> olan
+gruplara da uygulanmaya çalışılır.</p>
+<p><strong>Neden yanlış:</strong> Bu kural yalnızca terim sayısı <strong>tek</strong> olduğunda kesin
+olarak geçerlidir (çünkü o durumda ortadaki sayı bir tam sayıdır ve
+toplam bu tam sayının terim-sayısı-katıdır). Terim sayısı çift olduğunda
+böyle bir kesinlik yoktur.</p>
+<p><strong>Doğru çözüm:</strong> Kuralı yalnızca terim sayısı tek olan gruplara uygula;
+çift terim sayılı gruplarda toplamı doğrudan terim sayısı × ortadaki
+sayı ile hesapla, "N'in katı" kestirmesine güvenme.</p>
+<h2 id="7-eksi-konan-terimin-etkisini-yalnzca-1-kat-sanmak">7. Eksi Konan Terimin Etkisini Yalnızca 1 Katı Sanmak</h2>
+<p><strong>Hata:</strong> Bir terimin önüne yanlışlıkla eksi konduğunda, doğru toplamla
+yanlış toplam arasındaki farkın doğrudan o terime <strong>eşit</strong> olduğu
+düşünülür.</p>
+<p><strong>Neden yanlış:</strong> Bir terimin önüne eksi koymak, o terimi hem
+toplamamak hem de bir kez fazladan çıkarmak anlamına gelir — toplamdaki
+azalma terimin <strong>kendisinin 2 katı</strong> kadardır, 1 katı değil.</p>
+<p><strong>Doğru çözüm:</strong> <code>Doğru Toplam − Yanlış Toplam</code> farkını bul, bu farkı
+<strong>2'ye böl</strong>; çıkan sonuç aranan terimdir.</p>
+<h2 id="8-carpmsal-terimli-serilerde-tum-terimleri-yeniden-hesaplamaya-calsmak">8. Çarpımsal Terimli Serilerde Tüm Terimleri Yeniden Hesaplamaya Çalışmak</h2>
+<p><strong>Hata:</strong> <code>1×2 + 2×3 + ...</code> gibi bir seride yalnızca bir çarpan
+değiştiğinde, tüm terimler yeniden tek tek çarpılıp yeni toplam eski
+toplamdan çıkarılmaya çalışılır.</p>
+<p><strong>Neden yanlış:</strong> Bu yöntem gereksiz derecede uzundur ve hata riski
+yüksektir; asıl değişimi taşıyan yalnızca değişen çarpanlardır.</p>
+<p><strong>Doğru çözüm:</strong> Değişmeyen çarpanları zihinsel olarak sil, geriye kalan
+değişen çarpanların oluşturduğu yeni ardışık toplamı bul, bu toplamı
+artış miktarıyla çarp.</p>
+<p><a href="../">← Konu ana sayfasına dön</a> · <a href="../hizli-tekrar/">Hızlı Tekrar →</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Kopyaland\u0131", "clipboard.copy": "Kopyala", "search.result.more.one": "Bu sayfada 1 tane daha", "search.result.more.other": "Bu sayfada # tane daha", "search.result.none": "E\u015fle\u015fen dok\u00fcman bulunamad\u0131", "search.result.one": "1 dok\u00fcman bulundu", "search.result.other": "# dok\u00fcman bulundu", "search.result.placeholder": "Aramaya ba\u015flamak i\u00e7in yaz\u0131n", "search.result.term.missing": "Eksik", "select.version": "Versiyon se\u00e7"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

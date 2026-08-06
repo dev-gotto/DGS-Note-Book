@@ -1,0 +1,641 @@
+
+<!doctype html>
+<html lang="tr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>📘 Teorik Bilgiler — faktöriyel - DGS Note Book</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#teorik-bilgiler-faktoriyel" class="md-skip">
+          Ana içeriğe geç
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Başlık">
+    <a href="../../../.." title="DGS Note Book" class="md-header__button md-logo" aria-label="DGS Note Book" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DGS Note Book
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📘 Teorik Bilgiler — faktöriyel
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Ara" placeholder="Ara" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Ara">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Temizle" aria-label="Temizle" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Arama başlatılıyor
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigasyon" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="DGS Note Book" class="md-nav__button md-logo" aria-label="DGS Note Book" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    DGS Note Book
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ana Sayfa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../hizli-tekrar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hızlı Tekrar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matematik
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../geometri/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometri
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="İçindekiler">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      İçindekiler
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#faktoriyel-tanm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Faktöriyel Tanımı
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0-1-ozel-kabul" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0! = 1 (Özel Kabul)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#temel-degerler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Temel Değerler
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ardsk-aclm-kural" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ardışık Açılım Kuralı
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iki-faktoriyelin-bolumu-genel-formul" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        İki Faktöriyelin Bölümü (Genel Formül)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faktoriyel-ve-kombinasyon-iliskisi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Faktöriyel ve Kombinasyon İlişkisi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0-1-ispat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0! = 1 İspatı
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faktoriyel-icindeki-asal-carpan-says-legendre-mantg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Faktöriyel İçindeki Asal Çarpan Sayısı (Legendre Mantığı)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sondan-kac-basamagnn-0-oldugu-kural" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sondan Kaç Basamağının 0 Olduğu Kuralı
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#islem-sonucundaki-basamak-says-kurallar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        İşlem Sonucundaki Basamak Sayısı Kuralları
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bir-saydan-1-ckarldgnda-basamaklarn-9-olmas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bir Sayıdan 1 Çıkarıldığında Basamakların 9 Olması
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="teorik-bilgiler-faktoriyel">📘 Teorik Bilgiler — faktöriyel</h1>
+<blockquote>
+<p>Kaynak: Değişmeyen matematik kuralları (tanımlar, kurallar, formüller). Hoca anlatımından bağımsızdır.</p>
+</blockquote>
+<h2 id="faktoriyel-tanm">Faktöriyel Tanımı</h2>
+<p><strong>Faktöriyel</strong> ("çarpansal"), <code>1</code>'den <code>n</code>'e kadar olan doğal sayıların
+çarpımıdır ve <code>n!</code> şeklinde gösterilir:</p>
+<pre><code>n! = 1 × 2 × 3 × ... × n
+</code></pre>
+<p>Faktöriyel yalnızca <strong>doğal sayılarda</strong> tanımlı bir kavramdır; <strong>negatif
+sayılar için tanımlı değildir.</strong></p>
+<h2 id="0-1-ozel-kabul">0! = 1 (Özel Kabul)</h2>
+<p>Faktöriyel, doğal sayılarda <code>0</code>'dan başlar. <code>0!</code>, <code>1</code>'e eşit kabul
+edilmiştir; bu, negatif sayılarda faktöriyel tanımlanamadığı için
+matematikçilerin yaptığı özel bir kabuldür (ispatı için bkz. aşağıdaki
+"0! = 1 İspatı").</p>
+<h2 id="temel-degerler">Temel Değerler</h2>
+<table>
+<thead>
+<tr>
+<th>n</th>
+<th>n!</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>6</td>
+</tr>
+<tr>
+<td>4</td>
+<td>24</td>
+</tr>
+<tr>
+<td>5</td>
+<td>120</td>
+</tr>
+<tr>
+<td>6</td>
+<td>720</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ardsk-aclm-kural">Ardışık Açılım Kuralı</h2>
+<p>Bir faktöriyel, kendisinden başlayarak birer birer azalan çarpanlara ve
+sonunda durulan noktadaki faktöriyele ayrılarak açılabilir:</p>
+<pre><code>n! = n × (n-1)!
+n! = n × (n-1) × (n-2)!
+n! = n × (n-1) × (n-2) × ... × (k+1) × k!
+</code></pre>
+<p>Sayının kendisinden başlanır, birer birer azalınarak gidilir, durulan
+yerde faktöriyel işareti konur. Bu açılım, iki faktöriyeli birbirine
+benzetip <strong>sadeleştirmenin</strong> temelidir.</p>
+<h2 id="iki-faktoriyelin-bolumu-genel-formul">İki Faktöriyelin Bölümü (Genel Formül)</h2>
+<p><code>a &gt; b</code> olmak üzere:</p>
+<pre><code>a! / b! = (b+1) × (b+2) × ... × a
+</code></pre>
+<p>Yani büyük faktöriyeli küçük faktöriyele bölmenin sonucu, küçük
+faktöriyelden <strong>sonraki</strong> ardışık çarpanların çarpımıdır.</p>
+<h2 id="faktoriyel-ve-kombinasyon-iliskisi">Faktöriyel ve Kombinasyon İlişkisi</h2>
+<p><code>n</code> elemandan <code>r</code> tanesini seçmenin (kombinasyon) formülü:</p>
+<pre><code>C(n, r) = n! / ((n - r)! × r!)
+</code></pre>
+<h2 id="0-1-ispat">0! = 1 İspatı</h2>
+<p><code>n</code>'in <code>n</code>'li kombinasyonu (<code>n</code> elemandan <code>n</code> tanesini seçmek), her
+zaman <code>1</code>'dir (tek bir seçim şekli vardır — hepsini seçmek):</p>
+<pre><code>C(n, n) = n! / ((n - n)! × n!) = n! / (0! × n!) = 1
+</code></pre>
+<p><code>n!</code> ifadeleri sadeleşince:</p>
+<pre><code>1 / 0! = 1
+</code></pre>
+<p>İçler dışlar çarpımı yapılırsa <code>0! × 1 = 1</code>, yani <code>0! = 1</code> bulunur.</p>
+<h2 id="faktoriyel-icindeki-asal-carpan-says-legendre-mantg">Faktöriyel İçindeki Asal Çarpan Sayısı (Legendre Mantığı)</h2>
+<p><code>n!</code> içinde bir <strong>asal sayı <code>p</code>'nin</strong> kaç kez çarpan olarak geçtiğini
+bulmak için, <code>n</code>, <code>p</code>'ye ardışık olarak bölünür ve bölüm sonuçları (kalan
+değil) toplanır:</p>
+<pre><code>p'nin n! içindeki üssü = ⌊n/p⌋ + ⌊n/p²⌋ + ⌊n/p³⌋ + ...
+</code></pre>
+<p>(Bölme, bölünemeyecek noktaya kadar sürdürülür; her adımda yalnızca tam
+bölüm alınır, kalan atılır.)</p>
+<p>Taban <strong>asal olmayan</strong> bir sayıysa (ör. <code>6 = 2 × 3</code>), önce asal
+çarpanlarına ayrılır; <code>n!</code> içindeki o bileşik sayının maksimum çarpan
+adedi, asal çarpanlardan <strong>sayıca daha az olanının</strong> (büyük asal sayının)
+üssüne eşittir — çünkü bir bileşik çarpan oluşturmak için her asal
+çarpandan bir tane gerekir ve en az bulunan asal, oluşturulabilecek
+bileşik çarpan sayısını sınırlar.</p>
+<h2 id="sondan-kac-basamagnn-0-oldugu-kural">Sondan Kaç Basamağının 0 Olduğu Kuralı</h2>
+<p>Bir sayının <strong>sondan kaç basamağının <code>0</code> olduğu</strong>, o sayının içinde kaç
+tane <code>10 = 2 × 5</code> çarpanı olduğuna eşittir. <code>n!</code> içinde <code>2</code> çarpanı her
+zaman <code>5</code> çarpanından fazla olduğundan, sondan kaç basamağının <code>0</code>
+olduğu doğrudan <strong><code>n!</code> içindeki <code>5</code> çarpanı sayısına</strong> eşittir (Legendre
+formülüyle, <code>p = 5</code> alınarak bulunur).</p>
+<h2 id="islem-sonucundaki-basamak-says-kurallar">İşlem Sonucundaki Basamak Sayısı Kuralları</h2>
+<p><code>n!</code> içeren toplama, çıkarma ve çarpma işlemlerinin sonucundaki sondan
+<code>0</code> sayısı için:</p>
+<ul>
+<li><strong>Toplama:</strong> İki (ardışık olmayan) faktöriyel toplanırken, sonucun
+  sondan sıfır sayısı, <strong>küçük olan faktöriyelin</strong> sıfır sayısına eşittir.</li>
+<li><strong>Çarpma:</strong> İki faktöriyel çarpılırken, sonucun sondan sıfır sayısı,
+  ikisinin sıfır sayılarının <strong>toplamına</strong> eşittir.</li>
+<li><strong>Bölme:</strong> İki faktöriyel bölünürken, sonucun sondan sıfır sayısı,
+  ikisinin sıfır sayılarının <strong>farkına</strong> eşittir.</li>
+<li><strong>Ardışık faktöriyellerin toplamı/farkı</strong> parantezine alınırken, açığa
+  çıkan çarpanların içinde <strong>yeni <code>5</code> çarpanları</strong> oluşabilir; bu
+  durumda küçüğü almak yeterli değildir, parantez içi ayrıca
+  hesaplanmalıdır.</li>
+</ul>
+<h2 id="bir-saydan-1-ckarldgnda-basamaklarn-9-olmas">Bir Sayıdan 1 Çıkarıldığında Basamakların 9 Olması</h2>
+<p>Sonu <code>k</code> tane <code>0</code> ile biten bir sayıdan <code>1</code> çıkarıldığında, sayının
+sondan <code>k</code> basamağı <code>9</code> olur (ör. <code>1000 - 1 = 999</code>). Bu, <code>n!</code> sonu
+<code>0</code>larla bitmesi gereken sorularda <code>n! - 1</code> gibi ifadelerin sondan kaç
+basamağının <code>9</code> olduğunu sormak için kullanılır.</p>
+<p><a href="../">← Konu ana sayfasına dön</a> · <a href="../pratik/">💡 Pratik Bilgiler →</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Kopyaland\u0131", "clipboard.copy": "Kopyala", "search.result.more.one": "Bu sayfada 1 tane daha", "search.result.more.other": "Bu sayfada # tane daha", "search.result.none": "E\u015fle\u015fen dok\u00fcman bulunamad\u0131", "search.result.one": "1 dok\u00fcman bulundu", "search.result.other": "# dok\u00fcman bulundu", "search.result.placeholder": "Aramaya ba\u015flamak i\u00e7in yaz\u0131n", "search.result.term.missing": "Eksik", "select.version": "Versiyon se\u00e7"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
